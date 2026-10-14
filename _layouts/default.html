@@ -6,47 +6,45 @@
     <meta name="description" content="{{ page.description | default: site.description | escape }}">
     <title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
     <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     {% if page.layout == 'handout' %}
-      <link rel="stylesheet" href="{{ '/assets/css/handout.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/handout.css' | relative_url }}">
     {% endif %}
+    <link rel="stylesheet" media="print" href="{{ '/assets/css/print.css' | relative_url }}">
     <script>
       window.MathJax = {
         tex: {
           inlineMath: [['$', '$'], ['\\(', '\\)']],
           displayMath: [['$$', '$$'], ['\\[', '\\]']],
-          processEscapes: true,
+          processEscapes: false,
           packages: {'[+]': ['ams']}
         },
+        chtml: {scale: 1, linebreaks: {automatic: true}},
         options: {
+          enableMenu: false,
           skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        },
-        chtml: { scale: 1 }
+        }
       };
     </script>
     <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
   </head>
-  <body>
+{% assign subject_slug = page.subject %}
+{% if subject_slug == nil or subject_slug == empty %}
+  {% assign url_seg = page.url | remove_first: '/' | split: '/' | first %}
+  {% case url_seg %}
+    {% when 'mathematics' %}{% assign subject_slug = 'Mathematics' %}
+    {% when 'physics' %}{% assign subject_slug = 'Physics' %}
+    {% when 'computer-science' %}{% assign subject_slug = 'Computer Science' %}
+  {% endcase %}
+{% endif %}
+  <body{% if subject_slug %} data-subject="{{ subject_slug | downcase | replace: ' ', '-' }}"{% endif %}{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
     <a class="skip-link" href="#main-content">Skip to content</a>
-    <header class="site-header">
-      <div class="site-header__inner">
-        <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
-          <span class="site-brand__name">Galbadrakh STEM</span>
-          <span class="site-brand__tagline">Cambridge International · AS &amp; A Level</span>
-        </a>
-        {% include navbar.html %}
-      </div>
-    </header>
-
-    <main id="main-content" class="site-main">
+    {% include navbar.html %}
+    <main id="main-content" class="container">
       {{ content }}
     </main>
-
-    <footer class="site-footer">
-      <div class="site-footer__inner">
-        <p><strong>{{ site.title }}</strong> <span aria-hidden="true">·</span> Independent learning resources for Cambridge International AS &amp; A Level.</p>
-        <p class="site-footer__note">Syllabuses and assessment routes can change. Use the official syllabus for your examination year as the final reference.</p>
-      </div>
-    </footer>
   </body>
 </html>

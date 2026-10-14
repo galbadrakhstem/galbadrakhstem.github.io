@@ -9,12 +9,7 @@ layout: default
   </nav>
 
   <article class="handout">
-    <header class="handout-header">
-      <p class="handout-kicker">Cambridge International {{ page.code }} <span aria-hidden="true">·</span> AS &amp; A Level</p>
-      <h1>{{ page.title }}</h1>
-      {% if page.description %}<p class="handout-summary">{{ page.description }}</p>{% endif %}
-      <p class="handout-meta">{{ page.subject }} <span aria-hidden="true">·</span> {{ page.topic }}</p>
-    </header>
+    {% include handout-head.html %}
     <div class="handout-content">
       {{ content }}
     </div>

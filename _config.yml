@@ -7,7 +7,9 @@ markdown: kramdown
 permalink: pretty
 
 kramdown:
-  math_engine: mathjax
+  # null so kramdown leaves $...$ and $$...$$ untouched for MathJax v3.
+  # "mathjax" wraps maths in <script type="math/tex">, which MathJax v3 ignores.
+  math_engine: null
   syntax_highlighter: rouge
 
 exclude:

@@ -22,6 +22,8 @@ description: Cambridge International AS & A Level Mathematics 9709 notes, exam g
     <a href="{{ '/mathematics/handouts/quadratics/' | relative_url }}"><strong>Quadratics: methods and practice</strong></a>
     <p>Factorising, completing the square, the quadratic formula, and five fully solved practice questions.</p>
   </li>
+  <li><a href="{{ '/mathematics/self-assessment/quadratics/' | relative_url }}"><strong>Quadratics self-assessment</strong></a> — twelve fully worked fluency questions.</li>
+  <li><a href="{{ '/mathematics/exam-style-questions/quadratics/' | relative_url }}"><strong>Quadratics exam-style practice</strong></a> — six original questions with illustrative marks.</li>
 </ul>
 
 ## A useful study routine
