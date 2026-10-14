@@ -1,300 +1,167 @@
-/* Minimal, high-contrast foundation for Galbadrakh STEM. */
-:root {
-  color-scheme: light;
-  --ink: #111111;
-  --muted: #606060;
-  --border: #e5e5e5;
-  --paper: #ffffff;
-  --soft: #f7f7f7;
-  --link: #174b70;
-  --link-hover: #0d3049;
-  --content-width: 1080px;
-  --reading-width: 760px;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* ==========================================================================
+   Galbadrakh STEM — main.css
+   Design language verified against Kevin Zhou (knzhou.github.io), 2026-10-14.
+   Tokens below are the single source of truth. No new colours may be added.
+   Component vocabulary: .aligned-row / .aligned-heading / .aligned-text,
+   .handout-list / .handout-item / .handout-code / .handout-title / .handout-link
+   ========================================================================== */
+
+:root{
+  /* type */
+  --font-heading:"Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --font-body:-apple-system,BlinkMacSystemFont,"segoe ui",Roboto,"helvetica neue",Arial,"noto sans",sans-serif;
+  --font-mono:SFMono-Regular,Menlo,Monaco,Consolas,"liberation mono","courier new",monospace;
+
+  /* colour */
+  --heading:#313131; --text:#212529; --muted:#6c757d; --muted-2:#555555;
+  --link:#2962ff; --link-hover:#003adc;
+  --rule:#e5e7eb; --rule-2:#dee2e6;
+  --surface:#f8f9fa; --surface-2:#f3f6ff;
+
+  /* shell */
+  --nav-h:63px; --label-col:180px; --label-gap:36px;
+  --shell:calc(66.666667% + 206px); --radius:4px;
+
+  /* compatibility aliases — referenced by the current handout.css.
+     Keep until handout.css is rewritten, then delete this block. */
+  --ink:var(--text); --border:var(--rule); --paper:#ffffff; --soft:var(--surface);
+  --content-width:1200px; --reading-width:770px;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+html{font-size:13.09px}
+@media (min-width:58em){html{font-size:17px}}
+*,*::before,*::after{box-sizing:border-box}
+
+body{
+  margin:0; background:#ffffff; color:var(--text);
+  font-family:var(--font-body); font-size:1rem; line-height:1.5;
+  padding-bottom:80px; text-align:left;
+  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+}
+@media (min-width:992px){body{margin-top:var(--nav-h)}}
+
+h1,h2,h3,h4,h5,h6{
+  font-family:var(--font-heading); font-weight:400; color:var(--heading);
+  margin:1rem 0 .5rem; line-height:1.25; overflow-wrap:break-word;
+}
+h1{font-size:2.25rem}h2{font-size:1.75rem}h3{font-size:1.5rem}
+h4{font-size:1.25rem}h5{font-size:1rem}h6{font-size:.875rem}
+p{margin:0 0 1rem}
+ul,ol{margin:0 0 1rem;padding-left:1.5rem}
+li{margin:.25rem 0}
+a{color:var(--link);text-decoration:none}
+a:hover{color:var(--link-hover);text-decoration:underline}
+hr{border:0;border-top:1px solid var(--rule);margin:40px 0}
+img{max-width:100%;height:auto}
+
+code,kbd,samp{font-family:var(--font-mono);font-size:.9em}
+pre{
+  font-family:var(--font-mono); background:var(--surface); border:1px solid var(--rule);
+  border-radius:var(--radius); padding:14px 16px; overflow-x:auto;
+  font-size:.85rem; line-height:1.5;
+}
+pre code{font-size:1em;background:none;padding:0}
+:not(pre) > code{background:var(--surface);border:1px solid var(--rule);border-radius:3px;padding:1px 5px}
+blockquote{margin:1.5rem 0;padding:0 0 0 18px;border-left:3px solid var(--rule);color:var(--muted-2)}
+table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.95rem}
+th,td{border:1px solid var(--rule);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--surface);font-weight:600;font-family:var(--font-heading)}
+
+/* container */
+.container{width:100%;margin:0 auto;padding:0 15px}
+@media (min-width:576px){.container{max-width:540px}}
+@media (min-width:768px){.container{max-width:720px}}
+@media (min-width:992px){.container{max-width:960px}}
+@media (min-width:1200px){.container{max-width:1200px}}
+@media (max-width:575.98px){.container{padding:0 20px}}
+
+/* navbar — fixed, 63px desktop, 44px mobile, brand hidden on phones */
+.navbar{
+  position:fixed; top:0; left:0; right:0; z-index:1030; background:#ffffff;
+  border-bottom:1px solid var(--rule-2); min-height:var(--nav-h);
+}
+.navbar .container{display:flex;align-items:center;min-height:var(--nav-h)}
+.navbar-brand{
+  font-family:var(--font-heading); font-size:1.25rem; color:rgba(0,0,0,.9);
+  white-space:nowrap; margin-right:1rem;
+}
+.navbar-brand:hover{color:var(--link);text-decoration:none}
+.navbar-nav{display:flex;flex-wrap:wrap;list-style:none;margin:0 0 0 auto;padding:0}
+.navbar-nav .nav-link{
+  display:flex; align-items:center; min-height:44px; padding:0 .9rem;
+  font-size:18px; color:#495057; transition:color .6s ease;
+}
+.navbar-nav .nav-link:hover{color:var(--link);text-decoration:none}
+.navbar-nav .nav-link.active{color:var(--link)}
+@media (min-width:992px){.navbar-nav .nav-link{padding:6.5px .9rem}}
+@media (max-width:991.98px){
+  .navbar-brand{display:none}
+  .navbar-nav{flex-basis:100%;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;margin-left:0}
+  .navbar-nav::-webkit-scrollbar{display:none}
+  .navbar-nav .nav-link{font-size:16px;padding:10px}
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 1.5rem;
+/* section shell + 180px heading gutter (the signature layout) */
+main.container{padding-top:60px}
+.section{padding:60px 0 0}
+.aligned-sections{margin:0 auto}
+.aligned-row + .aligned-row{margin-top:40px;padding-top:40px;border-top:1px solid var(--rule)}
+.aligned-heading h1,.aligned-heading h2{
+  margin:0 0 20px; font-size:1.15rem; font-weight:600; line-height:1.4; overflow-wrap:break-word;
+}
+.aligned-text{min-width:0}
+.aligned-text > :first-child{margin-top:0}
+.aligned-text > :last-child{margin-bottom:0}
+@media (min-width:992px){
+  .aligned-sections{width:var(--shell)}
+  .aligned-row{display:grid;grid-template-columns:var(--label-col) minmax(0,1fr);column-gap:var(--label-gap)}
+  .aligned-heading h1,.aligned-heading h2{margin-bottom:0}
+  .aligned-text{grid-column:2}
 }
 
-body {
-  min-width: 320px;
-  min-height: 100vh;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  background: var(--paper);
-  color: var(--ink);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.7;
+/* topic list — code gutter + title + bordered action pills */
+.handout-list{
+  display:grid; grid-template-columns:repeat(2,minmax(0,1fr));
+  column-gap:26px; padding:0; margin:0 0 16px; list-style:none;
 }
+.handout-item{
+  display:grid; grid-template-columns:max-content minmax(0,1fr); column-gap:7px;
+  align-content:start; min-width:0; padding:13px 0; margin:0; border-bottom:1px solid #e1e4ea;
+}
+.handout-code{min-width:31px;padding-top:2px;color:#686b72;font-size:13px;font-weight:500;line-height:1.4}
+.handout-title{font-size:16px;line-height:1.4;overflow-wrap:break-word}
+.handout-actions{grid-column:2;display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+.handout-link{
+  display:inline-flex; align-items:center; justify-content:center; min-height:29px; padding:3px 9px;
+  border:1px solid #e1e4ea; border-radius:var(--radius); color:var(--link);
+  font-size:13px; line-height:1.4; text-decoration:none; white-space:nowrap;
+}
+.handout-link:hover{background:#e8eeff;border-color:var(--link);text-decoration:none}
+.handout-link.is-primary{background:var(--surface-2);border-color:var(--surface-2)}
+@media (max-width:575px){.handout-list{grid-template-columns:minmax(0,1fr)}}
 
-::selection {
-  background: #dce8ef;
-  color: var(--ink);
-}
+/* accessibility */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip-link{position:absolute;left:-9999px;top:0;background:#ffffff;padding:8px 14px;z-index:2000}
+.skip-link:focus{left:0}
+a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offset:2px}
 
-a {
-  color: var(--link);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.18em;
-}
+/* math */
+mjx-container[display="true"]{margin:1.25rem 0 !important;overflow-x:auto;overflow-y:hidden}
 
-a:hover {
-  color: var(--link-hover);
-}
-
-a:focus-visible,
-button:focus-visible {
-  outline: 3px solid #7aa7c4;
-  outline-offset: 3px;
-  border-radius: 2px;
-}
-
-.skip-link {
-  position: absolute;
-  z-index: 10;
-  top: 0.75rem;
-  left: 0.75rem;
-  padding: 0.5rem 0.8rem;
-  transform: translateY(-180%);
-  background: var(--ink);
-  color: var(--paper);
-  text-decoration: none;
-}
-
-.skip-link:focus {
-  transform: translateY(0);
-}
-
-.site-header {
-  border-bottom: 1px solid var(--border);
-  background: var(--paper);
-}
-
-.site-header__inner,
-.site-main,
-.site-footer__inner {
-  width: min(calc(100% - 3rem), var(--content-width));
-  margin-inline: auto;
-}
-
-.site-header__inner {
-  min-height: 82px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  padding-block: 0.85rem;
-}
-
-.site-brand {
-  display: flex;
-  flex-direction: column;
-  gap: 0.05rem;
-  color: var(--ink);
-  line-height: 1.3;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.site-brand__name {
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: -0.025em;
-}
-
-.site-brand__tagline {
-  color: var(--muted);
-  font-size: 0.74rem;
-  letter-spacing: 0.015em;
-}
-
-.site-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 0.3rem 1.25rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.site-nav a {
-  display: inline-block;
-  padding-block: 0.35rem;
-  color: #333333;
-  font-size: 0.91rem;
-  text-decoration: none;
-}
-
-.site-nav a:hover,
-.site-nav a[aria-current="page"] {
-  color: var(--link);
-  text-decoration: underline;
-  text-underline-offset: 0.3em;
-}
-
-.site-main {
-  flex: 1;
-  padding-block: clamp(2.5rem, 6vw, 5rem) 5rem;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  color: var(--ink);
-  line-height: 1.25;
-  text-wrap: balance;
-}
-
-h1 {
-  margin: 0 0 1.25rem;
-  font-size: clamp(2.15rem, 5vw, 3.45rem);
-  letter-spacing: -0.045em;
-}
-
-h2 {
-  margin: 2.8rem 0 0.9rem;
-  font-size: clamp(1.45rem, 3vw, 1.9rem);
-  letter-spacing: -0.025em;
-}
-
-h3 {
-  margin: 1.9rem 0 0.6rem;
-  font-size: 1.2rem;
-  letter-spacing: -0.012em;
-}
-
-h4 {
-  margin: 1.5rem 0 0.4rem;
-  font-size: 1.03rem;
-}
-
-p,
-ul,
-ol,
-dl,
-blockquote,
-figure {
-  margin-top: 0;
-}
-
-p {
-  margin-bottom: 1rem;
-}
-
-ul,
-ol {
-  padding-left: 1.4rem;
-}
-
-li + li {
-  margin-top: 0.3rem;
-}
-
-hr {
-  height: 1px;
-  margin: 2.5rem 0;
-  border: 0;
-  background: var(--border);
-}
-
-blockquote {
-  margin: 1.4rem 0;
-  padding: 0.2rem 0 0.2rem 1.15rem;
-  border-left: 3px solid #c9d3da;
-  color: #444444;
-}
-
-blockquote > :last-child {
-  margin-bottom: 0;
-}
-
-code,
-kbd,
-samp {
-  padding: 0.12em 0.32em;
-  border: 1px solid var(--border);
-  border-radius: 3px;
-  background: var(--soft);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  font-size: 0.88em;
-}
-
-pre {
-  overflow-x: auto;
-  padding: 1rem 1.2rem;
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  background: var(--soft);
-  line-height: 1.55;
-}
-
-pre code {
-  padding: 0;
-  border: 0;
-  background: transparent;
-}
+/* ==========================================================================
+   LEGACY COMPONENTS — temporary. Keep every rule that exists in the current
+   file's component section (.page-intro, .eyebrow, .lead, .subject-grid,
+   .subject-card, .resource-grid, .resource-card, .text-link, .notice,
+   .link-list, .table-wrap, .course-code) but remap their hard-coded colours to
+   var(--text) / var(--muted) / var(--rule) / var(--surface) / var(--link).
+   They are removed in a later phase when those pages are rewritten.
+   ========================================================================== */
 
 .table-wrap {
   width: 100%;
   overflow-x: auto;
   margin-block: 1.4rem;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.94rem;
-  text-align: left;
-}
-
-th,
-td {
-  padding: 0.65rem 0.8rem;
-  border: 1px solid var(--border);
-  vertical-align: top;
-}
-
-th {
-  background: var(--soft);
-  font-weight: 650;
-}
-
-.site-footer {
-  border-top: 1px solid var(--border);
-  color: var(--muted);
-  font-size: 0.87rem;
-}
-
-.site-footer__inner {
-  padding-block: 1.5rem 1.8rem;
-}
-
-.site-footer p {
-  margin: 0.2rem 0;
-}
-
-.site-footer strong {
-  color: var(--ink);
-}
-
-.site-footer__note {
-  font-size: 0.82rem;
 }
 
 /* Homepage and subject landing-page elements. */
@@ -314,7 +181,7 @@ th {
 
 .lead {
   max-width: 700px;
-  color: #414141;
+  color: var(--text);
   font-size: clamp(1.08rem, 2vw, 1.24rem);
   line-height: 1.65;
 }
@@ -330,8 +197,8 @@ th {
 .subject-card,
 .resource-card {
   padding: 1.25rem 1.3rem 1.35rem;
-  border: 1px solid var(--border);
-  background: var(--paper);
+  border: 1px solid var(--rule);
+  background: var(--surface);
 }
 
 .subject-card h2,
@@ -342,7 +209,7 @@ th {
 
 .subject-card h2 a,
 .resource-card h2 a {
-  color: var(--ink);
+  color: var(--text);
   text-decoration: none;
 }
 
@@ -355,7 +222,7 @@ th {
 .subject-card p,
 .resource-card p {
   margin-bottom: 0.7rem;
-  color: #505050;
+  color: var(--muted);
   font-size: 0.94rem;
 }
 
@@ -376,8 +243,8 @@ th {
 .notice {
   margin-block: 1.5rem;
   padding: 1rem 1.15rem;
-  border: 1px solid var(--border);
-  background: var(--soft);
+  border: 1px solid var(--rule);
+  background: var(--surface);
 }
 
 .notice > :last-child {
@@ -391,11 +258,11 @@ th {
 
 .link-list li {
   padding-block: 0.8rem;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--rule);
 }
 
 .link-list li:first-child {
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--rule);
 }
 
 .link-list p {
@@ -405,57 +272,77 @@ th {
 }
 
 @media (max-width: 760px) {
-  .site-header__inner {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 0.65rem;
-    padding-block: 0.9rem 0.75rem;
-  }
-
-  .site-nav ul {
-    justify-content: flex-start;
-    gap: 0.25rem 1.1rem;
-  }
-
-  .site-main {
-    padding-top: 2.6rem;
-  }
-
   .subject-grid,
   .resource-grid {
     grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 420px) {
-  .site-header__inner,
-  .site-main,
-  .site-footer__inner {
-    width: min(calc(100% - 2rem), var(--content-width));
-  }
+/* ==========================================================================
+   COLOUR LAYER — PHASE C
+   One variable drives every colour: --accent, set per subject on <body>.
+   No component below names a colour except through these tokens.
+   ========================================================================== */
 
-  .site-nav ul {
-    gap: 0.2rem 0.85rem;
-  }
-
-  .site-nav a {
-    font-size: 0.88rem;
-  }
+:root{
+  /* default accent (home, about, resources) */
+  --accent:#1d4ed8; --accent-ink:#1e40af; --accent-tint:#eef2ff; --accent-line:#c7d2fe;
+  /* semantics: same meaning on every page */
+  --pit-ink:#b02a37; --pit-tint:#fdf2f2; --pit-line:#f0b9be;   /* common errors */
+  --key-ink:#8a5a00; --key-tint:#fffaf0; --key-line:#f0d9a8;   /* formula, examiner, takeaway */
+  --ans-ink:#15803d; --ans-tint:#f1f9f3; --ans-line:#b7e0c4;   /* final answer */
+  --mark-ink:#6d28d9; --mark-tint:#f3efff; --mark-line:#d9cdfb;/* M1 / A1 / B1 tags */
 }
 
-@media print {
-  .site-header,
-  .site-footer,
-  .skip-link {
-    display: none !important;
-  }
-
-  .site-main {
-    width: 100%;
-    padding: 0;
-  }
-
-  a {
-    color: inherit;
-  }
+/* per-subject accents, driven by <body data-subject="…"> */
+body[data-subject="mathematics"]{
+  --accent:#1d4ed8; --accent-ink:#1e40af; --accent-tint:#eef2ff; --accent-line:#c7d2fe;
 }
+body[data-subject="physics"]{
+  --accent:#6d28d9; --accent-ink:#5b21b6; --accent-tint:#f4f0ff; --accent-line:#ddd0fb;
+}
+body[data-subject="computer-science"]{
+  --accent:#0e7c5a; --accent-ink:#0b5f46; --accent-tint:#eaf7f2; --accent-line:#b9e3d3;
+}
+
+/* 1. accent bar at the top of the page content */
+.site-main::before, main.container::before{
+  content:""; display:block; height:3px; margin:0 0 34px;
+  background:var(--accent); border-radius:2px;
+}
+
+/* 2. links, selection, focus */
+a{color:var(--accent)}
+a:hover{color:var(--accent-ink)}
+::selection{background:var(--accent-tint); color:inherit}
+a:focus-visible, button:focus-visible{outline:2px solid var(--accent)}
+
+/* 3. navigation */
+.site-nav a:hover, .site-nav a[aria-current="page"],
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover{color:var(--accent)}
+.site-header, .navbar{border-bottom:2px solid var(--accent-line)}
+
+/* 4. labels and lead text */
+.eyebrow, .handout-kicker{color:var(--accent); font-weight:700}
+.lead{color:var(--muted-2)}
+
+/* 5. tables: tinted header, accent rule under it */
+th{background:var(--accent-tint); border-bottom:2px solid var(--accent-line)}
+
+/* 6. pull quotes */
+blockquote{border-left:3px solid var(--accent)}
+
+/* 7. cards on the home page: each declares its own accent */
+.subject-card, .resource-card{border-top:3px solid var(--accent)}
+.subject-card{border-radius:4px}
+.subject-card.is-maths  {--accent:#1d4ed8; --accent-ink:#1e40af; --accent-tint:#eef2ff; --accent-line:#c7d2fe}
+.subject-card.is-physics{--accent:#6d28d9; --accent-ink:#5b21b6; --accent-tint:#f4f0ff; --accent-line:#ddd0fb}
+.subject-card.is-cs     {--accent:#0e7c5a; --accent-ink:#0b5f46; --accent-tint:#eaf7f2; --accent-line:#b9e3d3}
+.subject-card .course-code{color:var(--accent-ink); font-weight:700}
+
+/* 8. notice boxes and link lists (used on subject and resource pages) */
+.notice{background:var(--accent-tint); border:1px solid var(--accent-line);
+        border-left:4px solid var(--accent); border-radius:4px}
+.link-list li{border-bottom:1px solid var(--rule)}
+.link-list a{color:var(--accent)}
+.text-link{color:var(--accent)}

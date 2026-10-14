@@ -1,0 +1,9 @@
+<header class="handout-header handout-head">
+  <p class="handout-kicker running-head">Galbadrakh STEM Handouts — {{ page.subject | escape }} {{ page.code | escape }}</p>
+  <h1>{{ page.title | escape }}</h1>
+  <p class="handout-meta">
+    {{ page.code | escape }}{% if page.topic %} <span aria-hidden="true">·</span> {{ page.topic | escape }}{% endif %}{% if page.updated %} <span aria-hidden="true">·</span> Updated <time datetime="{{ page.updated | date: '%Y-%m-%d' }}">{{ page.updated | date: '%d %B %Y' }}</time>{% endif %}
+  </p>
+  {% if page.description %}<p class="handout-summary">{{ page.description | escape }}</p>{% endif %}
+  {% if page.points_total %}<p class="handout-total">Total: {{ page.points_total | escape }} points</p>{% endif %}
+</header>

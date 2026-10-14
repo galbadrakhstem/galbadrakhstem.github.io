@@ -1,152 +1,424 @@
-/* Focused, print-friendly reading styles for course handouts. */
+/* Galbadrakh STEM handouts — shared tokens from main.css only. */
 .handout-shell {
-  width: min(100%, 900px);
+  width: 100%;
+  max-width: 52rem;
   margin-inline: auto;
 }
 
 .handout-breadcrumb {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.55rem;
   align-items: center;
-  margin-bottom: 1.5rem;
+  gap: 0.5rem;
+  max-width: 45rem;
+  margin: 0 auto 1.5rem;
   color: var(--muted);
-  font-size: 0.87rem;
-}
-
-.handout-breadcrumb a {
-  color: var(--muted);
+  font-size: 0.85rem;
 }
 
 .handout {
-  max-width: var(--reading-width);
+  max-width: 45rem;
   margin-inline: auto;
 }
 
 .handout-header {
-  margin-bottom: 2.3rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid var(--border);
+  margin-bottom: 2rem;
 }
 
 .handout-kicker {
-  margin-bottom: 0.65rem;
+  margin: 0 0 0.75rem;
   color: var(--muted);
-  font-size: 0.78rem;
-  font-weight: 650;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  line-height: 1.5;
 }
 
 .handout-header h1 {
-  margin-bottom: 0.8rem;
+  margin: 0 0 0.75rem;
 }
 
 .handout-summary {
-  max-width: 680px;
-  margin-bottom: 1rem;
-  color: #444444;
-  font-size: 1.12rem;
+  margin: 0.75rem 0 0;
+  color: var(--muted-2);
+  font-size: 1.05rem;
   line-height: 1.6;
 }
 
 .handout-meta {
-  margin-bottom: 0;
+  margin: 0;
   color: var(--muted);
-  font-size: 0.88rem;
+  font-size: 0.85rem;
+  line-height: 1.6;
 }
 
 .handout-content {
-  font-size: 1.02rem;
-  line-height: 1.75;
+  min-width: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  overflow-wrap: break-word;
 }
 
-.handout-content h2 {
-  margin-top: 2.9rem;
-  padding-bottom: 0.45rem;
-  border-bottom: 1px solid var(--border);
-}
-
-.handout-content h3 {
-  margin-top: 2rem;
-}
-
-.handout-content .worked-example,
-.handout-content .answer-box {
-  margin-block: 1.25rem 1.8rem;
-  padding: 1rem 1.15rem;
-  border: 1px solid var(--border);
-  background: #fcfcfc;
-}
-
-.handout-content .worked-example > :first-child,
-.handout-content .answer-box > :first-child {
+.handout-content > :first-child {
   margin-top: 0;
 }
 
-.handout-content .worked-example > :last-child,
-.handout-content .answer-box > :last-child {
+.handout-content > :last-child {
   margin-bottom: 0;
 }
 
-.handout-content .math-steps {
-  overflow-x: auto;
-  padding-block: 0.25rem;
+.handout-content > h2 {
+  margin: 2rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--rule);
 }
 
-.handout-content table {
-  margin-block: 1.25rem;
+.handout-content > h3 {
+  margin: 1.5rem 0 0.75rem;
 }
 
-.handout-content table th {
-  white-space: nowrap;
+.handout-content [id] {
+  scroll-margin-top: calc(var(--nav-h) + 1rem);
 }
 
-.handout-content .practice-problem {
-  margin-block: 1.8rem;
-  padding-top: 0.2rem;
+/* Framing header. */
+.handout-head {
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--rule);
 }
 
-.handout-content .practice-problem h3 {
-  margin-top: 1.3rem;
+.running-head {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--rule);
 }
 
-.handout-content .small-note {
-  color: var(--muted);
+.handout-total {
+  margin: 0.75rem 0 0;
+  color: var(--heading);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+/* Neutral block framing; variants differ through typography, not colour. */
+.toc,
+.box,
+.example,
+.examiner,
+.sa-question,
+.key-takeaway {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.toc-title,
+.box-title,
+.solution-label {
+  margin: 0 0 0.75rem;
+  color: var(--heading);
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.toc ul,
+.toc ol {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.box.is-idea .box-title {
+  font-weight: 700;
+}
+
+.box.is-remark {
   font-size: 0.9rem;
 }
 
-@media (max-width: 600px) {
-  .handout-content {
-    font-size: 0.98rem;
-  }
-
-  .handout-content th,
-  .handout-content td {
-    padding: 0.5rem 0.6rem;
-  }
+.box.is-pitfall .box-title {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2rem;
 }
 
+.toc > :last-child,
+.box > :last-child,
+.example > :last-child,
+.example-statement > :last-child,
+.solution > :last-child,
+.steps > li > :last-child,
+.problems > li > :last-child,
+.examiner > :last-child,
+.sa-question > :last-child,
+.sa-answer > :last-child,
+.key-takeaway > :last-child {
+  margin-bottom: 0;
+}
+
+/* Worked examples and numbered solutions. */
+.example-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  margin: 0 0 0.75rem;
+  color: var(--heading);
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.example-head h3 {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+.source-tag {
+  display: inline-block;
+  padding: 0.125rem 0.5rem;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  color: var(--muted);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.example-statement {
+  margin: 0 0 1rem;
+}
+
+.solution {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+
+.steps {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.steps > li {
+  margin: 0.75rem 0;
+  padding-left: 0.25rem;
+}
+
+.steps > li:first-child {
+  margin-top: 0;
+}
+
+.steps > li:last-child {
+  margin-bottom: 0;
+}
+
+.steps > li::marker {
+  color: var(--heading);
+  font-weight: 600;
+}
+
+/* Problems and scoring annotations. */
+.problems {
+  margin: 1.5rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.problems > li {
+  display: flow-root;
+  margin: 0 0 1rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.problems > li:last-child {
+  margin-bottom: 0;
+}
+
+.pts {
+  float: right;
+  margin-inline-start: 0.75rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.problem-no {
+  margin-inline-end: 0.5rem;
+  color: var(--heading);
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+.mark {
+  display: inline-block;
+  padding: 0.1rem 0.35rem;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--muted-2);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.marks-total {
+  margin: 0.75rem 0 0;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--rule);
+  color: var(--heading);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+/* Supporting notes, short answers, and the final takeaway. */
+.examiner {
+  color: var(--muted-2);
+  font-size: 0.9rem;
+}
+
+.sa-question {
+  display: flow-root;
+}
+
+.sa-answer {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--rule);
+}
+
+.key-takeaway {
+  font-weight: 600;
+}
+
+/* Keep examples, complete solutions, and individual steps intact on paper. */
 @media print {
-  .handout-shell {
-    width: 100%;
+  .handout-shell,
+  .handout {
+    width: auto;
+    max-width: none;
+    margin-inline: 0;
   }
 
-  .handout-breadcrumb {
-    display: none;
+  .handout-breadcrumb,
+  .toc,
+  .examiner {
+    display: none !important;
   }
 
-  .handout-header {
+  .handout-header,
+  .handout-head,
+  .box-title,
+  .example-head,
+  .solution-label,
+  .handout-content > h2,
+  .handout-content > h3 {
+    page-break-after: avoid;
     break-after: avoid;
   }
 
-  .handout-content h2,
-  .handout-content h3 {
-    break-after: avoid;
-  }
-
-  .handout-content .worked-example,
-  .handout-content table {
+  .handout-header,
+  .box,
+  .example,
+  .solution,
+  .steps,
+  .steps > li,
+  .problems > li,
+  .sa-question,
+  .sa-answer,
+  .key-takeaway {
+    page-break-inside: avoid;
     break-inside: avoid;
   }
 }
+
+/* ==========================================================================
+   COLOUR LAYER — PHASE C (handout pages)
+   ========================================================================== */
+
+/* headings */
+.handout-content h2, .handout h2{padding-bottom:.45rem; border-bottom:2px solid var(--accent-line)}
+.handout-content h3, .handout h3{color:var(--accent-ink)}
+.handout-meta, .handout-summary{color:var(--muted-2)}
+
+/* boxes: tinted fill + coloured left rule */
+.box, .worked-example, .answer-box{
+  border:1px solid var(--rule); border-left:4px solid var(--accent);
+  background:var(--accent-tint); border-radius:4px;
+}
+.box .box-title{color:var(--accent-ink)}
+.box.is-idea{border-left-color:var(--accent); background:var(--accent-tint)}
+.box.is-definition{border-left-color:var(--rule-2); background:#f5f7fa}
+.box.is-remark{background:#fff; border-left-color:var(--rule-2)}
+.box.is-pitfall{background:var(--pit-tint); border-left-color:var(--pit-ink)}
+.box.is-pitfall .box-title{color:var(--pit-ink)}
+.box.is-keyeq{background:var(--key-tint); border-left-color:var(--key-line)}
+.box.is-keyeq .box-title{color:var(--key-ink)}
+.box.is-answer{background:var(--ans-tint); border-left-color:var(--ans-ink)}
+.box.is-answer .box-title{color:var(--ans-ink)}
+.answer-box{background:var(--ans-tint); border-left-color:var(--ans-ink)}
+
+/* worked examples */
+.example-head h3, .worked-example h3{color:var(--accent-ink)}
+.source-tag, .small-note{color:var(--muted)}
+.solution-label{color:var(--accent-ink)}
+
+/* numbered solution steps: circular accent badges */
+.solution .steps > li{padding-left:2.1rem}
+.solution .steps > li::before{
+  content:counter(step);
+  position:absolute; left:0; top:.18rem;
+  width:1.35rem; height:1.35rem; display:grid; place-items:center;
+  border-radius:50%; background:var(--accent-tint); color:var(--accent-ink);
+  border:1px solid var(--accent-line); font-size:.72rem; font-weight:600;
+}
+
+/* problem sets: accent point tags */
+.problems > li, .practice-problem{border-top:1px solid var(--rule)}
+.pts{
+  display:inline-block; margin-right:.5rem; padding:0 6px; border-radius:3px;
+  background:var(--accent-tint); border:1px solid var(--accent-line);
+  color:var(--accent-ink); font-family:var(--font-mono); font-size:.75rem;
+}
+.problem-no{color:var(--accent-ink)}
+
+/* mark-scheme tags [M1] [A1] [B1] */
+.mark{
+  color:var(--mark-ink); background:var(--mark-tint);
+  border:1px solid var(--mark-line); border-radius:3px;
+  padding:0 5px; font-family:var(--font-mono); font-size:.75rem;
+}
+
+/* examiner notes and key takeaways: amber */
+.examiner{border-left:4px solid var(--key-line); background:var(--key-tint);
+          padding:10px 14px; margin-top:14px; border-radius:4px}
+.examiner h4{color:var(--key-ink)}
+.key-takeaway{border-left:3px solid var(--key-line); background:var(--key-tint);
+              padding:10px 14px; margin-top:.6rem; border-radius:4px}
+.key-takeaway strong{color:var(--key-ink)}
+
+/* self-assessment */
+.sa-question{border-top:1px solid var(--rule)}
+.sa-answer{border-left:3px solid var(--accent-line); padding-left:1rem}
+
+/* topic list pills */
+.handout-code{color:var(--accent-ink)}
+.handout-link{border-color:var(--accent-line); color:var(--accent-ink)}
+.handout-link:hover{background:var(--accent-tint); border-color:var(--accent); text-decoration:none}
+.handout-link.is-primary{background:var(--accent-tint); border-color:var(--accent-line)}
+
+/* contents box */
+.toc{background:var(--accent-tint); border-color:var(--accent-line)}
+.toc p.toc-title{color:var(--accent-ink)}

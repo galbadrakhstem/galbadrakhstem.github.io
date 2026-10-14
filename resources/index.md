@@ -26,6 +26,8 @@ A compact directory of the notes, handouts, and course guidance currently availa
     <a href="{{ '/mathematics/handouts/quadratics/' | relative_url }}"><strong>Quadratic equations handout</strong></a>
     <p>Three worked examples and five practice problems with step-by-step solutions.</p>
   </li>
+  <li><a href="{{ '/mathematics/self-assessment/quadratics/' | relative_url }}"><strong>Quadratics self-assessment</strong></a> — twelve fully worked fluency questions.</li>
+  <li><a href="{{ '/mathematics/exam-style-questions/quadratics/' | relative_url }}"><strong>Quadratics exam-style practice</strong></a> — six original questions with illustrative marks.</li>
 </ul>
 
 ## Physics · 9702

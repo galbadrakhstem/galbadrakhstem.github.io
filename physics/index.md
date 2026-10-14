@@ -20,7 +20,11 @@ description: Cambridge International AS & A Level Physics 9702 notes, SI unit re
   </li>
   <li>
     <a href="{{ '/physics/handouts/physical-quantities/' | relative_url }}"><strong>Physical quantities: reference handout</strong></a>
-    <p>SI unit tables, conversion reminders, and three worked examples with complete unit conversions.</p>
+    <p>SI tables, three worked conversions, and eight original practice problems.</p>
+  </li>
+  <li>
+    <a href="{{ '/physics/handouts/physical-quantities-solutions/' | relative_url }}"><strong>Physical quantities: complete solutions</strong></a>
+    <p>Every unit factor and intermediate step for the eight practice problems.</p>
   </li>
 </ul>
 
