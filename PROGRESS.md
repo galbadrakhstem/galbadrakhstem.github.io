@@ -11,9 +11,10 @@ Last updated: 2026-10-15 (Phase V verification attempted)
   build could not start because Bundler is not installed. No page was rendered
   or generated-page count verified. Unresolved failures are listed below.
 - Publish attempt on 2026-10-15: committed and pushed the workspace to the
-  session branch; opened PR #2 to merge into main (mergeable, no checks reported).
-  Direct pushes to main are not allowed in this Arena session. Merge outcome is
-  reported separately; live Pages delivery remains unverified until checked.
+  session branch; PR #2 merged into main (merge commit 02f0a31).
+  Direct pushes to main are not allowed in this Arena session. After waiting
+  90 seconds, all three live-site curl checks failed at the TLS connection;
+  Pages delivery and the visible About/colour changes remain unverified.
 
 ## In progress
 - Nothing.
@@ -48,9 +49,9 @@ Last updated: 2026-10-15 (Phase V verification attempted)
   in _layouts/default.html contains uppercase `Montserrat` after the domain,
   which the requested uppercase-href check flags. Dynamic Liquid hrefs cannot
   be fully resolved without a build.
-- Publication check remains blocked in this sandbox: the live site host is not
-  on the outbound allowlist. The GitHub Pages deployment and live appearance
-  must be checked externally after PR #2 is merged.
+- Publication check remains blocked in this sandbox: all three curls to the
+  live site failed with OpenSSL SSL_ERROR_SYSCALL (exit 35). The GitHub Pages
+  deployment and live appearance must be checked externally after PR #2.
 
 ## Rules in force
 - One phase per chat. Read only the files named in the prompt, plus PROGRESS.md
