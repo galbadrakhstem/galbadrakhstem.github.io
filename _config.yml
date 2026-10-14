@@ -1,0 +1,16 @@
+title: Galbadrakh STEM
+description: Clear, independent study resources for Cambridge International AS & A Level Mathematics, Physics, and Computer Science.
+url: "https://galbadrakhstem.github.io"
+baseurl: ""
+lang: en
+markdown: kramdown
+permalink: pretty
+
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

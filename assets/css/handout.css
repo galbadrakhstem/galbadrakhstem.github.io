@@ -1,0 +1,152 @@
+/* Focused, print-friendly reading styles for course handouts. */
+.handout-shell {
+  width: min(100%, 900px);
+  margin-inline: auto;
+}
+
+.handout-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  color: var(--muted);
+  font-size: 0.87rem;
+}
+
+.handout-breadcrumb a {
+  color: var(--muted);
+}
+
+.handout {
+  max-width: var(--reading-width);
+  margin-inline: auto;
+}
+
+.handout-header {
+  margin-bottom: 2.3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.handout-kicker {
+  margin-bottom: 0.65rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 650;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.handout-header h1 {
+  margin-bottom: 0.8rem;
+}
+
+.handout-summary {
+  max-width: 680px;
+  margin-bottom: 1rem;
+  color: #444444;
+  font-size: 1.12rem;
+  line-height: 1.6;
+}
+
+.handout-meta {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.handout-content {
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.handout-content h2 {
+  margin-top: 2.9rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.handout-content h3 {
+  margin-top: 2rem;
+}
+
+.handout-content .worked-example,
+.handout-content .answer-box {
+  margin-block: 1.25rem 1.8rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--border);
+  background: #fcfcfc;
+}
+
+.handout-content .worked-example > :first-child,
+.handout-content .answer-box > :first-child {
+  margin-top: 0;
+}
+
+.handout-content .worked-example > :last-child,
+.handout-content .answer-box > :last-child {
+  margin-bottom: 0;
+}
+
+.handout-content .math-steps {
+  overflow-x: auto;
+  padding-block: 0.25rem;
+}
+
+.handout-content table {
+  margin-block: 1.25rem;
+}
+
+.handout-content table th {
+  white-space: nowrap;
+}
+
+.handout-content .practice-problem {
+  margin-block: 1.8rem;
+  padding-top: 0.2rem;
+}
+
+.handout-content .practice-problem h3 {
+  margin-top: 1.3rem;
+}
+
+.handout-content .small-note {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .handout-content {
+    font-size: 0.98rem;
+  }
+
+  .handout-content th,
+  .handout-content td {
+    padding: 0.5rem 0.6rem;
+  }
+}
+
+@media print {
+  .handout-shell {
+    width: 100%;
+  }
+
+  .handout-breadcrumb {
+    display: none;
+  }
+
+  .handout-header {
+    break-after: avoid;
+  }
+
+  .handout-content h2,
+  .handout-content h3 {
+    break-after: avoid;
+  }
+
+  .handout-content .worked-example,
+  .handout-content table {
+    break-inside: avoid;
+  }
+}
