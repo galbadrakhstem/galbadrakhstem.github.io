@@ -4,8 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <meta name="author" content="{{ site.author.name | default: 'Galbadrakh Ulziibold' }}">
+    <meta name="keywords" content="Galbadrakh, Galbadrakh STEM, galbadrakhstem, Mongol Aspiration, Physics and Astronomy Club, Astronomy Olympiad, Cosmic Calculations, Cambridge AS A Level, Mathematics 9709, Physics 9702, Computer Science 9618">
     <title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
     <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <!-- Favicon / Logo instead of globe -->
+    <link rel="icon" type="image/svg+xml" href="{{ '/assets/img/logo.svg' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon.png' | relative_url }}">
+    <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap">
@@ -14,6 +21,51 @@
     <link rel="stylesheet" href="{{ '/assets/css/handout.css' | relative_url }}">
     {% endif %}
     <link rel="stylesheet" media="print" href="{{ '/assets/css/print.css' | relative_url }}">
+    <!-- Open Graph / SEO like Kevin Zhou -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Galbadrakh STEM">
+    <meta property="og:title" content="{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}">
+    <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ '/assets/img/logo.svg' | absolute_url }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}">
+    <meta name="twitter:description" content="{{ page.description | default: site.description | escape }}">
+    <meta name="twitter:image" content="{{ '/assets/img/logo.svg' | absolute_url }}">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Galbadrakh Ulziibold",
+      "alternateName": "Galbadrakh STEM",
+      "url": "{{ '/' | absolute_url }}",
+      "image": "{{ '/assets/img/portrait.png' | absolute_url }}",
+      "email": "mailto:{{ site.author.email }}",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Mongol Aspiration International School"
+      },
+      "sameAs": [
+        "https://galbadrakhstem.github.io",
+        "https://github.com/galbadrakhstem"
+      ],
+      "description": "{{ site.description | escape }}"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Galbadrakh STEM",
+      "alternateName": "galbadrakhstem",
+      "url": "{{ '/' | absolute_url }}",
+      "description": "{{ site.description | escape }}",
+      "publisher": {
+        "@type": "Person",
+        "name": "Galbadrakh Ulziibold"
+      }
+    }
+    </script>
     <script>
       window.MathJax = {
         tex: {
@@ -38,6 +90,15 @@
     {% when 'mathematics' %}{% assign subject_slug = 'Mathematics' %}
     {% when 'physics' %}{% assign subject_slug = 'Physics' %}
     {% when 'computer-science' %}{% assign subject_slug = 'Computer Science' %}
+    {% when 'astronomy' %}{% assign subject_slug = 'Astronomy' %}
+    {% when 'resources' %}
+      {% assign second_seg = page.url | remove_first: '/' | split: '/' | offset: 1 | first %}
+      {% case second_seg %}
+        {% when 'mathematics' %}{% assign subject_slug = 'Mathematics' %}
+        {% when 'physics' %}{% assign subject_slug = 'Physics' %}
+        {% when 'computer-science' %}{% assign subject_slug = 'Computer Science' %}
+        {% when 'astronomy' %}{% assign subject_slug = 'Astronomy' %}
+      {% endcase %}
   {% endcase %}
 {% endif %}
   <body{% if subject_slug %} data-subject="{{ subject_slug | downcase | replace: ' ', '-' }}"{% endif %}{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>

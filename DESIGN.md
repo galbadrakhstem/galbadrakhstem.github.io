@@ -111,3 +111,28 @@ Kevin Zhou, knzhou.github.io — theme CSS and custom layout layer inspected 202
 - Personal statement removed from `/about/`.
 - Contact email `28c_galbadrakh.u@mongolaspiration.edu.mn` configured in `_config.yml`
   and displayed on `/`, `/about/`, and `/club/`.
+
+## Astronomy expansion and contact update (Phase R5 — 2026-10-15)
+
+- Contact email updated to `physicsandastronomy24@gmail.com` in `_config.yml`, `/`, `/about/`, `/club/`, `/cv/`, and all new astronomy pages.
+- New top-level subject Astronomy added: `/astronomy/` landing + 4 subfolders:
+  `/astronomy/olympiad/` (OWAO IV Gold + Diamond, National IX Gold, X Bronze Senior, club results 4 middle + 2 senior, D. Dolgion prize),
+  `/astronomy/book/` (Cosmic Calculations: Orbital Mechanics),
+  `/astronomy/club/` (MAIS Physics & Astronomy Club teaching),
+  `/astronomy/other/` (Solar Activity research assistant 24 Jun–14 Jul 2025, outreach, interests).
+- Resources mirrored: `/resources/astronomy/` with handouts (6 folders) + olympiad/book/club/other indexes linking to `/astronomy/*`.
+- Navbar: Home · Astronomy · Club · AS and A Level · Resources · About · CV. Added Astronomy accent #b45309 amber in main.css and subject detection for astronomy in default.html (including resources/astronomy second segment).
+- CV updated from Resume.pdf (Mongolian certificate): Education 10V Mongol Aspiration, A-grade 2024–2026, research assistant solar activity, club founder 14 Nov 2024, awards: OWAO IV Gold+Diamond, National IX Gold, X Bronze Senior, Oyunlag Suragch Gold Medal, SASMO 2025 Gold, Serius 2025 Gold, Vanda 2024 Bronze, class art festival 1st, personality curious/responsible, interests astronomy/table tennis/cube.
+- About page expanded with Education/Research/Awards sections; Club page expanded with teaching + founder achievements.
+- For Physics, Mathematics, Computer Science — added 4 subfolders each: olympiad, book, club, other (placeholder “To be added!”) to satisfy request “Add folders for Physics, math computer Science”. Updated their landing pages and /as-and-a-level/ and /resources/ to link to new subfolders.
+- Colour layer now: Mathematics #1d4ed8, Physics #6d28d9, CS #0e7c5a, Astronomy #b45309, neutral #1d4ed8.
+
+## Banner fix, favicon, bold nav, SEO, Physics and Astronomy rename (Phase R6 — 2026-10-15)
+
+- Banner blocking fix: body now always has margin-top var(--nav-h) on desktop; on mobile (max-width 991px) navbar position set to relative and body margin-top 0, main.container padding-top 20px. This prevents fixed banner covering portrait/text on phones. Removed earlier display:none brand rule that hid Galbadrakh STEM logo on phones — brand now visible on mobile as two rows (brand row + scrollable links row).
+- main.container padding-top reduced from 60px to 24px desktop (20px mobile) because body margin handles navbar height.
+- Bold portal names like Kevin Zhou: .navbar-brand font-weight 700, .nav-link font-weight 600, .nav-link.active font-weight 700 and color var(--link). When on Home, Home is bolder (700) than others (600).
+- Club portal renamed to Physics and Astronomy: navbar label changed from Club to Physics and Astronomy, club.md title changed to Physics and Astronomy · Galbadrakh STEM, permalink stays /club/ for backward compatibility.
+- Favicon/logo instead of globe: generated favicon.png (64x64, 4-color squares mimicking logo.svg), favicon.ico (multi-size), apple-touch-icon.png (180x180), and added links in default.html head for svg, png, ico, apple-touch-icon. Logo.svg already at assets/img/logo.svg now used as favicon SVG.
+- Google SEO: _config.yml description expanded to include Galbadrakh, galbadrakhstem, Astronomy Olympiad, MAIS Physics and Astronomy Club, Cosmic Calculations. Added Open Graph tags, Twitter card, JSON-LD Person + WebSite schema (name, alternateName galbadrakhstem, url, image portrait, email, affiliation, sameAs). Added robots.txt (Allow all + Sitemap) and sitemap.xml listing all main pages and new astronomy/physics/math/cs subfolders. Added keywords meta. Canonical already present. This helps Google show galbadrakhstem.github.io when searching Galbadrakhstem like Kevin Zhou site.
+- Files added: favicon.ico (root), assets/favicon.ico, assets/img/favicon.png, assets/img/apple-touch-icon.png, robots.txt, sitemap.xml.

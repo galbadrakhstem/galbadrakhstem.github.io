@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://galbadrakhstem.github.io/sitemap.xml

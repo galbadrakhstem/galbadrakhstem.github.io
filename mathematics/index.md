@@ -26,6 +26,15 @@ description: Cambridge International AS & A Level Mathematics 9709 notes, exam g
   <li><a href="{{ '/mathematics/exam-style-questions/quadratics/' | relative_url }}"><strong>Quadratics exam-style practice</strong></a> — six original questions with illustrative marks.</li>
 </ul>
 
+## More folders
+
+<ul class="link-list">
+  <li><a href="{{ '/mathematics/olympiad/' | relative_url }}"><strong>Math Olympiad</strong></a> — SASMO Gold and other competitions</li>
+  <li><a href="{{ '/mathematics/book/' | relative_url }}"><strong>Book</strong></a> — notes and publications</li>
+  <li><a href="{{ '/mathematics/club/' | relative_url }}"><strong>Club</strong></a> — club math activities</li>
+  <li><a href="{{ '/mathematics/other/' | relative_url }}"><strong>Other</strong></a> — other math projects</li>
+</ul>
+
 ## A useful study routine
 
 1. Check that the topic is listed in your current 9709 syllabus.

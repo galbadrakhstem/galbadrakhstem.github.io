@@ -37,8 +37,13 @@ body{
   font-family:var(--font-body); font-size:1rem; line-height:1.5;
   padding-bottom:80px; text-align:left;
   -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  margin-top:var(--nav-h);
 }
-@media (min-width:992px){body{margin-top:var(--nav-h)}}
+@media (max-width:991px){
+  body{margin-top:0}
+  .navbar{position:relative}
+  main.container{padding-top:20px}
+}
 
 h1,h2,h3,h4,h5,h6{
   font-family:var(--font-heading); font-weight:400; color:var(--heading);
@@ -75,34 +80,34 @@ th{background:var(--surface);font-weight:600;font-family:var(--font-heading)}
 @media (min-width:1200px){.container{max-width:1200px}}
 @media (max-width:575.98px){.container{padding:0 20px}}
 
-/* navbar — fixed, 63px desktop, 44px mobile, brand hidden on phones */
+/* navbar — fixed desktop, relative on mobile to prevent banner blocking text. Bold like Kevin Zhou. */
 .navbar{
   position:fixed; top:0; left:0; right:0; z-index:1030; background:#ffffff;
   border-bottom:1px solid var(--rule-2); min-height:var(--nav-h);
 }
 .navbar .container{display:flex;align-items:center;min-height:var(--nav-h)}
 .navbar-brand{
-  font-family:var(--font-heading); font-size:1.25rem; color:rgba(0,0,0,.9);
+  font-family:var(--font-heading); font-size:1.25rem; font-weight:700; color:rgba(0,0,0,.9);
   white-space:nowrap; margin-right:1rem;
 }
 .navbar-brand:hover{color:var(--link);text-decoration:none}
 .navbar-nav{display:flex;flex-wrap:wrap;list-style:none;margin:0 0 0 auto;padding:0}
 .navbar-nav .nav-link{
   display:flex; align-items:center; min-height:44px; padding:0 .9rem;
-  font-size:18px; color:#495057; transition:color .6s ease;
+  font-size:18px; font-weight:600; color:#495057; transition:color .6s ease;
 }
 .navbar-nav .nav-link:hover{color:var(--link);text-decoration:none}
-.navbar-nav .nav-link.active{color:var(--link)}
+.navbar-nav .nav-link.active{color:var(--link); font-weight:700;}
 @media (min-width:992px){.navbar-nav .nav-link{padding:6.5px .9rem}}
 @media (max-width:991.98px){
-  .navbar-brand{display:none}
   .navbar-nav{flex-basis:100%;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;margin-left:0}
   .navbar-nav::-webkit-scrollbar{display:none}
-  .navbar-nav .nav-link{font-size:16px;padding:10px}
+  .navbar-nav .nav-link{font-size:16px;padding:10px; font-weight:600;}
+  .navbar-nav .nav-link.active{font-weight:700;}
 }
 
-/* section shell + 180px heading gutter (the signature layout) */
-main.container{padding-top:60px}
+/* section shell + 180px heading gutter (the signature layout) — reduced top padding because body now always has margin-top for fixed navbar, and mobile navbar is relative to avoid blocking */
+main.container{padding-top:24px}
 .section{padding:60px 0 0}
 .aligned-sections{margin:0 auto}
 .aligned-row + .aligned-row{margin-top:40px;padding-top:40px;border-top:1px solid var(--rule)}
@@ -304,6 +309,9 @@ body[data-subject="physics"]{
 body[data-subject="computer-science"]{
   --accent:#0e7c5a; --accent-ink:#0b5f46; --accent-tint:#eaf7f2; --accent-line:#b9e3d3;
 }
+body[data-subject="astronomy"]{
+  --accent:#b45309; --accent-ink:#92400e; --accent-tint:#fef3c7; --accent-line:#fcd34d;
+}
 
 /* 1. accent bar at the top of the page content */
 .site-main::before, main.container::before{
@@ -338,6 +346,7 @@ blockquote{border-left:3px solid var(--accent)}
 .subject-card.is-maths  {--accent:#1d4ed8; --accent-ink:#1e40af; --accent-tint:#eef2ff; --accent-line:#c7d2fe}
 .subject-card.is-physics{--accent:#6d28d9; --accent-ink:#5b21b6; --accent-tint:#f4f0ff; --accent-line:#ddd0fb}
 .subject-card.is-cs     {--accent:#0e7c5a; --accent-ink:#0b5f46; --accent-tint:#eaf7f2; --accent-line:#b9e3d3}
+.subject-card.is-astronomy{--accent:#b45309; --accent-ink:#92400e; --accent-tint:#fef3c7; --accent-line:#fcd34d}
 .subject-card .course-code{color:var(--accent-ink); font-weight:700}
 
 /* 8. notice boxes and link lists (used on subject and resource pages) */
