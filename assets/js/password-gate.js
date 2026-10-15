@@ -4,18 +4,15 @@
 (function () {
   'use strict';
   var HASH = 'bb29a75dbff4cdd4284cf94e2d199ab7c8a33624f350c1581c2af3049e610148';
-  var KEY = 'site_unlocked_v1';
-
-  function isUnlocked() {
-    try { return sessionStorage.getItem(KEY) === '1'; } catch (e) { return false; }
-  }
+  // No persistence: every page load / refresh / navigation requires the password again.
+  var unlocked = false;
 
   async function sha256(str) {
     if (window.crypto && crypto.subtle) {
       var buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
       return Array.from(new Uint8Array(buf)).map(function (b) { return b.toString(16).padStart(2, '0'); }).join('');
     }
-    // Fallback (non-secure context): simple compare is not used; fail closed.
+    // Fallback (non-secure context): fail closed.
     throw new Error('crypto.subtle unavailable');
   }
 
@@ -23,12 +20,14 @@
     var g = document.getElementById('pw-gate');
     if (g) g.hidden = false;
     document.body.classList.add('pw-locked');
+    unlocked = false;
   }
 
   function hideGate() {
     var g = document.getElementById('pw-gate');
     if (g) g.hidden = true;
     document.body.classList.remove('pw-locked');
+    unlocked = true;
   }
 
   async function attempt() {
@@ -38,7 +37,6 @@
     try {
       var h = await sha256(val);
       if (h === HASH) {
-        try { sessionStorage.setItem(KEY, '1'); } catch (e) {}
         hideGate();
         return;
       }
@@ -51,7 +49,7 @@
   }
 
   function init() {
-    if (isUnlocked()) { hideGate(); return; }
+    // Always require the password on every load; never trust any stored state.
     showGate();
     var btn = document.getElementById('pw-btn');
     var input = document.getElementById('pw-input');
@@ -61,6 +59,15 @@
       setTimeout(function () { input.focus(); }, 50);
     }
   }
+
+  // Re-lock on back/forward cache restore so a refresh-like revisit still gates.
+  window.addEventListener('pageshow', function (e) {
+    if (e.persisted) {
+      showGate();
+      var input = document.getElementById('pw-input');
+      if (input) setTimeout(function () { input.focus(); }, 50);
+    }
+  });
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
