@@ -16,13 +16,6 @@ description: Curriculum vitae of Galbadrakh Ulziibold — Astronomy Olympiad med
 </div>
 
 <div class="simple-row">
-  <h2>Research Experience</h2>
-  <div>
-    <p><strong>Assistant Researcher — Solar Activity Astronomy & Geophysics Research</strong><br>Research Institute, 24 Jun – 14 Jul 2025<br>Collected and processed observational data; assisted with data analysis for solar activity study.</p>
-  </div>
-</div>
-
-<div class="simple-row">
   <h2>Leadership & Teaching</h2>
   <div>
     <p><strong>Founder & Head — MAIS Physics & Astronomy Club</strong> (2024–2026)<br>Founded 14 Nov 2024. Teaches orbital mechanics and A-level physics content with intuitive methods for grades 9–10. Repeated teaching with new cohorts deepened curriculum.</p>
@@ -40,18 +33,13 @@ description: Curriculum vitae of Galbadrakh Ulziibold — Astronomy Olympiad med
   <div>
     <h4>2025–2026</h4>
     <ul>
-      <li>OWAO IV International Astronomy Olympiad — Gold Medal</li>
-      <li>OWAO IV — Diamond Diploma for High Performance</li>
+      <li>OWAO 2025 — Open World Astronomy Olympiad: Gold Medal, and Diamond award for high performance. Listed in the <a href="https://owao.siriusolymp.ru/2025en/results">official OWAO 2025 list of the winners and prize-winners</a> (U. Galbadrakh, Mongolia — Gold).</li>
       <li>National Astronomy Olympiad X — Bronze Medal, Senior Level</li>
-      <li>Mongolian Students Association — “Oyunlag Suragch” Gold Medal (Highest Award)</li>
       <li>Grade 10 — A-grade standing</li>
     </ul>
     <h4>2024–2025</h4>
     <ul>
       <li>National Astronomy Olympiad IX — Gold Medal</li>
-      <li>SASMO 2025 — Gold</li>
-      <li>Serius Online Olympiad 2025 — Gold</li>
-      <li>Vanda National Junior Science Olympiad 2024 — Bronze</li>
       <li>Grade 9–10 — A-grade standing</li>
       <li>Art Festival, Mongol Temuulel School — 1st Place (class)</li>
     </ul>

@@ -28,17 +28,16 @@ description: Astronomy resources by Galbadrakh Ulziibold — Olympiad preparatio
   </li>
   <li>
     <a href="{{ '/astronomy/other/' | relative_url }}"><strong>Other</strong></a>
-    <p>Research, outreach, and side projects — Solar Activity research assistant (Jun–Jul 2025), art festival, table tennis, cube solving, and future volumes.</p>
+    <p>Outreach, school projects, interests and future volumes — art festival, table tennis, cube solving.</p>
   </li>
 </ul>
 
 ## Quick links
 
 - <a href="{{ '/club/' | relative_url }}">Main Club page</a>
-- <a href="{{ '/resources/astronomy/' | relative_url }}">Astronomy Resources (handouts by type)</a>
 - <a href="{{ '/cv/' | relative_url }}">Full CV</a>
 - Contact: <a href="mailto:physicsandastronomy24@gmail.com">physicsandastronomy24@gmail.com</a>
 
 <div class="notice">
-<strong>About me:</strong> OWAO IV International Astronomy Olympiad Gold + Diamond Diploma, National Astronomy Olympiad IX Gold & X Bronze (Senior), “Oyunlag Suragch” Gold Medal (Mongolian Students Association highest award), SASMO 2025 Gold, Serius Online 2025 Gold, Vanda 2024 Bronze. Mongol Aspiration International School, Grade 10V, A-grade.
+<strong>About me:</strong> OWAO 2025 (Open World Astronomy Olympiad) Gold Medal and Diamond award — see the <a href="https://owao.siriusolymp.ru/2025en/results">official OWAO 2025 list of the winners and prize-winners</a> — and National Astronomy Olympiad IX Gold &amp; X Bronze (Senior). Mongol Aspiration International School, Grade 10V, A-grade.
 </div>

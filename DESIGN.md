@@ -136,3 +136,55 @@ Kevin Zhou, knzhou.github.io — theme CSS and custom layout layer inspected 202
 - Favicon/logo instead of globe: generated favicon.png (64x64, 4-color squares mimicking logo.svg), favicon.ico (multi-size), apple-touch-icon.png (180x180), and added links in default.html head for svg, png, ico, apple-touch-icon. Logo.svg already at assets/img/logo.svg now used as favicon SVG.
 - Google SEO: _config.yml description expanded to include Galbadrakh, galbadrakhstem, Astronomy Olympiad, MAIS Physics and Astronomy Club, Cosmic Calculations. Added Open Graph tags, Twitter card, JSON-LD Person + WebSite schema (name, alternateName galbadrakhstem, url, image portrait, email, affiliation, sameAs). Added robots.txt (Allow all + Sitemap) and sitemap.xml listing all main pages and new astronomy/physics/math/cs subfolders. Added keywords meta. Canonical already present. This helps Google show galbadrakhstem.github.io when searching Galbadrakhstem like Kevin Zhou site.
 - Files added: favicon.ico (root), assets/favicon.ico, assets/img/favicon.png, assets/img/apple-touch-icon.png, robots.txt, sitemap.xml.
+
+## Mathematics hub, handout structure, and citation pass (Phase R7 — 2026-10-15)
+
+- Navbar: **Resources removed**. Navigation is now Home · Astronomy · Physics and
+  Astronomy · AS and A Level · About · CV. The whole `/resources/` tree was deleted
+  (all pages were “To be added!” stubs); handout folders now live under their subject,
+  at `/mathematics/handouts/…`. `/as-and-a-level/` gained a Handouts row and
+  `/physics/olympiad/`, `/astronomy/`, `/astronomy/olympiad/` no longer link to
+  `/resources/`.
+- Home page (`index.md`) contact email is `28c_galbadrakh.u@mongolaspiration.edu.mn`
+  again, as the author asked (home page only). `_config.yml`, `/about/`, `/club/`,
+  `/cv/` and the astronomy pages keep `physicsandastronomy24@gmail.com`.
+- `/club/` (Physics and Astronomy) rebuilt in the Home-page profile layout:
+  `.aligned-sections.about-layout`, with the club logo, club facts and contact links
+  in `.about-profile` and the written sections as `<h4>` inside `.about-biography`.
+  `#profile .club-page-logo` centres the square logo in the profile column.
+- Founder achievements on `/club/` are now only OWAO 2025 (Gold + Diamond, cited) and
+  National Astronomy Olympiad IX Gold / X Bronze. Removed site-wide: the “Oyunlag
+  Suragch” Gold Medal line, the SASMO / Serius / Vanda line, and the Solar Activity
+  research-assistant line (together with the now-empty Research rows on `/cv/`,
+  `/about/` and `/astronomy/other/`).
+- OWAO citation added wherever the award appears (`/club/`, `/cv/`, `/about/`,
+  `/astronomy/`, `/astronomy/olympiad/`): OWAO 2025 Gold Medal + Diamond award, cited
+  to https://owao.siriusolymp.ru/2025en/results (U. Galbadrakh, Mongolia — Gold).
+- Mathematics restructured: `/mathematics/` leads with **Start Learning** (Exam
+  Overview, Step-by-step solutions, Past-paper walkthroughs, Chapter handouts,
+  Last-minute prep, Everything in one tab) and the “More folders” block is gone.
+  The six handout folders live under `/mathematics/handouts/…`.
+- `/mathematics/handouts/past-paper-walkthroughs/` is the CAIE 9709 component picker
+  from the reference design supplied by the author, built as a new token-only
+  component: `.component-grid`, `.component-card`, `.component-name`,
+  `.component-meta`, `.component-arrow` (two columns, 1px rule border, 4px left
+  accent bar, muted arrow, no shadow, one column under 700px).
+- Six component pages (`pure-1`, `pure-2`, `pure-3`, `mechanics`, `statistics-1`,
+  `statistics-2`) each carry: paper metrics, an official syllabus citation list
+  (2026–2027 syllabus, 2026–2027 update, 2023–2025, 2028–2030, notation list), the
+  numbered topics, and a papers table that links Cambridge’s published June 2024
+  question paper and mark scheme and the 2020 specimen paper, each row naming the
+  syllabus in force.
+- Chapter handouts: `/mathematics/handouts/chapter-handouts/` plus four paper pages
+  (`pure-1`, `statistics-1`, `pure-3`, `statistics-2`) listing chapters as
+  `.handout-list.is-single` rows (code gutter, linked title, bordered pills:
+  Handout · Syllabus §n · Full handout/Solutions for Quadratics). Pure 1 and
+  Statistics 1 use the chapter names the author supplied; Pure 3 and Statistics 2 use
+  syllabus sections 3.1–3.9 and 6.1–6.5. Cross-topic review rows (R1, R2) sit after
+  chapters 3 and 6 (Pure 1) and after chapters 3 and 5 (Statistics 1).
+- 35 chapter pages use the `handout` layout with `code: "9709 §n.n"`, a syllabus
+  reference section with links to the official PDFs, a plain-language paraphrase of
+  that section’s outcomes labelled as a study paraphrase, and Notes / Worked examples
+  / Practice sections that read “To be added!” until the author writes the content.
+- `sitemap.xml` regenerated from the repository (84 URLs); it no longer lists
+  `/resources/`.
