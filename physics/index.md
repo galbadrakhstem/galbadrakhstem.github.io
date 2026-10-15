@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Physics (9702)
+title: "Physics (9702)"
 permalink: /physics/
-description: Cambridge International AS & A Level Physics 9702 notes, SI unit references, and worked handouts.
+description: "Cambridge International AS & A Level Physics 9702 — exam overview, step-by-step solutions, past-paper walkthroughs, chapter handouts, last-minute prep."
 ---
 
 <p class="eyebrow">Cambridge International · 9702</p>
@@ -11,30 +11,33 @@ description: Cambridge International AS & A Level Physics 9702 notes, SI unit re
 
 <p class="lead">Use models, quantities, and evidence to explain the physical world. These Cambridge International AS &amp; A Level resources pair concise topic notes with worked calculations that make units and reasoning explicit.</p>
 
-## Start learning
+## Start Learning
 
 <ul class="link-list">
   <li>
-    <a href="{{ '/physics/syllabus-notes/physical-quantities/' | relative_url }}"><strong>Physical quantities and units</strong></a>
-    <p>Review SI base and derived units, prefixes, scalar and vector quantities, and dimensional consistency.</p>
+    <a href="{{ '/physics/exam-overview/' | relative_url }}"><strong>Exam Overview</strong></a>
+    <p>Check your syllabus year, paper route, and assessment objectives before you plan revision.</p>
   </li>
   <li>
-    <a href="{{ '/physics/handouts/physical-quantities/' | relative_url }}"><strong>Physical quantities: reference handout</strong></a>
-    <p>SI tables, three worked conversions, and eight original practice problems.</p>
+    <a href="{{ '/physics/handouts/step-by-step-solutions/' | relative_url }}"><strong>Step-by-step solutions</strong></a>
+    <p>Complete worked solutions: the equation first, every substitution with its unit, and the answer to a sensible precision.</p>
   </li>
   <li>
-    <a href="{{ '/physics/handouts/physical-quantities-solutions/' | relative_url }}"><strong>Physical quantities: complete solutions</strong></a>
-    <p>Every unit factor and intermediate step for the eight practice problems.</p>
+    <a href="{{ '/physics/handouts/past-paper-walkthroughs/' | relative_url }}"><strong>Past-paper walkthroughs</strong></a>
+    <p>CAIE 9702 past papers by component — Multiple Choice, AS Level Structured Questions, Advanced Practical Skills, A Level Structured Questions, and Planning, Analysis and Evaluation.</p>
   </li>
-</ul>
-
-## More folders
-
-<ul class="link-list">
-  <li><a href="{{ '/physics/olympiad/' | relative_url }}"><strong>Physics Olympiad</strong></a> — preparation and problems</li>
-  <li><a href="{{ '/physics/book/' | relative_url }}"><strong>Book</strong></a> — related notes and publications</li>
-  <li><a href="{{ '/physics/club/' | relative_url }}"><strong>Club</strong></a> — Physics & Astronomy Club activities for physics</li>
-  <li><a href="{{ '/physics/other/' | relative_url }}"><strong>Other</strong></a> — other physics projects</li>
+  <li>
+    <a href="{{ '/physics/handouts/chapter-handouts/' | relative_url }}"><strong>Chapter handouts</strong></a>
+    <p>One handout per syllabus topic: AS Level topics 1–11 and A Level topics 12–25.</p>
+  </li>
+  <li>
+    <a href="{{ '/physics/handouts/last-minute-prep/' | relative_url }}"><strong>Last-minute prep</strong></a>
+    <p>The short list to read in the final week: definitions, units, uncertainties, and the errors that cost marks.</p>
+  </li>
+  <li>
+    <a href="{{ '/physics/handouts/everything-in-one-tab/' | relative_url }}"><strong>Everything in one tab</strong></a>
+    <p>Every 9702 handout on one page, for revision sessions without clicking.</p>
+  </li>
 </ul>
 
 ## Working scientifically

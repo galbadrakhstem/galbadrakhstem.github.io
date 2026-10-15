@@ -188,3 +188,52 @@ Kevin Zhou, knzhou.github.io — theme CSS and custom layout layer inspected 202
   / Practice sections that read “To be added!” until the author writes the content.
 - `sitemap.xml` regenerated from the repository (84 URLs); it no longer lists
   `/resources/`.
+
+## Physics and Computer Science hubs, and the Other folder (Phase R8 — 2026-10-15)
+
+- `/physics/` and `/computer-science/` now use the Mathematics design exactly: eyebrow,
+  H1, lead, **Start Learning** (Exam Overview · Step-by-step solutions · Past-paper
+  walkthroughs · Chapter handouts · Last-minute prep · Everything in one tab) as a
+  `ul.link-list`, then the subject's existing practice paragraph ("Working
+  scientifically" / "A good way to practise"), the syllabus notice and the official link.
+  The "More folders" block is gone from both, as it was from Mathematics in R7;
+  Olympiad · Book · Club · Other stay linked from `/as-and-a-level/`.
+- Each subject has the same folder tree as Mathematics: `/<subject>/exam-overview/` and
+  `/<subject>/handouts/{overview,step-by-step-solutions,past-paper-walkthroughs,chapter-handouts,last-minute-prep,everything-in-one-tab}/`.
+- Past-paper pickers reuse the R7 `.component-grid` cards (accent = subject colour).
+  9702: `paper-1` … `paper-5` (Multiple Choice, AS Level Structured Questions,
+  Advanced Practical Skills, A Level Structured Questions, Planning, Analysis and
+  Evaluation). 9618: `paper-1` … `paper-4` (Theory Fundamentals, Fundamental
+  Problem-solving and Programming Skills, Advanced Theory, Practical). Each component
+  page carries the metrics table, the official syllabus list, the topics/sections it
+  examines (practical papers: a skills outline instead), and a papers table linking
+  Cambridge's June 2024 question paper and mark scheme and the specimen paper, each row
+  naming the syllabus in force. Durations, marks and weightings are copied from the
+  assessment overviews of the 9702 2025–2027 / 2028–2030 and 9618 2026 / 2027–2029
+  syllabuses (fetched 2026-10-15).
+- Chapter handouts are grouped by level: 9702 AS Level topics 1–11 and A Level topics
+  12–25; 9618 AS Level sections 1–12 and A Level sections 13–20, with `###` sub-groups
+  by paper. Rows are `.handout-list.is-single` (code, linked title, Handout · Syllabus
+  §n pills; topic 1 / section 1 also link the existing finished handouts and notes).
+- 45 new chapter pages (25 Physics, 20 Computer Science) use the `handout` layout with
+  `code: "9702 §n"` / `"9618 §n"`, the section list, a study paraphrase of the outcomes
+  and "To be added!" Notes / Worked examples / Practice sections — the R7 pattern.
+- `/as-and-a-level/` gained an **Other** row and Physics 9702 / Computer Science 9618
+  lines in the Handouts row. Other lives at `/as-and-a-level/other/` (so the navbar's
+  AS and A Level item stays active) and holds two groups, both shown as
+  `.component-grid` folder cards in the neutral accent:
+  - Mongolian 11th grade curriculum / Үндэсний хөтөлбөр (`national-curriculum/`):
+    Монгол хэл (`mongol-khel`), Үндэсний бичиг (`undesnii-bichig`), Уран зохиол
+    (`uran-zokhiol`), Нийгэм судлал (`niigem-sudlal`). Cited to the Ministry of
+    Education upper-secondary curriculum page (moe.gov.mn/curriculum-buren-dund), the
+    2019 curriculum PDF and mnier.mn/curriculum. Mongolian text is marked `lang="mn"`.
+  - Non-technical classes (`non-technical/`): General Language English
+    (`general-english`) and Global Perspectives and Research (`global-perspectives-and-research`,
+    Cambridge 9239, with the component table from the 2026–2028 syllabus).
+  Folder pages read "To be added!" until the author writes the content.
+- `_layouts/default.html`: the site name is appended to `<title>`, `og:title` and
+  `twitter:title` only when the page title does not already contain it (23 pages were
+  rendering "· Galbadrakh STEM · Galbadrakh STEM").
+- Fixed the Quadratics chapter page notice, whose Markdown links inside an HTML block
+  were printed literally; README records the rule.
+- `sitemap.xml` regenerated (167 URLs; existing entries and priorities unchanged).

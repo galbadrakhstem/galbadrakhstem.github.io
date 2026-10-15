@@ -10,12 +10,15 @@
   <url><loc>https://galbadrakhstem.github.io/mathematics/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://galbadrakhstem.github.io/physics/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://galbadrakhstem.github.io/style-demo/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/as-and-a-level/other/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://galbadrakhstem.github.io/astronomy/book/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://galbadrakhstem.github.io/astronomy/club/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://galbadrakhstem.github.io/astronomy/olympiad/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://galbadrakhstem.github.io/astronomy/other/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://galbadrakhstem.github.io/computer-science/book/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://galbadrakhstem.github.io/computer-science/club/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/exam-overview/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://galbadrakhstem.github.io/computer-science/olympiad/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://galbadrakhstem.github.io/computer-science/other/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://galbadrakhstem.github.io/mathematics/book/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -26,8 +29,18 @@
   <url><loc>https://galbadrakhstem.github.io/mathematics/other/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://galbadrakhstem.github.io/physics/book/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://galbadrakhstem.github.io/physics/club/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/exam-overview/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://galbadrakhstem.github.io/physics/olympiad/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://galbadrakhstem.github.io/physics/other/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/as-and-a-level/other/national-curriculum/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/as-and-a-level/other/non-technical/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/chapter-handouts/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/past-paper-walkthroughs/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/past-paper-walkthroughs/paper-1/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/past-paper-walkthroughs/paper-2/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/past-paper-walkthroughs/paper-3/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/past-paper-walkthroughs/paper-4/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://galbadrakhstem.github.io/mathematics/handouts/chapter-handouts/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://galbadrakhstem.github.io/mathematics/handouts/past-paper-walkthroughs/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://galbadrakhstem.github.io/mathematics/handouts/past-paper-walkthroughs/mechanics/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -36,7 +49,24 @@
   <url><loc>https://galbadrakhstem.github.io/mathematics/handouts/past-paper-walkthroughs/pure-3/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://galbadrakhstem.github.io/mathematics/handouts/past-paper-walkthroughs/statistics-1/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://galbadrakhstem.github.io/mathematics/handouts/past-paper-walkthroughs/statistics-2/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/past-paper-walkthroughs/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/past-paper-walkthroughs/paper-1/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/past-paper-walkthroughs/paper-2/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/past-paper-walkthroughs/paper-3/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/past-paper-walkthroughs/paper-4/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/past-paper-walkthroughs/paper-5/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/as-and-a-level/other/national-curriculum/mongol-khel/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/as-and-a-level/other/national-curriculum/niigem-sudlal/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/as-and-a-level/other/national-curriculum/undesnii-bichig/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/as-and-a-level/other/national-curriculum/uran-zokhiol/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/as-and-a-level/other/non-technical/general-english/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/as-and-a-level/other/non-technical/global-perspectives-and-research/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/everything-in-one-tab/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/info-rep/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/last-minute-prep/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/overview/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/step-by-step-solutions/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://galbadrakhstem.github.io/computer-science/syllabus-notes/information-representation/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://galbadrakhstem.github.io/mathematics/exam-style-questions/quadratics/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://galbadrakhstem.github.io/mathematics/handouts/everything-in-one-tab/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -46,9 +76,35 @@
   <url><loc>https://galbadrakhstem.github.io/mathematics/handouts/quadratics/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://galbadrakhstem.github.io/mathematics/handouts/step-by-step-solutions/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://galbadrakhstem.github.io/mathematics/self-assessment/quadratics/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/everything-in-one-tab/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/last-minute-prep/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/overview/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://galbadrakhstem.github.io/physics/handouts/physical-quantities-solutions/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://galbadrakhstem.github.io/physics/handouts/physical-quantities/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/step-by-step-solutions/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://galbadrakhstem.github.io/physics/syllabus-notes/physical-quantities/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/chapter-handouts/a-level/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/chapter-handouts/a-level/artificial-intelligence/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/chapter-handouts/a-level/communication-and-internet-technologies/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/chapter-handouts/a-level/computational-thinking-and-problem-solving/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/chapter-handouts/a-level/data-representation/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/chapter-handouts/a-level/further-programming/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/chapter-handouts/a-level/hardware-and-virtual-machines/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/chapter-handouts/a-level/security/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/chapter-handouts/a-level/system-software/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/chapter-handouts/as-level/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/chapter-handouts/as-level/algorithm-design-and-problem-solving/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/chapter-handouts/as-level/communication/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/chapter-handouts/as-level/data-types-and-structures/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/chapter-handouts/as-level/databases/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/chapter-handouts/as-level/ethics-and-ownership/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/chapter-handouts/as-level/hardware/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/chapter-handouts/as-level/information-representation/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/chapter-handouts/as-level/processor-fundamentals/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/chapter-handouts/as-level/programming/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/chapter-handouts/as-level/security-privacy-and-data-integrity/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/chapter-handouts/as-level/software-development/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/computer-science/handouts/chapter-handouts/as-level/system-software/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://galbadrakhstem.github.io/mathematics/handouts/chapter-handouts/pure-1/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://galbadrakhstem.github.io/mathematics/handouts/chapter-handouts/pure-1/circular-measure/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://galbadrakhstem.github.io/mathematics/handouts/chapter-handouts/pure-1/coordinate-geometry/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
@@ -84,4 +140,31 @@
   <url><loc>https://galbadrakhstem.github.io/mathematics/handouts/chapter-handouts/statistics-2/linear-combinations-of-random-variables/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://galbadrakhstem.github.io/mathematics/handouts/chapter-handouts/statistics-2/sampling-and-estimation/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://galbadrakhstem.github.io/mathematics/handouts/chapter-handouts/statistics-2/the-poisson-distribution/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/a-level/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/a-level/alternating-currents/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/a-level/astronomy-and-cosmology/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/a-level/capacitance/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/a-level/electric-fields/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/a-level/gravitational-fields/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/a-level/ideal-gases/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/a-level/magnetic-fields/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/a-level/medical-physics/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/a-level/motion-in-a-circle/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/a-level/nuclear-physics/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/a-level/oscillations/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/a-level/quantum-physics/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/a-level/temperature/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/a-level/thermodynamics/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/as-level/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/as-level/dc-circuits/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/as-level/deformation-of-solids/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/as-level/dynamics/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/as-level/electricity/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/as-level/forces-density-and-pressure/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/as-level/kinematics/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/as-level/particle-physics/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/as-level/physical-quantities-and-units/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/as-level/superposition/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/as-level/waves/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://galbadrakhstem.github.io/physics/handouts/chapter-handouts/as-level/work-energy-and-power/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
 </urlset>
