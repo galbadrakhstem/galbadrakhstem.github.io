@@ -92,3 +92,11 @@ Kevin Zhou, knzhou.github.io — theme CSS and custom layout layer inspected 202
   last-minute-prep, everything-in-one-tab.
 - Each folder page reads "To be added!" until content is written.
 - The About page uses the author's own wording. Edit it only with the author's approval.
+
+## Phone navigation and CV (Phase R3)
+
+- Phone (under 992px): brand on its own row; links in one horizontally scrollable row;
+  44px tap targets.
+- Navigation order: Home · Club · AS and A Level · Resources · About · CV.
+- Home introduction order: subjects first, astronomy and club second, then subject links,
+  resources, CV.
