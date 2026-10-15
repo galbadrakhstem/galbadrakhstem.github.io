@@ -45,8 +45,20 @@ To be added!
 
 To be added!
 
-## Practice questions and solutions
+## Self-assessment questions (SA) {#sa}
 
 To be added!
 
-<p><a href="{{ '/computer-science/handouts/chapter-handouts/a-level/' | relative_url }}">All A Level sections</a> · <a href="{{ '/computer-science/handouts/past-paper-walkthroughs/paper-3/' | relative_url }}">Paper 3 past papers</a> · <a href="{{ '/computer-science/handouts/chapter-handouts/' | relative_url }}">Chapter handouts</a></p>
+## Self-assessment solutions (SA Sol) {#sa-sol}
+
+To be added!
+
+## Exam-style questions (ES) {#es}
+
+To be added!
+
+## Exam-style solutions (ES Sol) {#es-sol}
+
+To be added!
+
+<p><a href="{{ '/computer-science/handouts/chapter-handouts/paper-3/' | relative_url }}">All Paper 3 chapters</a> · <a href="{{ '/computer-science/handouts/past-paper-walkthroughs/paper-3/' | relative_url }}">Paper 3 past papers</a> · <a href="{{ '/computer-science/handouts/chapter-handouts/' | relative_url }}">Chapter handouts</a></p>

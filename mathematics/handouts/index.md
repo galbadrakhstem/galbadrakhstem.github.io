@@ -15,6 +15,10 @@ description: All Cambridge International 9709 Mathematics handouts — overview,
     <p>The six papers, how they combine into AS and A Level, and the syllabus documents they are examined under.</p>
   </li>
   <li>
+    <a href="{{ '/mathematics/handouts/faq/' | relative_url }}"><strong>Frequently asked questions</strong></a>
+    <p>What Handout, SA, SA Sol, ES and ES Sol mean, which papers the chapter handouts cover, and which syllabus applies.</p>
+  </li>
+  <li>
     <a href="{{ '/mathematics/handouts/step-by-step-solutions/' | relative_url }}"><strong>Step-by-step solutions</strong></a>
     <p>Full worked solutions to the questions on this site, with the method and the marks named at every step.</p>
   </li>

@@ -15,6 +15,10 @@ description: "All Cambridge International 9618 Computer Science handouts — ove
     <p>The four papers, how they combine into AS and A Level, and the syllabus documents they are examined under.</p>
   </li>
   <li>
+    <a href="{{ '/computer-science/handouts/faq/' | relative_url }}"><strong>Frequently asked questions</strong></a>
+    <p>What Handout, SA, SA Sol, ES and ES Sol mean, how the chapters map to the four papers, and which syllabus applies.</p>
+  </li>
+  <li>
     <a href="{{ '/computer-science/handouts/step-by-step-solutions/' | relative_url }}"><strong>Step-by-step solutions</strong></a>
     <p>Full worked solutions to the questions on this site, with every conversion, trace and line of pseudocode written out.</p>
   </li>

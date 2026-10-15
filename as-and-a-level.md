@@ -110,3 +110,5 @@ description: Cambridge International AS and A Level — technical classes (Mathe
     <p>Astronomy, an independent subject — <a href="{{ '/astronomy/olympiad/' | relative_url }}">Olympiad preparation</a> · <a href="{{ '/astronomy/book/' | relative_url }}">Cosmic Calculations book</a> · <a href="{{ '/astronomy/club/' | relative_url }}">Club</a> · <a href="{{ '/astronomy/other/' | relative_url }}">Other projects</a> · <a href="{{ '/astronomy/' | relative_url }}">Open Astronomy</a></p>
   </div>
 </div>
+
+<p class="page-footnote">Feel free to reach out (at my personal address, <a href="mailto:galbadrakhstem@gmail.com">galbadrakhstem@gmail.com</a>) if you find an issue or have a suggestion.</p>

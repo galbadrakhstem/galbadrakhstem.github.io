@@ -659,3 +659,41 @@ main.container:not(:has(> .about-layout)){padding-top:30px}
 .component-card.has-icon .component-arrow{position:static; transform:none; color:inherit; font-size:1.1em; font-weight:400}
 .component-card.has-icon:hover .component-browse,
 .component-card.has-icon:focus .component-browse{color:var(--accent)}
+
+/* ==========================================================================
+   HANDOUTS PAGES — PHASE R10 (2026-10-15)
+   The three subject pages and their chapter-handout pages, laid out like
+   Kevin Zhou's Teaching page: one .simple-row.is-handouts per section, his
+   label and sub-heading sizes, and the .handout-list grid (code · title ·
+   pills) three across where it fits. Existing tokens only; no new colours.
+   ========================================================================== */
+
+/* Kevin: .aligned-heading h2 is 1.15rem / 600; #teaching .aligned-text > h3 is 1rem */
+.simple-row.is-handouts h2{font-size:1.15rem; font-weight:600; line-height:1.4}
+.simple-row.is-handouts h3{font-size:1rem; font-weight:700; margin:1.5rem 0 .55rem}
+.simple-row.is-handouts h3:first-child{margin-top:0}
+
+/* a pill grid inside a row is not an indented bullet list */
+.simple-row .handout-list{margin:0 0 16px; padding:0}
+.simple-row .handout-item{margin:0}
+
+/* as many columns of at least 240px as fit: three in the 954px row column
+   (1200px and wider), two in the 714px one (992-1199px), one or two below,
+   so a chapter's four question pills stay on one line wherever they can */
+.handout-list.is-grid{grid-template-columns:repeat(auto-fill, minmax(min(100%, 240px), 1fr))}
+
+/* two rows of pills, as the author specified: the Handout, then the Questions
+   (SA · SA Sol · ES · ES Sol); SA stays with SA Sol, and ES with ES Sol, if they wrap */
+.handout-questions{display:flex; flex-wrap:wrap; gap:6px; flex-basis:100%}
+.handout-pair{display:inline-flex; flex-wrap:nowrap; gap:6px}
+
+/* the "Handout · SA · SA Sol · ES · ES Sol" key above a chapter grid */
+.simple-row .handout-key{margin:0 0 .35rem; color:var(--muted); font-size:13px; line-height:1.5}
+
+/* Kevin: 44px pills on touch screens */
+@media (pointer:coarse){.handout-link{min-height:44px}}
+
+/* "Feel free to reach out…" under the last row of /as-and-a-level/ */
+.page-footnote{margin:0 0 0 calc(var(--label-col) + var(--label-gap)); padding:22px 0 0;
+               color:var(--muted-2); font-size:.95rem}
+@media (max-width:700px){.page-footnote{margin-left:0}}
