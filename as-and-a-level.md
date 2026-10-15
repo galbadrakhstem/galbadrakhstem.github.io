@@ -38,8 +38,9 @@ description: Cambridge International AS and A Level Mathematics 9709, Physics 97
 </div>
 
 <div class="simple-row">
-  <h2>Resources</h2>
+  <h2>Handouts</h2>
   <div>
-    <p><a href="{{ '/resources/' | relative_url }}">Browse resources by subject</a> · <a href="{{ '/resources/astronomy/' | relative_url }}">Astronomy resources</a></p>
+    <p>Mathematics 9709 — <a href="{{ '/mathematics/handouts/overview/' | relative_url }}">Overview</a> · <a href="{{ '/mathematics/handouts/step-by-step-solutions/' | relative_url }}">Step-by-step solutions</a> · <a href="{{ '/mathematics/handouts/past-paper-walkthroughs/' | relative_url }}">Past-paper walkthroughs</a> · <a href="{{ '/mathematics/handouts/chapter-handouts/' | relative_url }}">Chapter handouts</a> · <a href="{{ '/mathematics/handouts/last-minute-prep/' | relative_url }}">Last-minute prep</a> · <a href="{{ '/mathematics/handouts/everything-in-one-tab/' | relative_url }}">Everything in one tab</a></p>
+    <p>Astronomy — <a href="{{ '/astronomy/olympiad/' | relative_url }}">Olympiad preparation</a> · <a href="{{ '/astronomy/book/' | relative_url }}">Cosmic Calculations</a> · <a href="{{ '/astronomy/club/' | relative_url }}">Club</a> · <a href="{{ '/astronomy/other/' | relative_url }}">Other projects</a></p>
   </div>
 </div>

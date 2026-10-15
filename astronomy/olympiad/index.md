@@ -15,12 +15,9 @@ description: Astronomy Olympiad preparation and results — National and Interna
   <h2>My Results</h2>
   <div>
     <ul>
-      <li><strong>OWAO IV International Astronomy Olympiad (2025–2026)</strong> — Gold Medal + Diamond Diploma for High Performance</li>
+      <li><strong>OWAO 2025 — Open World Astronomy Olympiad</strong> — Gold Medal + Diamond award, listed in the <a href="https://owao.siriusolymp.ru/2025en/results">official OWAO 2025 list of the winners and prize-winners</a></li>
       <li><strong>National Astronomy Olympiad X (2025–2026)</strong> — Bronze Medal, Senior Level</li>
       <li><strong>National Astronomy Olympiad IX (2024–2025)</strong> — Gold Medal</li>
-      <li>SASMO 2025 — Gold</li>
-      <li>Serius Online Olympiad 2025 — Gold</li>
-      <li>Vanda National Junior Science Olympiad 2024 — Bronze</li>
     </ul>
   </div>
 </div>
@@ -40,7 +37,6 @@ description: Astronomy Olympiad preparation and results — National and Interna
   <h2>Preparation</h2>
   <div>
     <p>To be added! — topics will include: celestial sphere, orbital mechanics, photometry, spectroscopy, and past-paper walkthroughs with full steps.</p>
-    <p>See also <a href="{{ '/resources/astronomy/handouts/overview/' | relative_url }}">Astronomy handouts overview</a> and <a href="{{ '/resources/astronomy/' | relative_url }}">Resources</a>.</p>
   </div>
 </div>
 

@@ -549,3 +549,45 @@ main.container:not(:has(> .about-layout)){padding-top:30px}
     justify-self:end;
   }
 }
+
+/* ==========================================================================
+   COMPONENT CARDS — PHASE R7 (2026-10-15)
+   Two-column component picker (Pure 1 … Statistics 2) used by
+   /mathematics/handouts/past-paper-walkthroughs/.
+   Built from tokens only: --rule, --accent, --muted, --heading, --radius,
+   --font-heading. No shadows, no animation, radius <= 4px.
+   ========================================================================== */
+
+.component-grid{
+  display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px;
+  margin:1.4rem 0 2rem; padding:0; list-style:none;
+}
+.component-grid > li{margin:0}
+.component-card{
+  display:block; position:relative; min-height:92px;
+  padding:20px 52px 20px 22px; background:#ffffff; color:var(--text);
+  border:1px solid var(--rule); border-left:4px solid var(--accent);
+  border-radius:var(--radius); text-decoration:none;
+}
+.component-card:hover,
+.component-card:focus{border-color:var(--accent); text-decoration:none}
+.component-name{
+  display:block; font-family:var(--font-heading); font-weight:700;
+  font-size:1.15rem; line-height:1.35; color:var(--heading);
+}
+.component-card:hover .component-name{color:var(--accent)}
+.component-meta{display:block; margin-top:6px; color:var(--muted); font-size:.95rem}
+.component-arrow{
+  position:absolute; right:20px; top:50%; transform:translateY(-50%);
+  color:var(--muted); font-size:1.2rem; line-height:1;
+}
+.component-card:hover .component-arrow{color:var(--accent)}
+@media (max-width:700px){.component-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* Chapter handouts: one numbered chapter per row, like the printed contents
+   pages of a course book, instead of the two-column topic grid. */
+.handout-list.is-single{grid-template-columns:minmax(0,1fr)}
+
+/* Club page (Physics and Astronomy) now uses the home-page profile layout, so
+   the square club logo is centred in the same column as the home portrait. */
+#profile .club-page-logo{margin:0 auto}

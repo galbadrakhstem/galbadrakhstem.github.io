@@ -7,16 +7,9 @@ description: Other astronomy projects — research, outreach, and interests.
 
 <p class="eyebrow">Astronomy · Other</p>
 
-# Other — Astronomy Projects & Interests
+# Other — Astronomy Projects &amp; Interests
 
 <p class="lead">Research, outreach, and side projects beyond Olympiad and club.</p>
-
-<div class="simple-row">
-  <h2>Research</h2>
-  <div>
-    <p><strong>Solar Activity — Astronomy & Geophysics Research</strong>, Assistant Researcher, 24 Jun – 14 Jul 2025 — collected and processed observational data at research institute; assisted with data analysis for solar activity study.</p>
-  </div>
-</div>
 
 <div class="simple-row">
   <h2>Outreach & School</h2>
@@ -24,7 +17,6 @@ description: Other astronomy projects — research, outreach, and interests.
     <ul>
       <li>Art Festival, Mongol Temuulel School — 1st Place (class, 2024–2025)</li>
       <li>A-grade standing — 2024–2025 and 2025–2026</li>
-      <li>Mongolian Students Association — “Oyunlag Suragch” Gold Medal (Highest Award)</li>
     </ul>
   </div>
 </div>

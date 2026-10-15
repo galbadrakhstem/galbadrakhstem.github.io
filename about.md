@@ -22,22 +22,11 @@ description: About Galbadrakh Ulziibold, the Physics & Astronomy Club, and the C
 </div>
 
 <div class="simple-row">
-  <h2>Research</h2>
-  <div>
-    <p><strong>Solar Activity — Astronomy & Geophysics Research</strong>, Assistant Researcher, 24 Jun – 14 Jul 2025 — collected and processed observational data at the research institute.</p>
-  </div>
-</div>
-
-<div class="simple-row">
   <h2>Awards</h2>
   <div>
     <ul>
-      <li>OWAO IV International Astronomy Olympiad — Gold Medal + Diamond Diploma for High Performance (2025–2026)</li>
+      <li>OWAO 2025 — Open World Astronomy Olympiad: Gold Medal and Diamond award, verified in the <a href="https://owao.siriusolymp.ru/2025en/results">official OWAO 2025 list of the winners and prize-winners</a> (U. Galbadrakh, Mongolia — Gold).</li>
       <li>National Astronomy Olympiad IX — Gold (2024–2025); X — Bronze, Senior Level (2025–2026)</li>
-      <li>Mongolian Students Association — “Oyunlag Suragch” Gold Medal (Highest Award)</li>
-      <li>SASMO 2025 — Gold</li>
-      <li>Serius Online Olympiad 2025 — Gold</li>
-      <li>Vanda National Junior Science Olympiad 2024 — Bronze</li>
       <li>Club achievement: 6 members won medals at National Olympiad — 4 middle level, 2 senior level (2025–2026); member D. Dolgion awarded at International Astronomy Olympiad</li>
     </ul>
   </div>

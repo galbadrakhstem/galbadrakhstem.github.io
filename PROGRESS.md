@@ -1,6 +1,6 @@
 # PROGRESS
 
-Last updated: 2026-10-15 (Phase R4 complete)
+Last updated: 2026-10-15 (Phase R7 complete)
 
 ## Done
 - Phase 1 design lock, Phase 2 handout language, Phases 3-5 prototype topics
@@ -26,6 +26,15 @@ Last updated: 2026-10-15 (Phase R4 complete)
   author portrait (`assets/img/portrait.png`), club logo (`assets/img/club-logo.png`),
   and contact email (`28c_galbadrakh.u@mongolaspiration.edu.mn`); personal statement
   removed from `/about/`; club logo and contact email added to `/club/`.
+
+- Phase R7: Resources removed from the navigation and the `/resources/` tree deleted;
+  Home-page email set to `28c_galbadrakh.u@mongolaspiration.edu.mn`; `/club/` rebuilt in
+  the Home-page profile layout; “Oyunlag Suragch”, SASMO/Serius/Vanda and Solar Activity
+  lines removed site-wide; OWAO 2025 Gold + Diamond cited to the official results page;
+  Mathematics rewritten around six handouts folders (overview, step-by-step solutions,
+  past-paper walkthroughs, chapter handouts, last-minute prep, everything in one tab) with
+  a CAIE 9709 component picker, six component pages carrying syllabus and paper citations,
+  four chapter-handout paper pages and 35 chapter pages; sitemap regenerated.
 
 ## In progress
 - Nothing.

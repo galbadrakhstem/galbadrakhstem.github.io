@@ -309,7 +309,8 @@ These are original teaching problems with illustrative point allocations, not of
 ## Companions
 
 - [Complete solutions]({{ '/mathematics/handouts/quadratics-solutions/' | relative_url }}) — all eight problems, in the same order and numbering.
-- [Self-assessment — reserved companion route]({{ '/mathematics/handouts/quadratics-self-assessment/' | relative_url }}) — not created or verified in this phase.
-- [Exam-style practice — reserved companion route]({{ '/mathematics/handouts/quadratics-exam-style/' | relative_url }}) — not created or verified in this phase.
+- [Quadratics self-assessment]({{ '/mathematics/self-assessment/quadratics/' | relative_url }}) — twelve fully worked fluency questions.
+- [Quadratics exam-style practice]({{ '/mathematics/exam-style-questions/quadratics/' | relative_url }}) — six original questions with illustrative marks.
+- [Pure 1 chapter handouts]({{ '/mathematics/handouts/chapter-handouts/pure-1/' | relative_url }}) — the chapter list this handout belongs to.
 
 Only the solutions companion is supplied in this phase. The other two links reserve destinations for later work and may not resolve yet.
