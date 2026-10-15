@@ -101,4 +101,4 @@ description: "Cambridge International 9709 Probability &amp; Statistics 1 (Paper
 3. Attempt the practice questions closed-book, then compare the complete method, not only the final answer.
 4. Finish with the past-paper questions from the same syllabus section.
 
-<p><a href="{ '/mathematics/handouts/chapter-handouts/' | relative_url }">All chapter handouts</a> · <a href="{ '/mathematics/handouts/past-paper-walkthroughs/statistics-1/' | relative_url }">Probability &amp; Statistics 1 past papers</a> · <a href="{ '/mathematics/handouts/' | relative_url }">All Mathematics handouts</a></p>
+<p><a href="{{ '/mathematics/handouts/chapter-handouts/' | relative_url }}">All chapter handouts</a> · <a href="{{ '/mathematics/handouts/past-paper-walkthroughs/statistics-1/' | relative_url }}">Probability &amp; Statistics 1 past papers</a> · <a href="{{ '/mathematics/handouts/' | relative_url }}">All Mathematics handouts</a></p>
