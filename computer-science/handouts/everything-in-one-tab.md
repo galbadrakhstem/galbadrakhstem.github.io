@@ -18,8 +18,11 @@ description: "Every 9618 handout on one page — chapters, solutions, past-paper
 
 ## Chapter handouts
 
-- <a href="{{ '/computer-science/handouts/chapter-handouts/as-level/' | relative_url }}">AS Level, sections 1–12</a> — information representation to software development.
-- <a href="{{ '/computer-science/handouts/chapter-handouts/a-level/' | relative_url }}">A Level, sections 13–20</a> — data representation to further programming.
+- <a href="{{ '/computer-science/handouts/chapter-handouts/paper-1/' | relative_url }}">Paper 1 — Theory Fundamentals, sections 1–8</a> — information representation to databases.
+- <a href="{{ '/computer-science/handouts/chapter-handouts/paper-2/' | relative_url }}">Paper 2 — Fundamental Problem-solving and Programming Skills, sections 9–12</a> — algorithm design to software development.
+- <a href="{{ '/computer-science/handouts/chapter-handouts/paper-3/' | relative_url }}">Paper 3 — Advanced Theory, sections 13–20</a> — data representation to further programming.
+- <a href="{{ '/computer-science/handouts/chapter-handouts/paper-4/' | relative_url }}">Paper 4 — Practical, sections 19–20</a> — computational thinking and further programming.
+- By level: <a href="{{ '/computer-science/handouts/chapter-handouts/as-level/' | relative_url }}">AS Level, sections 1–12</a> · <a href="{{ '/computer-science/handouts/chapter-handouts/a-level/' | relative_url }}">A Level, sections 13–20</a>.
 
 <p>AS Level: <a href="{{ '/computer-science/handouts/chapter-handouts/as-level/information-representation/' | relative_url }}">1 Information representation</a> ·
   <a href="{{ '/computer-science/handouts/chapter-handouts/as-level/communication/' | relative_url }}">2 Communication</a> ·

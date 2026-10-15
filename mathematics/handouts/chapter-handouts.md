@@ -38,7 +38,7 @@ Every chapter handout is being written to the same structure:
 2. **What you need to be able to do** — the outcomes as a checklist, in ordinary language.
 3. **Notes** — why each method works, with the conditions that restrict it.
 4. **Worked examples** — complete solutions with every step written out.
-5. **Practice questions and solutions** — original questions with full answers.
+5. **Questions** — self-assessment questions (SA) with their solutions (SA Sol), and exam-style questions (ES) with their solutions (ES Sol), all original and with full answers.
 
 <div class="notice">
 <strong>Starting points:</strong> the Pure 1 chapter on quadratics is already complete — see <a href="{{ '/mathematics/handouts/quadratics/' | relative_url }}">Quadratics: methods and practice</a> and its <a href="{{ '/mathematics/handouts/quadratics-solutions/' | relative_url }}">complete solutions</a>. The other chapters currently hold the syllabus reference and the outcome list, and are filled in chapter by chapter.

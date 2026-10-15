@@ -1,6 +1,6 @@
 # PROGRESS
 
-Last updated: 2026-10-15 (Phase R9 complete)
+Last updated: 2026-10-15 (Phase R10 complete)
 
 ## Done
 - Phase 1 design lock, Phase 2 handout language, Phases 3-5 prototype topics
@@ -55,6 +55,17 @@ Last updated: 2026-10-15 (Phase R9 complete)
   (Mathematics, Physics and Computer Science icon cards with inline-SVG Σ, atom and 0101
   icons, after the author's reference design), Non-Technical classes, Other and Handout;
   all 47 links kept, the Astronomy row folded into Handout. No new pages; sitemap unchanged.
+
+- Phase R10: the three Technical-class pages rebuilt in the layout of Kevin Zhou's Teaching
+  page — "Mathematics / Physics / Computer Science Handouts" with Logistics (Overview,
+  Syllabus, new FAQ pages), Chapter Handouts (blocks for Pure 1, Probability & Statistics 1,
+  Pure 3, Probability & Statistics 2; AS Level, A Level; Computer Science Papers 1–4 on four
+  new pages), Past-paper walkthroughs and How to prepare. Chapter grids follow Kevin's Core
+  Curriculum: Ch.n, title, a Handout pill and SA · SA Sol · ES · ES Sol pills linking to new
+  `#sa`/`#sa-sol`/`#es`/`#es-sol` sections on all 76 chapter pages. `/as-and-a-level/` gained
+  the "Feel free to reach out…" footnote. Sitemap 174 URLs. Built and checked in a session
+  whose pull request (#13) had already been merged, so it was handed over as a patch file
+  to publish from a new session.
 
 ## In progress
 - Nothing.

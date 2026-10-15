@@ -47,7 +47,19 @@ To be added!
 
 To be added!
 
-## Practice questions and solutions
+## Self-assessment questions (SA) {#sa}
+
+To be added!
+
+## Self-assessment solutions (SA Sol) {#sa-sol}
+
+To be added!
+
+## Exam-style questions (ES) {#es}
+
+To be added!
+
+## Exam-style solutions (ES Sol) {#es-sol}
 
 To be added!
 

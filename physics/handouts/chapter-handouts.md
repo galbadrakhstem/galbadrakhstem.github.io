@@ -30,7 +30,7 @@ Every chapter handout is being written to the same structure:
 2. **What you need to be able to do** — the learning outcomes as a checklist, in ordinary language.
 3. **Notes** — the physics behind each relationship, with the conditions that restrict it.
 4. **Worked examples** — complete solutions with every substitution and unit written out.
-5. **Practice questions and solutions** — original questions with full answers.
+5. **Questions** — self-assessment questions (SA) with their solutions (SA Sol), and exam-style questions (ES) with their solutions (ES Sol), all original and with full answers.
 
 <div class="notice">
 <strong>Starting points:</strong> topic 1 is already written up — see the <a href="{{ '/physics/syllabus-notes/physical-quantities/' | relative_url }}">physical quantities and units notes</a>, the <a href="{{ '/physics/handouts/physical-quantities/' | relative_url }}">methods and practice handout</a> and its <a href="{{ '/physics/handouts/physical-quantities-solutions/' | relative_url }}">complete solutions</a>. The other topics currently hold the syllabus reference and the outcome list, and are filled in topic by topic. Practical skills for Papers 3 and 5 are summarised on their past-paper pages.

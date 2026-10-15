@@ -293,3 +293,68 @@ Kevin Zhou, knzhou.github.io — theme CSS and custom layout layer inspected 202
   R9 component rules contain no hex values.
 - `.simple-row .component-grid` resets the `.simple-row ul` margin and indent, so card
   grids line up with the row text.
+
+## Handouts pages in the Kevin Zhou Teaching layout (Phase R10 — 2026-10-15)
+
+- `/mathematics/`, `/physics/` and `/computer-science/` are each one `.simple-row.is-handouts`
+  labelled "Mathematics Handouts" / "Physics Handouts" / "Computer Science Handouts", with a
+  visually hidden `h1` (Kevin's `h1.sr-only`). The author's four sub-headings, in order:
+  - **Logistics**: Overview · Syllabus (current and next syllabus PDFs, from the official
+    Cambridge page) · Frequently Asked Questions.
+  - **Chapter Handouts**: one R7 `.component-grid` block per part.
+  - **Past-paper walkthroughs**: `.handout-list.is-grid`, codes P1…P6, one Walkthroughs pill.
+  - **How to prepare**: the subject's existing practice text, then Exam overview ·
+    Step-by-step solutions · Last-minute prep · Everything in one tab (existing descriptions),
+    then the existing syllabus or route notice.
+  Nothing from the old Start Learning page is dropped; it moved into these sections.
+- Parts ("branch domains"):
+  - Mathematics: Pure 1 (Paper 1) · Probability & Statistics 1 (Paper 5) · Pure 3 (Paper 3) ·
+    Probability & Statistics 2 (Paper 6), the four the author listed.
+  - Physics: AS Level (topics 1–11) · A Level (topics 12–25); its papers do not divide by topic.
+  - Computer Science: Paper 1 Theory Fundamentals (Ch.1–8) · Paper 2 Fundamental
+    Problem-solving and Programming Skills (Ch.9–12) · Paper 3 Advanced Theory (Ch.13–20) ·
+    Paper 4 Practical (Ch.19–20), on new pages `/computer-science/handouts/chapter-handouts/paper-1/`
+    … `paper-4/`. Sections 19–20 are listed under both Papers 3 and 4 because the syllabus
+    examines them in both. `as-level/` and `a-level/` stay as short level pages, two paper
+    blocks each, so old links still work.
+- Branch pages use the same row: label = part name; the existing intro and syllabus notice
+  ("each chapter handout cites the section it covers", since the grid no longer carries
+  Syllabus pills); **Chapters** with the chapter-count line and a `.handout-key` line; the
+  grid; **How to use a chapter handout** (steps 3–4 now name SA/SA Sol and ES/ES Sol); footer
+  links: Subject Handouts · All chapter handouts · the paper's past papers.
+- Chapter grid item, after Kevin's Core Curriculum: `.handout-code` "Ch.n" (review rows keep
+  R1/R2 and have no pills), `.handout-title` as plain text, then `.handout-actions`:
+  - a primary **Handout** pill (the chapter page), on its own row;
+  - `.handout-questions` (sr-only label "Questions:"), on the next row: **SA** + **SA Sol** and
+    **ES** + **ES Sol**, each pair a `.handout-pair` that never splits, linking to the chapter
+    page's `#sa`, `#sa-sol`, `#es`, `#es-sol`.
+  Tinted pills are question sets, outlined pills their solutions (Kevin's Problems/Solutions).
+  Every pill has an aria-label "Ch.n Title — …"; question pills also have a title tooltip.
+  The grid drops the Syllabus §n, Full handout, Notes and Conversions pills; the chapter
+  pages still link all of them.
+- Grid columns: `repeat(auto-fill, minmax(min(100%, 240px), 1fr))` — three at 1200px and wider
+  (about 300px each), two at 992–1199px, one or two below. The questions row stays on one
+  line wherever it fits.
+- `.simple-row.is-handouts` uses Kevin's sizes: label `h2` 1.15rem / 600, `h3` 1rem / 700.
+  `.simple-row .handout-list` and `.handout-item` cancel the row's list indent and item
+  margin. Pills are 44px tall under `pointer:coarse`, as on Kevin's page. Other
+  `.simple-row` pages are unchanged.
+- Chapter pages (76): "Practice questions and solutions" became four sections with fixed
+  kramdown ids — Self-assessment questions (SA) `{#sa}`, Self-assessment solutions (SA Sol)
+  `{#sa-sol}`, Exam-style questions (ES) `{#es}`, Exam-style solutions (ES Sol) `{#es-sol}` —
+  reading "To be added!". Pure 1 Chapter 1 Quadratics links its existing self-assessment and
+  exam-style pages instead (each solution follows its question there). Computer Science
+  chapter footers link their paper page(s) rather than the level page.
+- FAQ pages at `/<subject>/handouts/faq/` (eyebrow "Handouts · Logistics", one `h2` per
+  question): the five links, how chapters map to papers, the AS/A Level routes (copied from
+  the subject Overview), syllabus documents, calculators (9618), official status, "To be
+  added!", and the personal address for mistakes. Linked from Logistics and from each
+  `/<subject>/handouts/` list.
+- Chapter-handouts hubs: item 5 of "What each chapter handout will contain" now describes
+  the SA/SA Sol/ES/ES Sol questions; the Computer Science hub and Everything in one tab list
+  the four papers, plus a By level line.
+- `/as-and-a-level/` ends with a footnote after the Handout row, as Kevin's Teaching page
+  does: "Feel free to reach out (at my personal address, galbadrakhstem@gmail.com) if you find
+  an issue or have a suggestion." `.page-footnote` lines up with the row content column
+  (no offset at 700px and below), muted, .95rem.
+- `sitemap.xml`: 174 URLs (three FAQ pages at 0.6, four Computer Science paper pages at 0.5).

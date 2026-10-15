@@ -44,8 +44,20 @@ To be added!
 
 To be added!
 
-## Practice questions and solutions
+## Self-assessment questions (SA) {#sa}
 
-To be added!
+Twelve original fluency questions: [Quadratics: self-assessment]({{ '/mathematics/self-assessment/quadratics/' | relative_url }}).
+
+## Self-assessment solutions (SA Sol) {#sa-sol}
+
+Each question on the [self-assessment page]({{ '/mathematics/self-assessment/quadratics/' | relative_url }}) is followed by its complete five-step solution.
+
+## Exam-style questions (ES) {#es}
+
+Six original CAIE-style questions with illustrative marks: [Quadratics: original exam-style practice]({{ '/mathematics/exam-style-questions/quadratics/' | relative_url }}).
+
+## Exam-style solutions (ES Sol) {#es-sol}
+
+Each question on the [exam-style page]({{ '/mathematics/exam-style-questions/quadratics/' | relative_url }}) is followed by its full solution and illustrative marks.
 
 <p><a href="{{ '/mathematics/handouts/chapter-handouts/pure-1/' | relative_url }}">All Pure 1 chapters</a> · <a href="{{ '/mathematics/handouts/past-paper-walkthroughs/pure-1/' | relative_url }}">Pure 1 past papers</a> · <a href="{{ '/mathematics/handouts/chapter-handouts/' | relative_url }}">Chapter handouts</a></p>
