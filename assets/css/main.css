@@ -369,3 +369,25 @@ main.container::before, .site-main::before{display:none}
 @media (max-width:700px){
   .simple-row{grid-template-columns:1fr; row-gap:6px}
 }
+
+/* ==========================================================================
+   MOBILE NAV — PHASE R3
+   Phone: brand on its own row, links in one scrollable row, 44px tap targets.
+   ========================================================================== */
+
+@media (max-width:991px){
+  .navbar .container, .navbar > .container, .navbar-inner{
+    display:flex; flex-wrap:wrap; align-items:center;
+  }
+  .navbar-brand{width:100%; padding:14px 0 6px; font-size:1.05rem}
+  .navbar-nav{
+    display:flex; flex-wrap:nowrap; width:100%;
+    overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none;
+    gap:2px; padding-bottom:6px;
+  }
+  .navbar-nav::-webkit-scrollbar{display:none}
+  .navbar-nav .nav-link{
+    white-space:nowrap; min-height:44px; padding:10px 12px;
+    display:flex; align-items:center; font-size:1rem;
+  }
+}

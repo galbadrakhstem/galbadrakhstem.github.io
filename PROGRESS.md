@@ -1,6 +1,6 @@
 # PROGRESS
 
-Last updated: 2026-10-15 (Phase R2 complete)
+Last updated: 2026-10-15 (Phase R3 complete)
 
 ## Done
 - Phase 1 design lock, Phase 2 handout language, Phases 3-5 prototype topics
@@ -19,6 +19,9 @@ Last updated: 2026-10-15 (Phase R2 complete)
   navigation, and plain-row styling completed on 2026-10-15.
 - Phase R2: About page in the author's own words, resources hub, three subject
   pages, and 18 handout pages completed on 2026-10-15.
+- Phase R3: phone navigation (brand row, scrollable links, 44px targets),
+  six-link navigation with CV last, subject-first home introduction, and CV
+  page at /cv/ completed on 2026-10-15.
 
 ## In progress
 - Nothing.
@@ -27,6 +30,7 @@ Last updated: 2026-10-15 (Phase R2 complete)
 - Content phases, one topic per chat.
 
 ## Open issues
+- CV content not yet supplied; /cv/ reads "To be added!" until the author sends it.
 - The site has never been built or rendered in the environment.
 - physics/handouts/physical-quantities.md was recreated from scratch in Phase 5;
   confirm it exists once and not also at physics/physical-quantities.md.
