@@ -84,3 +84,11 @@ Kevin Zhou, knzhou.github.io — theme CSS and custom layout layer inspected 202
 - Home, Club, AS and A Level and About use plain white rows (.simple-row), not cards.
 - Colour is limited to the logo (assets/img/logo.svg), links, and the subject handouts.
 - Subject pages (/mathematics/, /physics/, /computer-science/) are reached from AS and A Level.
+
+## Resources folders (Phase R2)
+
+- resources/<subject>/index.md lists six folders under "Handouts":
+  overview, step-by-step-solutions, past-paper-walkthroughs, chapter-handouts,
+  last-minute-prep, everything-in-one-tab.
+- Each folder page reads "To be added!" until content is written.
+- The About page uses the author's own wording. Edit it only with the author's approval.

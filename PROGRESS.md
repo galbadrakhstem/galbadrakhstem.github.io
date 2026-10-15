@@ -1,6 +1,6 @@
 # PROGRESS
 
-Last updated: 2026-10-15 (Phase R1 complete)
+Last updated: 2026-10-15 (Phase R2 complete)
 
 ## Done
 - Phase 1 design lock, Phase 2 handout language, Phases 3-5 prototype topics
@@ -17,14 +17,14 @@ Last updated: 2026-10-15 (Phase R1 complete)
   Pages delivery and the visible About/colour changes remain unverified.
 - Phase R1: simple home page, logo, Club and AS and A Level pages, five-link
   navigation, and plain-row styling completed on 2026-10-15.
+- Phase R2: About page in the author's own words, resources hub, three subject
+  pages, and 18 handout pages completed on 2026-10-15.
 
 ## In progress
 - Nothing.
 
 ## Next
-- Phase V verification: build the site, inventory the files, check every link,
-  check maths delimiters, confirm no footer exists.
-- Phase R2: About page and Resources folders.
+- Content phases, one topic per chat.
 
 ## Open issues
 - The site has never been built or rendered in the environment.
