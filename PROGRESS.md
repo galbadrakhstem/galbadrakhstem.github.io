@@ -1,6 +1,6 @@
 # PROGRESS
 
-Last updated: 2026-10-15 (Phase R2 complete)
+Last updated: 2026-10-15 (Phase FIX publish-to-main complete; live verification blocked)
 
 ## Done
 - Phase 1 design lock, Phase 2 handout language, Phases 3-5 prototype topics
@@ -19,6 +19,8 @@ Last updated: 2026-10-15 (Phase R2 complete)
   navigation, and plain-row styling completed on 2026-10-15.
 - Phase R2: About page in the author's own words, resources hub, three subject
   pages, and 18 handout pages completed on 2026-10-15.
+- Phase FIX: PR #4 squash-merged into main on 2026-10-15 (merge commit
+  a3917c1). GitHub Pages source is main at /; the deployment run was queued.
 
 ## In progress
 - Nothing.
@@ -52,6 +54,7 @@ Last updated: 2026-10-15 (Phase R2 complete)
   in _layouts/default.html contains uppercase `Montserrat` after the domain,
   which the requested uppercase-href check flags. Dynamic Liquid hrefs cannot
   be fully resolved without a build.
-- Publication check remains blocked in this sandbox: all three curls to the
-  live site failed with OpenSSL SSL_ERROR_SYSCALL (exit 35). The GitHub Pages
-  deployment and live appearance must be checked externally after PR #2.
+- Live-site verification remains blocked in this sandbox: the five post-merge
+  checks returned HTTP 000 / zero matches because galbadrakhstem.github.io was
+  unreachable. The Pages deployment run was queued; verify delivery externally
+  once network access is available.
