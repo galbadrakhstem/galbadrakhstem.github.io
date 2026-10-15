@@ -17,3 +17,4 @@ With Jekyll installed, run `jekyll serve` from the repository root and open the 
 - Use the current Cambridge International syllabus for the relevant examination year as the authority for syllabus coverage and paper combinations.
 - Keep equations in Markdown as `$...$` inline and `$$...$$` on their own lines for display mathematics.
 - Handouts use the `handout` layout and should show working clearly enough for independent study.
+- Inside raw HTML blocks (`<div class="notice">`, `<ul class="link-list">`, `<p>`), write links as `<a href="{{ '/path/' | relative_url }}">…</a>`. kramdown does not parse Markdown inside HTML blocks, so `[text](url)` there is printed literally.

@@ -1,6 +1,6 @@
 # PROGRESS
 
-Last updated: 2026-10-15 (Phase R7 complete)
+Last updated: 2026-10-15 (Phase R8 complete)
 
 ## Done
 - Phase 1 design lock, Phase 2 handout language, Phases 3-5 prototype topics
@@ -36,6 +36,17 @@ Last updated: 2026-10-15 (Phase R7 complete)
   a CAIE 9709 component picker, six component pages carrying syllabus and paper citations,
   four chapter-handout paper pages and 35 chapter pages; sitemap regenerated.
 
+- Phase R8: Physics 9702 and Computer Science 9618 rebuilt in the Mathematics design —
+  Start Learning with the six folders, exam overviews, handouts indexes, component
+  pickers (5 Physics papers, 4 Computer Science papers) with June 2024 and specimen
+  paper links, chapter handouts by level with 45 chapter pages (25 + 20), last-minute
+  prep and everything-in-one-tab pages. `/as-and-a-level/` gained an Other row
+  (`/as-and-a-level/other/`): Mongolian 11th grade curriculum / Үндэсний хөтөлбөр
+  (Монгол хэл, Үндэсний бичиг, Уран зохиол, Нийгэм судлал) and Non-technical classes
+  (General Language English, Global Perspectives and Research). Duplicated site name in
+  page titles fixed in the layout; Quadratics chapter notice links fixed; sitemap
+  regenerated (167 URLs).
+
 ## In progress
 - Nothing.
 
@@ -44,15 +55,20 @@ Last updated: 2026-10-15 (Phase R7 complete)
 
 ## Open issues
 - CV content not yet supplied; /cv/ reads "To be added!" until the author sends it.
-- The site has never been built or rendered in the environment.
+- No real Jekyll build is possible in the sandbox (no Ruby). Phase R8 used an
+  approximate preview build (liquidjs + markdown-it, kept outside the repository):
+  167 pages, 3440 internal links, none broken, no unrendered Liquid. Kramdown-only
+  behaviour still has to be confirmed on the live site after publishing.
+- The Other folders, Physics/CS chapter pages (Notes, Worked examples, Practice) and
+  past-paper walkthroughs read "To be added!" until the author writes them.
 - physics/handouts/physical-quantities.md was recreated from scratch in Phase 5;
   confirm it exists once and not also at physics/physical-quantities.md.
 - style-demo.md is intentionally unlinked; keep it out of the navbar and out of
   resources/index.md.
 - Build FAIL: `bundle exec jekyll build` could not run (`bundle: command not
   found`); generated page count and build warnings cannot be determined.
-- Inventory FAIL: computer-science/handouts/info-rep.md is missing (an alternate
-  info-rep-handout.md exists). Two pairs share permalinks: quadratics.md and
+- computer-science/handouts/info-rep-handout.md serves /computer-science/handouts/info-rep/
+  (checked in R8; every link to it resolves). Two pairs share permalinks: quadratics.md and
   quadratics-handout.md; physical-quantities.md and physical-quantities-handout.md.
 - Step badge FAIL: handout.css lacks `counter-reset: step` on `.solution .steps`;
   its `::before` does not contain `counter-increment` either. Badge numbering
@@ -64,8 +80,8 @@ Last updated: 2026-10-15 (Phase R7 complete)
   treatment in quadratics.md, quadratics-solutions.md, physical-quantities.md,
   and style-demo.md. No fenced-code dollars, word-adjacent inline maths, or
   display maths in table cells were found in content pages.
-- Link FAIL: quadratics.md links to non-existent handouts/quadratics-self-
-  assessment/ and handouts/quadratics-exam-style/ routes. The external font URL
+- The quadratics.md links to handouts/quadratics-self-assessment/ and
+  handouts/quadratics-exam-style/ are gone (checked in R8). The external font URL
   in _layouts/default.html contains uppercase `Montserrat` after the domain,
   which the requested uppercase-href check flags. Dynamic Liquid hrefs cannot
   be fully resolved without a build.

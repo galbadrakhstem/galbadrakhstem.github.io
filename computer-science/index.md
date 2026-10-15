@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Computer Science (9618)
+title: "Computer Science (9618)"
 permalink: /computer-science/
-description: Cambridge International AS & A Level Computer Science 9618 notes, information representation guidance, and worked handouts.
+description: "Cambridge International AS & A Level Computer Science 9618 — exam overview, step-by-step solutions, past-paper walkthroughs, chapter handouts, last-minute prep."
 ---
 
 <p class="eyebrow">Cambridge International · 9618</p>
@@ -11,26 +11,33 @@ description: Cambridge International AS & A Level Computer Science 9618 notes, i
 
 <p class="lead">Learn how computers represent numbers, characters, images, and sound—and practise converting values with clear, checkable steps.</p>
 
-## Start learning
+## Start Learning
 
 <ul class="link-list">
   <li>
-    <a href="{{ '/computer-science/syllabus-notes/information-representation/' | relative_url }}"><strong>Information representation</strong></a>
-    <p>Notes on number systems, signed integers, text, images, sound, and compression.</p>
+    <a href="{{ '/computer-science/exam-overview/' | relative_url }}"><strong>Exam Overview</strong></a>
+    <p>Check your syllabus year, paper route, and assessment objectives before you plan revision.</p>
   </li>
   <li>
-    <a href="{{ '/computer-science/handouts/info-rep/' | relative_url }}"><strong>Information representation: conversion handout</strong></a>
-    <p>Binary, decimal, and hexadecimal walkthroughs, a repeated-division trace table, and two's complement.</p>
+    <a href="{{ '/computer-science/handouts/step-by-step-solutions/' | relative_url }}"><strong>Step-by-step solutions</strong></a>
+    <p>Complete worked solutions: every conversion written out, trace tables for algorithms, and Cambridge pseudocode.</p>
   </li>
-</ul>
-
-## More folders
-
-<ul class="link-list">
-  <li><a href="{{ '/computer-science/olympiad/' | relative_url }}"><strong>CS Olympiad</strong></a> — competitions and problem solving</li>
-  <li><a href="{{ '/computer-science/book/' | relative_url }}"><strong>Book</strong></a> — notes and publications</li>
-  <li><a href="{{ '/computer-science/club/' | relative_url }}"><strong>Club</strong></a> — club CS activities</li>
-  <li><a href="{{ '/computer-science/other/' | relative_url }}"><strong>Other</strong></a> — other CS projects</li>
+  <li>
+    <a href="{{ '/computer-science/handouts/past-paper-walkthroughs/' | relative_url }}"><strong>Past-paper walkthroughs</strong></a>
+    <p>CAIE 9618 past papers by component — Theory Fundamentals, Fundamental Problem-solving and Programming Skills, Advanced Theory, and Practical.</p>
+  </li>
+  <li>
+    <a href="{{ '/computer-science/handouts/chapter-handouts/' | relative_url }}"><strong>Chapter handouts</strong></a>
+    <p>One handout per syllabus section: AS Level sections 1–12 and A Level sections 13–20.</p>
+  </li>
+  <li>
+    <a href="{{ '/computer-science/handouts/last-minute-prep/' | relative_url }}"><strong>Last-minute prep</strong></a>
+    <p>The short list to read in the final week: definitions, pseudocode conventions, and the errors that cost marks.</p>
+  </li>
+  <li>
+    <a href="{{ '/computer-science/handouts/everything-in-one-tab/' | relative_url }}"><strong>Everything in one tab</strong></a>
+    <p>Every 9618 handout on one page, for revision sessions without clicking.</p>
+  </li>
 </ul>
 
 ## A good way to practise

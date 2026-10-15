@@ -33,7 +33,7 @@ Cambridge International AS &amp; A Level Mathematics **9709**, subject content *
 </div>
 
 <div class="notice">
-<strong>Already written:</strong> this chapter also has a complete handout — [Quadratics: methods and practice]({{ '/mathematics/handouts/quadratics/' | relative_url }}) — with [complete solutions]({{ '/mathematics/handouts/quadratics-solutions/' | relative_url }}), [twelve self-assessment questions]({{ '/mathematics/self-assessment/quadratics/' | relative_url }}) and [exam-style practice]({{ '/mathematics/exam-style-questions/quadratics/' | relative_url }}). The sections below will hold the same material for the other chapters.
+<strong>Already written:</strong> this chapter also has a complete handout — <a href="{{ '/mathematics/handouts/quadratics/' | relative_url }}">Quadratics: methods and practice</a> — with <a href="{{ '/mathematics/handouts/quadratics-solutions/' | relative_url }}">complete solutions</a>, <a href="{{ '/mathematics/self-assessment/quadratics/' | relative_url }}">twelve self-assessment questions</a> and <a href="{{ '/mathematics/exam-style-questions/quadratics/' | relative_url }}">exam-style practice</a>. The sections below will hold the same material for the other chapters.
 </div>
 
 ## Notes
