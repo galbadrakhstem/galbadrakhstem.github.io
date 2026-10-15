@@ -32,18 +32,18 @@ html{font-size:13.09px}
 @media (min-width:58em){html{font-size:17px}}
 *,*::before,*::after{box-sizing:border-box}
 
+/* Body top margin = fixed navbar height, exactly like Kevin Zhou:
+   63px desktop, 45px tablet (992–1200), 44px phone. The navbar is never
+   relative, so it can only ever sit above the content, never on top of it. */
 body{
   margin:0; background:#ffffff; color:var(--text);
   font-family:var(--font-body); font-size:1rem; line-height:1.5;
   padding-bottom:80px; text-align:left;
   -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
-  margin-top:var(--nav-h);
+  margin-top:63px;
 }
-@media (max-width:991px){
-  body{margin-top:0}
-  .navbar{position:relative}
-  main.container{padding-top:20px}
-}
+@media (min-width:992px) and (max-width:1200px){body{margin-top:45px}}
+@media (max-width:991.98px){body{margin-top:44px}}
 
 h1,h2,h3,h4,h5,h6{
   font-family:var(--font-heading); font-weight:400; color:var(--heading);
@@ -80,34 +80,58 @@ th{background:var(--surface);font-weight:600;font-family:var(--font-heading)}
 @media (min-width:1200px){.container{max-width:1200px}}
 @media (max-width:575.98px){.container{padding:0 20px}}
 
-/* navbar — fixed desktop, relative on mobile to prevent banner blocking text. Bold like Kevin Zhou. */
+/* navbar — Kevin Zhou structure and metrics: fixed-top at every width, with the
+   brand on one side and a single scrollable row of links on the other. */
 .navbar{
-  position:fixed; top:0; left:0; right:0; z-index:1030; background:#ffffff;
+  position:fixed; top:0; right:0; left:0; z-index:1030; background:#ffffff;
   border-bottom:1px solid var(--rule-2); min-height:var(--nav-h);
+  padding-left:0; padding-right:0;
 }
-.navbar .container{display:flex;align-items:center;min-height:var(--nav-h)}
+#navbar-main .navbar-content{
+  display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between;
+  width:100%; margin-right:auto; margin-left:auto;
+}
+#navbar-main .navbar-menu{display:flex; flex-grow:1; align-items:center; min-width:0}
 .navbar-brand{
-  font-family:var(--font-heading); font-size:1.25rem; font-weight:700; color:rgba(0,0,0,.9);
-  white-space:nowrap; margin-right:1rem;
+  display:inline-flex; align-items:center; gap:.5rem;
+  font-family:var(--font-heading); font-size:1.25rem; font-weight:700;
+  color:rgba(0,0,0,.9); white-space:nowrap; margin-right:1rem;
 }
-.navbar-brand:hover{color:var(--link);text-decoration:none}
+.navbar-brand:hover,.navbar-brand:focus{color:rgba(0,0,0,.9);text-decoration:none}
 .navbar-nav{display:flex;flex-wrap:wrap;list-style:none;margin:0 0 0 auto;padding:0}
 .navbar-nav .nav-link{
   display:flex; align-items:center; min-height:44px; padding:0 .9rem;
-  font-size:18px; font-weight:600; color:#495057; transition:color .6s ease;
+  font-size:18px; font-weight:600; color:#495057; white-space:nowrap;
+  transition:color .6s ease;
 }
 .navbar-nav .nav-link:hover{color:var(--link);text-decoration:none}
 .navbar-nav .nav-link.active{color:var(--link); font-weight:700;}
-@media (min-width:992px){.navbar-nav .nav-link{padding:6.5px .9rem}}
+.navbar-nav>.nav-item:last-child>.nav-link{padding-right:0}
+@media (min-width:992px){
+  #navbar-main{min-height:63px}
+  #navbar-main .navbar-brand,
+  #navbar-main .navbar-nav .nav-link{padding-top:6.5px;padding-bottom:6.5px}
+}
+@media (min-width:992px) and (max-width:1200px){
+  #navbar-main{min-height:45px}
+  #navbar-main .navbar-brand{padding-top:2.5px;padding-bottom:2.5px}
+}
 @media (max-width:991.98px){
-  .navbar-nav{flex-basis:100%;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;margin-left:0}
-  .navbar-nav::-webkit-scrollbar{display:none}
-  .navbar-nav .nav-link{font-size:16px;padding:10px; font-weight:600;}
-  .navbar-nav .nav-link.active{font-weight:700;}
+  #navbar-main{min-height:44px}
+  /* phone: brand hidden so the fixed bar can never sit over the page text */
+  #navbar-main .navbar-brand{display:none}
+  #navbar-main .navbar-menu{
+    flex-basis:100%; overflow-x:auto; overscroll-behavior-x:contain;
+    scrollbar-width:none; margin-left:0;
+  }
+  #navbar-main .navbar-menu::-webkit-scrollbar{display:none}
+  .navbar-nav{flex-wrap:nowrap; flex-shrink:0; margin-left:0}
+  .navbar-nav .nav-link{font-size:16px; line-height:24px; padding:10px;}
 }
 
-/* section shell + 180px heading gutter (the signature layout) — reduced top padding because body now always has margin-top for fixed navbar, and mobile navbar is relative to avoid blocking */
-main.container{padding-top:24px}
+/* section shell + 180px heading gutter (the signature layout) — no top padding:
+   the fixed navbar is cleared by the body margin (63/45/44px), exactly like Kevin. */
+main.container{padding-top:0}
 .section{padding:60px 0 0}
 .aligned-sections{margin:0 auto}
 .aligned-row + .aligned-row{margin-top:40px;padding-top:40px;border-top:1px solid var(--rule)}
@@ -380,38 +404,36 @@ main.container::before, .site-main::before{display:none}
 }
 
 /* ==========================================================================
-   MOBILE NAV — PHASE R3
-   Phone: brand on its own row, links in one scrollable row, 44px tap targets.
+   HOME PROFILE LAYOUT — EXACT KEVIN ZHOU MATCH
+   Metrics copied from knzhou.github.io (css/academic.1a8d84f9…css) and his
+   index.html markup: circular portrait, contact links, education list, and a
+   biography column. No club picture badge, no Highlights, no Subjects, no
+   Resources list. Club and school icons live inside the education list.
    ========================================================================== */
 
-@media (max-width:991px){
-  .navbar .container, .navbar > .container, .navbar-inner{
-    display:flex; flex-wrap:wrap; align-items:center;
-  }
-  .navbar-brand{width:100%; padding:14px 0 6px; font-size:1.05rem}
-  .navbar-nav{
-    display:flex; flex-wrap:nowrap; width:100%;
-    overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none;
-    gap:2px; padding-bottom:6px;
-  }
-  .navbar-nav::-webkit-scrollbar{display:none}
-  .navbar-nav .nav-link{
-    white-space:nowrap; min-height:44px; padding:10px 12px;
-    display:flex; align-items:center; font-size:1rem;
-  }
-}
+/* Bootstrap utilities used by index.md's markup (this site ships no Bootstrap). */
+.list-unstyled{padding-left:0;list-style:none}
+.mt-3{margin-top:1rem}
+.mb-0{margin-bottom:0}
+.mb-1{margin-bottom:.25rem}
 
-/* ==========================================================================
-   HOME PROFILE LAYOUT — KEVIN ZHOU STYLE
-   Two-column home page with circular portrait, contact links, club logo,
-   and right-hand biography column.
-   ========================================================================== */
+/* Kevin wraps the home block in <section id="about" style="padding:30px 0 20px">.
+   index.md has no wrapper, so the same rhythm is applied to the home grid. */
+#about{padding:30px 0 20px}
+main.container > .about-layout{padding:30px 0 20px}
+/* Every other page keeps Kevin's 30px section gap under the fixed navbar,
+   otherwise a first child's own top margin would collapse into the body and
+   the breadcrumb or title would sit flush against the bar. Browsers without
+   :has() simply leave the shell at 0, which only affects those inner pages. */
+main.container:not(:has(> .about-layout)){padding-top:30px}
 
 #profile{
   text-align:center;
-  padding:0 10px 30px;
+  padding:30px 10px;
   position:relative;
 }
+/* the section already supplies the top gap (Kevin: .about-profile #profile) */
+.about-profile #profile{padding-top:0}
 .portrait{
   width:200px;
   height:200px;
@@ -421,45 +443,48 @@ main.container::before, .site-main::before{display:none}
   display:block;
 }
 .portrait-title .portrait-name{
-  font-size:1.75rem;
-  font-weight:400;
-  color:var(--heading);
+  font-size:1.75em;
+  font-weight:300;
+  color:#000;
   margin:20px 0 10px;
 }
-.profile-links{
-  list-style:none;
-  padding:0;
-  margin:14px 0 0;
-  font-size:.86rem;
+/* contact links — inline so a long address wraps inside the 240px column */
+#profile .list-unstyled{
+  margin:1rem 0 0;
+  font-size:1rem;
   line-height:1.5;
 }
-.profile-links li{
-  margin:0 0 6px;
+#profile .list-unstyled li{
+  margin:0 0 .25rem;
 }
-.profile-links a{
-  display:inline-flex;
-  align-items:center;
-  gap:6px;
+#profile .list-unstyled a{
   overflow-wrap:anywhere;
+  word-break:break-word;
+}
+#profile .list-unstyled a span{
+  overflow-wrap:anywhere;
+  word-break:break-word;
 }
 .profile-icon{
-  flex:0 0 15px;
+  display:inline-block;
+  vertical-align:-2px;
+  margin-right:6px;
   width:15px;
   height:15px;
 }
 .profile-education{
   width:max-content;
   max-width:100%;
-  margin:28px auto 0;
-  color:var(--text);
-  font-size:.88rem;
+  margin:30px auto 0;
+  color:#000;
+  font-size:15px;
   line-height:1.45;
   text-align:left;
 }
 .profile-education h2{
-  margin:0 0 10px;
-  color:var(--heading);
-  font-size:.9rem;
+  margin:0 0 12px;
+  color:inherit;
+  font-size:15px;
   font-weight:700;
   line-height:1.5;
 }
@@ -479,23 +504,17 @@ main.container::before, .site-main::before{display:none}
 }
 .profile-education .university-icon{
   display:block;
-  flex:0 0 22px;
-  width:22px;
-  height:22px;
+  flex:0 0 20px;
+  width:20px;
+  height:20px;
   margin:0;
   object-fit:contain;
   border-radius:var(--radius);
 }
-.profile-club-badge{
-  display:inline-block;
-  margin-top:20px;
-}
+/* club picture badge removed from the home page (Kevin has no such image) */
+.profile-club-badge,
 .club-logo-badge{
-  display:block;
-  width:140px;
-  height:auto;
-  margin:0 auto;
-  border-radius:var(--radius);
+  display:none;
 }
 .club-page-logo{
   display:block;
@@ -514,17 +533,19 @@ main.container::before, .site-main::before{display:none}
 }
 @media (min-width:992px){
   .about-layout{
+    width:calc(66.666667% + 206px);
     display:grid;
-    grid-template-columns:260px minmax(0,1fr);
-    column-gap:40px;
+    grid-template-columns:180px minmax(0,1fr);
+    column-gap:36px;
     align-items:start;
   }
   .about-profile{
-    width:260px;
+    width:240px;
     justify-self:center;
   }
   .about-biography{
     min-width:0;
-    width:100%;
+    width:95%;
+    justify-self:end;
   }
 }
