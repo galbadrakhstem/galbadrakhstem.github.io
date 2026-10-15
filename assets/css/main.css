@@ -372,6 +372,15 @@ blockquote{border-left:3px solid var(--accent)}
 .subject-card.is-cs     {--accent:#0e7c5a; --accent-ink:#0b5f46; --accent-tint:#eaf7f2; --accent-line:#b9e3d3}
 .subject-card.is-astronomy{--accent:#b45309; --accent-ink:#92400e; --accent-tint:#fef3c7; --accent-line:#fcd34d}
 .subject-card .course-code{color:var(--accent-ink); font-weight:700}
+/* 7a. icon cards (Technical classes on /as-and-a-level/, Phase R9): each card
+   takes its subject's accent, tint and line. --accent-ink is left alone, so
+   every title and "Browse" line keeps the page ink, as in the reference design. */
+.component-card.is-maths  {--accent:#1d4ed8; --accent-tint:#eef2ff; --accent-line:#c7d2fe}
+.component-card.is-physics{--accent:#6d28d9; --accent-tint:#f4f0ff; --accent-line:#ddd0fb}
+.component-card.is-cs     {--accent:#0e7c5a; --accent-tint:#eaf7f2; --accent-line:#b9e3d3}
+/* icon-card wash: half the subject tint on paper. Derived from existing tokens
+   (no new hue); browsers without color-mix() show plain paper. */
+.component-card.has-icon{--accent-wash:color-mix(in srgb, var(--accent-tint) 50%, var(--paper))}
 
 /* 8. notice boxes and link lists (used on subject and resource pages) */
 .notice{background:var(--accent-tint); border:1px solid var(--accent-line);
@@ -591,3 +600,62 @@ main.container:not(:has(> .about-layout)){padding-top:30px}
 /* Club page (Physics and Astronomy) now uses the home-page profile layout, so
    the square club logo is centred in the same column as the home portrait. */
 #profile .club-page-logo{margin:0 auto}
+
+/* ==========================================================================
+   ICON CARDS — PHASE R9 (2026-10-15)
+   Technical classes on /as-and-a-level/, after the author's reference design:
+   the R7 .component-card plus an icon slot. Icon tile top left, title,
+   description, then "Browse #### resources" with the arrow on its right.
+   Icons are inline SVG in the page (no asset files). Colours come from the
+   card's subject tokens (COLOUR LAYER 7a); no new colours. Radius stays
+   var(--radius), no shadow, and hover changes colour only.
+   ========================================================================== */
+
+/* a card grid inside a .simple-row is not an indented bullet list */
+.simple-row .component-grid{margin:0 0 1.4rem; padding:0}
+
+/* three across from 1200px, where each card gets about 300px; one column below
+   (between 992 and 1199px three columns would leave about 200px per card, and
+   three cards should never split 2 + 1) */
+.component-grid.is-icon-grid{grid-template-columns:minmax(0,1fr)}
+@media (min-width:1200px){
+  .component-grid.is-icon-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+/* equal-height cards, so the "Browse" lines line up along the bottom */
+.component-grid.is-icon-grid > li{display:flex}
+
+.component-card.has-icon{
+  display:flex; flex-direction:column; align-items:flex-start; flex:1 1 auto;
+  padding:24px 24px 22px;
+  border-color:var(--accent-line); border-left-color:var(--accent);
+  background:var(--accent-wash);   /* COLOUR LAYER 7a */
+}
+.component-card.has-icon:hover,
+.component-card.has-icon:focus{border-color:var(--accent)}
+
+/* the icon slot: a tinted tile in the card's accent */
+.component-icon{
+  display:flex; align-items:center; justify-content:center; flex:0 0 auto;
+  width:46px; height:46px; margin:0 0 18px;
+  color:var(--accent); background:var(--accent-tint);
+  border:1px solid var(--accent-line); border-radius:var(--radius);
+}
+/* each SVG carries its own width/height: 26 x 26 (Σ, atom), 35 x 26 (0101) */
+.component-icon svg{display:block; overflow:visible}
+.component-icon text{fill:currentColor}
+.icon-sigma{font-family:"Cambria Math","STIX Two Math",Georgia,"Times New Roman",Times,"DejaVu Serif",serif; font-size:25px; font-weight:700}
+.icon-binary{font-family:var(--font-mono); font-size:12px; font-weight:700}
+
+.component-card.has-icon .component-name,
+.component-card.has-icon:hover .component-name{color:var(--accent-ink)}
+.component-card.has-icon .component-meta{margin-top:8px; color:var(--muted-2); line-height:1.55}
+
+/* "Browse #### resources →" — pinned to the bottom of the card */
+.component-browse{
+  display:inline-flex; align-items:center; gap:.45em;
+  margin-top:auto; padding-top:18px;
+  color:var(--accent-ink); font-weight:700;
+}
+.component-card.has-icon .component-arrow{position:static; transform:none; color:inherit; font-size:1.1em; font-weight:400}
+.component-card.has-icon:hover .component-browse,
+.component-card.has-icon:focus .component-browse{color:var(--accent)}

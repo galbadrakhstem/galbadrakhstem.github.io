@@ -1,6 +1,6 @@
 # PROGRESS
 
-Last updated: 2026-10-15 (Phase R8 complete)
+Last updated: 2026-10-15 (Phase R9 complete)
 
 ## Done
 - Phase 1 design lock, Phase 2 handout language, Phases 3-5 prototype topics
@@ -47,6 +47,15 @@ Last updated: 2026-10-15 (Phase R8 complete)
   page titles fixed in the layout; Quadratics chapter notice links fixed; sitemap
   regenerated (167 URLs).
 
+- Phase R9: contact emails split by purpose — personal `galbadrakhstem@gmail.com` in
+  `_config.yml` `author.email`, the Home profile, `/about/`, the `/cv/` header and the
+  Mathematics and Physics contact lines; astronomy `physicsandastronomy24@gmail.com` only
+  on the five astronomy pages and `/club/`; the `/cv/` Contact row lists the personal,
+  school and astronomy addresses. `/as-and-a-level/` reorganised into Technical classes
+  (Mathematics, Physics and Computer Science icon cards with inline-SVG Σ, atom and 0101
+  icons, after the author's reference design), Non-Technical classes, Other and Handout;
+  all 47 links kept, the Astronomy row folded into Handout. No new pages; sitemap unchanged.
+
 ## In progress
 - Nothing.
 
@@ -59,6 +68,10 @@ Last updated: 2026-10-15 (Phase R8 complete)
   approximate preview build (liquidjs + markdown-it, kept outside the repository):
   167 pages, 3440 internal links, none broken, no unrendered Liquid. Kramdown-only
   behaviour still has to be confirmed on the live site after publishing.
+  Phase R9 replaced markdown-it with the real kramdown 2.4.0 + kramdown-parser-gfm 1.1.0
+  (GitHub Pages' versions) under ruby.wasm, with Jekyll's kramdown options: all 169
+  sources convert, 167 pages, no broken internal links. Liquid is still liquidjs, and
+  Rouge highlighting is not run.
 - The Other folders, Physics/CS chapter pages (Notes, Worked examples, Practice) and
   past-paper walkthroughs read "To be added!" until the author writes them.
 - physics/handouts/physical-quantities.md was recreated from scratch in Phase 5;
