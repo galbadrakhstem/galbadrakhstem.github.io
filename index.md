@@ -14,9 +14,9 @@ description: Galbadrakh Ulziibold — Cambridge AS and A Level student, founder 
       </div>
       <ul class="list-unstyled mt-3 mb-0">
         <li class="mb-1">
-          <a href="mailto:28c_galbadrakh.u@mongolaspiration.edu.mn">
+          <a href="mailto:galbadrakhstem@gmail.com">
             <svg class="profile-icon" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
-            <span>28c_galbadrakh.u@mongolaspiration.edu.mn</span>
+            <span>galbadrakhstem<wbr>@gmail.com</span>
           </a>
         </li>
         <li class="mb-1">

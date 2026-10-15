@@ -10,7 +10,7 @@ description: Curriculum vitae of Galbadrakh Ulziibold — Astronomy Olympiad med
   <div>
     <p>Mongol Aspiration International School (Mongol Temuulel), Ulaanbaatar, Mongolia — 11th grade student, Class 28c (high school class of 2028)</p>
     <p>Cambridge International AS & A Level: Mathematics 9709, Physics 9702, Computer Science 9618, AI</p>
-    <p>Contact: <a href="mailto:physicsandastronomy24@gmail.com">physicsandastronomy24@gmail.com</a></p>
+    <p>Contact: <a href="mailto:galbadrakhstem@gmail.com">galbadrakhstem@gmail.com</a></p>
     <p>Curious, responsible — astronomy research. Founder, MAIS Physics & Astronomy Club (14 Nov 2024).</p>
   </div>
 </div>
@@ -67,6 +67,10 @@ description: Curriculum vitae of Galbadrakh Ulziibold — Astronomy Olympiad med
 <div class="simple-row">
   <h2>Contact</h2>
   <div>
-    <p><a href="mailto:physicsandastronomy24@gmail.com">physicsandastronomy24@gmail.com</a></p>
+    <ul>
+      <li>Personal: <a href="mailto:galbadrakhstem@gmail.com">galbadrakhstem@gmail.com</a></li>
+      <li>School: <a href="mailto:28c_galbadrakh.u@mongolaspiration.edu.mn">28c_galbadrakh.u@mongolaspiration.edu.mn</a></li>
+      <li>Astronomy and the Physics &amp; Astronomy Club: <a href="mailto:physicsandastronomy24@gmail.com">physicsandastronomy24@gmail.com</a></li>
+    </ul>
   </div>
 </div>

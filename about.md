@@ -43,6 +43,6 @@ description: About Galbadrakh Ulziibold, the Physics & Astronomy Club, and the C
 <div class="simple-row">
   <h2>Contact</h2>
   <div>
-    <p><a href="mailto:physicsandastronomy24@gmail.com">physicsandastronomy24@gmail.com</a></p>
+    <p><a href="mailto:galbadrakhstem@gmail.com">galbadrakhstem@gmail.com</a></p>
   </div>
 </div>

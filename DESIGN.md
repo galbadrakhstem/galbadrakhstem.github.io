@@ -237,3 +237,59 @@ Kevin Zhou, knzhou.github.io — theme CSS and custom layout layer inspected 202
 - Fixed the Quadratics chapter page notice, whose Markdown links inside an HTML block
   were printed literally; README records the rule.
 - `sitemap.xml` regenerated (167 URLs; existing entries and priorities unchanged).
+
+## Contact policy and Technical classes icon cards (Phase R9 — 2026-10-15)
+
+- Contact policy (supersedes the email notes in R4, R5 and R7):
+  - Personal `galbadrakhstem@gmail.com`: `_config.yml` `author.email` (so the JSON-LD
+    Person email on every page), the Home profile column, the `/about/` Contact row,
+    the `/cv/` header line, and every contact line on a non-astronomy page
+    (`/mathematics/olympiad/`, `/physics/book/`, `/physics/olympiad/`).
+  - Astronomy `physicsandastronomy24@gmail.com`: only the astronomy pages (`/astronomy/`,
+    `/astronomy/olympiad/`, `/astronomy/book/`, `/astronomy/club/`, `/astronomy/other/`)
+    and the Physics and Astronomy page (`/club/` profile column and Contact).
+  - The `/cv/` Contact row lists all three, labelled: Personal `galbadrakhstem@gmail.com`,
+    School `28c_galbadrakh.u@mongolaspiration.edu.mn`, Astronomy and the Physics &
+    Astronomy Club `physicsandastronomy24@gmail.com`.
+  - The Home profile address carries `<wbr>` before `@`, so in the 240px column it wraps
+    as "galbadrakhstem / @gmail.com" instead of breaking inside a word.
+- `/as-and-a-level/` is four `.simple-row` sections, in this order: Technical classes,
+  Non-Technical classes, Other, Handout (h2 ids `technical-classes`,
+  `non-technical-classes`, `other`, `handout`). Every link of the R8 page is kept.
+  - Technical classes: three icon cards — Mathematics (`/mathematics/`), Physics
+    (`/physics/`), Computer Science (`/computer-science/`) — then one line per subject
+    with its Olympiad · Book · Club · Other folders.
+  - Non-Technical classes: General Language English and Global Perspectives and Research
+    as plain `.component-grid` cards, then the `/as-and-a-level/other/non-technical/` link.
+  - Other: the four Mongolian 11th grade curriculum subjects (Монгол хэл, Үндэсний бичиг,
+    Уран зохиол, Нийгэм судлал) as plain `.component-grid` cards, then the
+    `/as-and-a-level/other/national-curriculum/` and `/as-and-a-level/other/` links.
+  - Handout: the six handout folders for 9709, 9702 and 9618, and one Astronomy line
+    (independent subject — Olympiad preparation · Cosmic Calculations book · Club · Other
+    projects · Open Astronomy), which replaces the former Astronomy row.
+- Icon cards follow the author's reference design (icon tile top left, title,
+  description, "Browse #### resources" with the arrow on its right). Markup:
+  `ul.component-grid.is-icon-grid` > `li` > `a.component-card.has-icon.is-maths|is-physics|is-cs`
+  holding `.component-icon` (inline SVG), `.component-name`, `.component-meta` and
+  `.component-browse` (text + `.component-arrow`, static, inline after the text).
+  - Card: R7 card with a 1px `--accent-line` border, the 4px `--accent` bar on the left,
+    and an `--accent-wash` background (a COLOUR LAYER token: `color-mix()` of
+    `--accent-tint` 50% with `--paper`; browsers without `color-mix()` show plain paper).
+    Padding 24px; equal heights in a row; the Browse line is pinned to the bottom.
+  - Icon tile: 46px, `--accent-tint` fill, 1px `--accent-line` border, radius token,
+    icon in `--accent`.
+  - Title and Browse line: `--accent-ink` (the page ink). Hover/focus: border and Browse
+    line take the card's `--accent`. Colour change only; no movement, no shadow.
+  - The reference's large corner radius is not copied: radius stays the 4px token.
+  - Three columns at 1200px and wider (about 300px per card); one column below, so three
+    cards never split 2 + 1 and never shrink to about 200px.
+- Icons are inline SVG in the page, no asset files: Σ is SVG `<text class="icon-sigma">`
+  (bold serif stack); the atom is three `<ellipse>` orbits at 0°, 60° and 120° around a
+  filled `<circle>` nucleus; `0101` is SVG `<text class="icon-binary">` in `--font-mono`.
+  The icon wrapper is `aria-hidden="true"`.
+- COLOUR LAYER rule 7a gives each icon card its subject's `--accent`, `--accent-tint` and
+  `--accent-line`, copied from the existing subject palette (no new colours), and defines
+  `--accent-wash` from those tokens. `--accent-ink` is deliberately not overridden. The
+  R9 component rules contain no hex values.
+- `.simple-row .component-grid` resets the `.simple-row ul` margin and indent, so card
+  grids line up with the row text.
