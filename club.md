@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Club · Galbadrakh STEM
+title: Physics and Astronomy · Galbadrakh STEM
 permalink: /club/
-description: The Physics and Astronomy Club at Mongol Aspiration International School.
+description: The Physics and Astronomy Club at Mongol Aspiration International School — MAIS Physics and Astronomy Club founded by Galbadrakh Ulziibold.
 ---
 
 <div class="simple-row">
@@ -34,6 +34,7 @@ description: The Physics and Astronomy Club at Mongol Aspiration International S
   <h2>Teaching</h2>
   <div>
     <p>Orbital mechanics is the core topic. It was taught to club members throughout 9th and 10th grade, returning to the same material with new students, new questions and new gaps to bridge. Each repetition deepened the teacher's own understanding.</p>
+    <p>A-level content is explained with intuitive methods for high-school students.</p>
     <p>In July 2026 the founder was invited to teach the astronomy component to students preparing for the International Earth Science Olympiad.</p>
   </div>
 </div>
@@ -41,13 +42,31 @@ description: The Physics and Astronomy Club at Mongol Aspiration International S
 <div class="simple-row">
   <h2>Results</h2>
   <div>
-    <p>Members have gone on to deliver research presentations, including one on orbital resonance, and six students from the school have won medals at the National Olympiad.</p>
+    <ul>
+      <li>2025–2026: Club prepared students for National Astronomy Olympiad — 4 medals middle level, 2 medals senior level.</li>
+      <li>Member D. Dolgion — prize winner at International Astronomy Olympiad.</li>
+      <li>Members have delivered research presentations, including one on orbital resonance.</li>
+      <li>Six students from the school have won medals at the National Olympiad (2024–2025 cycle).</li>
+    </ul>
+  </div>
+</div>
+
+<div class="simple-row">
+  <h2>Founder Achievements</h2>
+  <div>
+    <ul>
+      <li>OWAO IV International Astronomy Olympiad — Gold Medal + Diamond Diploma (High Performance)</li>
+      <li>National Astronomy Olympiad IX — Gold; X — Bronze (Senior)</li>
+      <li>“Oyunlag Suragch” Gold Medal — Highest Award of Mongolian Students Association</li>
+      <li>SASMO 2025 Gold, Serius Online 2025 Gold, Vanda National Junior Science 2024 Bronze</li>
+      <li>Research Assistant — Solar Activity Astronomy & Geophysics Research (24 Jun – 14 Jul 2025)</li>
+    </ul>
   </div>
 </div>
 
 <div class="simple-row">
   <h2>Contact</h2>
   <div>
-    <p><a href="mailto:28c_galbadrakh.u@mongolaspiration.edu.mn">28c_galbadrakh.u@mongolaspiration.edu.mn</a></p>
+    <p><a href="mailto:physicsandastronomy24@gmail.com">physicsandastronomy24@gmail.com</a></p>
   </div>
 </div>

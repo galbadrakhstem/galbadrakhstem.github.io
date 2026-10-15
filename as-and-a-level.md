@@ -9,7 +9,7 @@ description: Cambridge International AS and A Level Mathematics 9709, Physics 97
   <h2>Mathematics</h2>
   <div>
     <p>Cambridge International AS and A Level Mathematics, syllabus code 9709.</p>
-    <p><a href="{{ '/mathematics/' | relative_url }}">Open Mathematics 9709</a></p>
+    <p><a href="{{ '/mathematics/' | relative_url }}">Open Mathematics 9709</a> · <a href="{{ '/mathematics/olympiad/' | relative_url }}">Olympiad</a> · <a href="{{ '/mathematics/book/' | relative_url }}">Book</a> · <a href="{{ '/mathematics/club/' | relative_url }}">Club</a> · <a href="{{ '/mathematics/other/' | relative_url }}">Other</a></p>
   </div>
 </div>
 
@@ -17,7 +17,7 @@ description: Cambridge International AS and A Level Mathematics 9709, Physics 97
   <h2>Physics</h2>
   <div>
     <p>Cambridge International AS and A Level Physics, syllabus code 9702.</p>
-    <p><a href="{{ '/physics/' | relative_url }}">Open Physics 9702</a></p>
+    <p><a href="{{ '/physics/' | relative_url }}">Open Physics 9702</a> · <a href="{{ '/physics/olympiad/' | relative_url }}">Olympiad</a> · <a href="{{ '/physics/book/' | relative_url }}">Book</a> · <a href="{{ '/physics/club/' | relative_url }}">Club</a> · <a href="{{ '/physics/other/' | relative_url }}">Other</a></p>
   </div>
 </div>
 
@@ -25,13 +25,21 @@ description: Cambridge International AS and A Level Mathematics 9709, Physics 97
   <h2>Computer Science</h2>
   <div>
     <p>Cambridge International AS and A Level Computer Science, syllabus code 9618.</p>
-    <p><a href="{{ '/computer-science/' | relative_url }}">Open Computer Science 9618</a></p>
+    <p><a href="{{ '/computer-science/' | relative_url }}">Open Computer Science 9618</a> · <a href="{{ '/computer-science/olympiad/' | relative_url }}">Olympiad</a> · <a href="{{ '/computer-science/book/' | relative_url }}">Book</a> · <a href="{{ '/computer-science/club/' | relative_url }}">Club</a> · <a href="{{ '/computer-science/other/' | relative_url }}">Other</a></p>
+  </div>
+</div>
+
+<div class="simple-row">
+  <h2>Astronomy</h2>
+  <div>
+    <p>Independent subject — Olympiad preparation, Cosmic Calculations book, club, and other projects.</p>
+    <p><a href="{{ '/astronomy/' | relative_url }}">Open Astronomy</a> · <a href="{{ '/astronomy/olympiad/' | relative_url }}">Olympiad</a> · <a href="{{ '/astronomy/book/' | relative_url }}">Book</a> · <a href="{{ '/astronomy/club/' | relative_url }}">Club</a> · <a href="{{ '/astronomy/other/' | relative_url }}">Other</a></p>
   </div>
 </div>
 
 <div class="simple-row">
   <h2>Resources</h2>
   <div>
-    <p><a href="{{ '/resources/' | relative_url }}">Browse resources by subject</a></p>
+    <p><a href="{{ '/resources/' | relative_url }}">Browse resources by subject</a> · <a href="{{ '/resources/astronomy/' | relative_url }}">Astronomy resources</a></p>
   </div>
 </div>

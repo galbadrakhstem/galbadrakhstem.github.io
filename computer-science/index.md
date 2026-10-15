@@ -24,6 +24,15 @@ description: Cambridge International AS & A Level Computer Science 9618 notes, i
   </li>
 </ul>
 
+## More folders
+
+<ul class="link-list">
+  <li><a href="{{ '/computer-science/olympiad/' | relative_url }}"><strong>CS Olympiad</strong></a> — competitions and problem solving</li>
+  <li><a href="{{ '/computer-science/book/' | relative_url }}"><strong>Book</strong></a> — notes and publications</li>
+  <li><a href="{{ '/computer-science/club/' | relative_url }}"><strong>Club</strong></a> — club CS activities</li>
+  <li><a href="{{ '/computer-science/other/' | relative_url }}"><strong>Other</strong></a> — other CS projects</li>
+</ul>
+
 ## A good way to practise
 
 Write the base beside each value, preserve leading zeroes when a fixed bit width matters, and show each place-value or division step. For storage questions, identify whether the answer is required in bits or bytes and state any unit convention you use.

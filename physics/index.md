@@ -28,6 +28,15 @@ description: Cambridge International AS & A Level Physics 9702 notes, SI unit re
   </li>
 </ul>
 
+## More folders
+
+<ul class="link-list">
+  <li><a href="{{ '/physics/olympiad/' | relative_url }}"><strong>Physics Olympiad</strong></a> — preparation and problems</li>
+  <li><a href="{{ '/physics/book/' | relative_url }}"><strong>Book</strong></a> — related notes and publications</li>
+  <li><a href="{{ '/physics/club/' | relative_url }}"><strong>Club</strong></a> — Physics & Astronomy Club activities for physics</li>
+  <li><a href="{{ '/physics/other/' | relative_url }}"><strong>Other</strong></a> — other physics projects</li>
+</ul>
+
 ## Working scientifically
 
 In calculations, write the governing relationship before substituting values. Convert to consistent SI units, keep units attached to quantities, and check that the final unit matches the quantity you are finding. State an answer to a sensible precision, following the question's instructions.

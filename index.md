@@ -16,11 +16,11 @@ description: Galbadrakh STEM — Cambridge AS and A Level handouts and solutions
 
       <ul class="profile-links">
         <li>
-          <a href="mailto:28c_galbadrakh.u@mongolaspiration.edu.mn">
+          <a href="mailto:physicsandastronomy24@gmail.com">
             <svg class="profile-icon" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" fill="currentColor">
               <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
             </svg>
-            <span>28c_galbadrakh.u@mongolaspiration.edu.mn</span>
+            <span>physicsandastronomy24@gmail.com</span>
           </a>
         </li>
         <li>
@@ -66,16 +66,19 @@ description: Galbadrakh STEM — Cambridge AS and A Level handouts and solutions
 
     <p>I also wrote <em>Cosmic Calculations: Orbital Mechanics</em>, the first volume of a series for students who, like me, could not find books that were easy to understand. I wrote it to be the resource I wish I had.</p>
 
+    <p><strong>Highlights:</strong> OWAO IV International Astronomy Olympiad Gold + Diamond Diploma; National Astronomy Olympiad IX Gold, X Bronze (Senior); “Oyunlag Suragch” Gold Medal (Mongolian Students Association highest award); SASMO 2025 Gold; Research Assistant — Solar Activity Astronomy & Geophysics (Jun–Jul 2025). Club members: 6 national medals (4 middle, 2 senior) + member D. Dolgion prize at International Astronomy Olympiad. <a href="{{ '/astronomy/' | relative_url }}">Explore Astronomy</a>.</p>
+
     <h4 id="subjects">Subjects</h4>
 
     <ul>
       <li><a href="{{ '/mathematics/' | relative_url }}">Mathematics 9709</a></li>
       <li><a href="{{ '/physics/' | relative_url }}">Physics 9702</a></li>
       <li><a href="{{ '/computer-science/' | relative_url }}">Computer Science 9618</a></li>
+      <li><a href="{{ '/astronomy/' | relative_url }}">Astronomy — Olympiad, Book, Club, Other</a></li>
     </ul>
 
     <h4 id="resources">Resources</h4>
 
-    <p><a href="{{ '/resources/' | relative_url }}">Browse resources by subject</a> · <a href="{{ '/cv/' | relative_url }}">Curriculum vitae</a></p>
+    <p><a href="{{ '/resources/' | relative_url }}">Browse resources by subject</a> · <a href="{{ '/cv/' | relative_url }}">Curriculum vitae</a> · Contact: <a href="mailto:physicsandastronomy24@gmail.com">physicsandastronomy24@gmail.com</a></p>
   </div>
 </div>

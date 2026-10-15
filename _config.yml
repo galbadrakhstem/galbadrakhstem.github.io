@@ -1,11 +1,11 @@
 title: Galbadrakh STEM
-description: Clear, independent study resources for Cambridge International AS & A Level Mathematics, Physics, and Computer Science.
+description: Galbadrakh Ulziibold — Galbadrakh STEM (galbadrakhstem.github.io) — Cambridge AS & A Level handouts, Astronomy Olympiad (OWAO Gold, National Gold), MAIS Physics and Astronomy Club, Cosmic Calculations book.
 url: "https://galbadrakhstem.github.io"
 baseurl: ""
 lang: en
 author:
   name: Galbadrakh Ulziibold
-  email: 28c_galbadrakh.u@mongolaspiration.edu.mn
+  email: physicsandastronomy24@gmail.com
 markdown: kramdown
 permalink: pretty
 
