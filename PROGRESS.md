@@ -22,6 +22,11 @@ Last updated: 2026-10-15 (Phase R3 complete)
 - Phase R3: phone navigation (brand row, scrollable links, 44px targets),
   six-link navigation with CV last, subject-first home introduction, and CV
   page at /cv/ completed on 2026-10-15.
+- PR #5 merged into main on 2026-10-15 via `gh pr merge` (merge commit
+  4c793e1); GitHub Pages latest build reports "built" for that commit.
+  Live-site curl checks from this sandbox still fail with OpenSSL
+  SSL_ERROR_SYSCALL (exit 35), including a `curl -sk` retry, so the live
+  appearance must be confirmed externally.
 
 ## In progress
 - Nothing.
