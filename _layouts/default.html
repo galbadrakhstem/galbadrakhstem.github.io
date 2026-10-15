@@ -91,11 +91,32 @@
       #pw-gate .box { background: #1a2030; padding: 2rem; border-radius: 12px; width: 90%; max-width: 360px; text-align: center; color: #fff; box-shadow: 0 10px 40px rgba(0,0,0,.5); }
       #pw-gate h2 { margin: 0 0 .5rem; font-size: 1.25rem; }
       #pw-gate p { color: #9aa; font-size: .9rem; margin: .5rem 0 1rem; }
+      #pw-gate label { display: block; text-align: left; font-size: .8rem; color: #8fa; margin: .75rem 0 .3rem; }
       #pw-gate input { width: 100%; padding: .6rem .8rem; border: 1px solid #334; border-radius: 8px; background: #0b0f19; color: #fff; font-size: 1rem; box-sizing: border-box; }
-      #pw-gate button { margin-top: 1rem; width: 100%; padding: .6rem; border: none; border-radius: 8px; background: #4f8cff; color: #fff; font-size: 1rem; cursor: pointer; }
+      #pw-gate input:disabled { color: #b8c4dd; }
+      #pw-gate button { margin-top: 1.1rem; width: 100%; padding: .6rem; border: none; border-radius: 8px; background: #4f8cff; color: #fff; font-size: 1rem; cursor: pointer; }
+      #pw-gate button:disabled { opacity: .6; cursor: wait; }
       #pw-gate .err { color: #ff6b6b; font-size: .85rem; margin-top: .5rem; min-height: 1.2em; }
       body.pw-locked { overflow: hidden; }
+      /* Signed-in state (set synchronously in <head>) hides the gate with no flash. */
+      html.pw-unlocked #pw-gate { display: none !important; }
+      html.pw-unlocked body { overflow: auto !important; }
+      #signout-item { display: none; }
+      html.pw-unlocked #signout-item { display: block; }
     </style>
+    <script>
+      /* Synchronous session check so a signed-in visitor never sees the gate
+         flash. The token is derived from the password hash + salt and is
+         recomputed/verified by password-gate.js on every load. */
+      (function () {
+        try {
+          var TOKEN = 'e7bfe756cd89752fddcb45512aa4447bc9cf491aba94b78b4447e234e17eda16';
+          if (localStorage.getItem('gs_auth_token_v2') === TOKEN) {
+            document.documentElement.classList.add('pw-unlocked');
+          }
+        } catch (e) { /* storage blocked: stay locked */ }
+      })();
+    </script>
   </head>
 {% assign subject_slug = page.subject %}
 {% if subject_slug == nil or subject_slug == empty %}
@@ -116,13 +137,18 @@
   {% endcase %}
 {% endif %}
   <body{% if subject_slug %} data-subject="{{ subject_slug | downcase | replace: ' ', '-' }}"{% endif %} class="pw-locked{% if page.body_class %} {{ page.body_class }}{% endif %}">
-    <div id="pw-gate">
+    <div id="pw-gate" role="dialog" aria-modal="true" aria-labelledby="pw-gate-title">
       <div class="box">
-        <h2>Protected site</h2>
-        <p>This site is private. Enter the password to continue.</p>
-        <input type="password" id="pw-input" autocomplete="current-password" placeholder="Password">
-        <button id="pw-btn" type="button">Unlock</button>
-        <div class="err" id="pw-err"></div>
+        <h2 id="pw-gate-title">Sign in to Galbadrakh STEM</h2>
+        <p>This site is private. The only account is the site owner's — enter it to continue.</p>
+        <form id="login-form" autocomplete="on" onsubmit="return false;">
+          <label for="user-input">Username</label>
+          <input type="text" id="user-input" value="Galbadrakh Ulziibold" autocomplete="username" spellcheck="false">
+          <label for="pw-input">Password</label>
+          <input type="password" id="pw-input" autocomplete="current-password" placeholder="Password">
+          <button id="pw-btn" type="submit">Sign in</button>
+        </form>
+        <div class="err" id="pw-err" role="alert"></div>
       </div>
     </div>
     <a class="skip-link" href="#main-content">Skip to content</a>
