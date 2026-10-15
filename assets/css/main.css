@@ -346,3 +346,26 @@ blockquote{border-left:3px solid var(--accent)}
 .link-list li{border-bottom:1px solid var(--rule)}
 .link-list a{color:var(--accent)}
 .text-link{color:var(--accent)}
+
+/* ==========================================================================
+   SIMPLE SITE — PHASE R1
+   Plain white pages, like Kevin Zhou. Colour lives in the logo, the links,
+   and the subject handouts.
+   ========================================================================== */
+
+main.container::before, .site-main::before{display:none}
+.navbar{background:#fff; border-bottom:1px solid var(--rule); box-shadow:none}
+.navbar-brand{display:inline-flex; align-items:center; gap:.5rem}
+.site-logo{width:28px; height:28px; display:inline-block; flex:0 0 auto}
+.eyebrow{display:none}
+.simple-row{display:grid; grid-template-columns:180px minmax(0,1fr); column-gap:36px;
+            padding:28px 0; border-bottom:1px solid var(--rule)}
+.simple-row:last-child{border-bottom:0}
+.simple-row h2{font-size:1.1rem; border:0; margin:0; padding:0; color:inherit}
+.simple-row p{margin:0 0 .9rem}
+.simple-row ul{margin:0; padding-left:1.1rem}
+.simple-row li{margin-bottom:.45rem}
+.simple-logo{width:96px; height:96px; display:block; margin-bottom:.8rem}
+@media (max-width:700px){
+  .simple-row{grid-template-columns:1fr; row-gap:6px}
+}

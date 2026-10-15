@@ -1,13 +1,12 @@
 <nav class="navbar" id="navbar-main" aria-label="Main navigation">
   <div class="container">
-    <a class="navbar-brand" href="{{ '/' | relative_url }}">Galbadrakh STEM</a>
+    <a class="navbar-brand" href="{{ '/' | relative_url }}"><img class="site-logo" src="{{ '/assets/img/logo.svg' | relative_url }}" alt="" width="28" height="28">Galbadrakh STEM</a>
     <ul class="navbar-nav">
       <li class="nav-item"><a class="nav-link{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}">Home</a></li>
-      <li class="nav-item"><a class="nav-link{% if page.url contains '/mathematics/' %} active{% endif %}" href="{{ '/mathematics/' | relative_url }}">Mathematics 9709</a></li>
-      <li class="nav-item"><a class="nav-link{% if page.url contains '/physics/' %} active{% endif %}" href="{{ '/physics/' | relative_url }}">Physics 9702</a></li>
-      <li class="nav-item"><a class="nav-link{% if page.url contains '/computer-science/' %} active{% endif %}" href="{{ '/computer-science/' | relative_url }}">Computer Science 9618</a></li>
+      <li class="nav-item"><a class="nav-link{% if page.url contains '/club/' %} active{% endif %}" href="{{ '/club/' | relative_url }}">Club</a></li>
+      <li class="nav-item"><a class="nav-link{% if page.url contains '/as-and-a-level/' %} active{% endif %}" href="{{ '/as-and-a-level/' | relative_url }}">AS and A Level</a></li>
       <li class="nav-item"><a class="nav-link{% if page.url contains '/resources/' %} active{% endif %}" href="{{ '/resources/' | relative_url }}">Resources</a></li>
-        <li class="nav-item"><a class="nav-link{% if page.url contains '/about/' %} active{% endif %}" href="{{ '/about/' | relative_url }}">About</a></li>
-      </ul>
+      <li class="nav-item"><a class="nav-link{% if page.url contains '/about/' %} active{% endif %}" href="{{ '/about/' | relative_url }}">About</a></li>
+    </ul>
   </div>
 </nav>
