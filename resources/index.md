@@ -1,65 +1,21 @@
 ---
 layout: default
-title: Resources
+title: Resources · Galbadrakh STEM
 permalink: /resources/
-description: A directory of all independent Cambridge International AS & A Level resources on Galbadrakh STEM.
+description: Resources by subject: handouts, step-by-step solutions, past-paper walkthroughs, chapter handouts and last-minute prep.
 ---
 
-<p class="eyebrow">Cambridge International · AS &amp; A Level</p>
+<div class="simple-row">
+  <h2>Physics</h2>
+  <div><p><a href="{{ '/resources/physics/' | relative_url }}">Physics 9702 resources</a></p></div>
+</div>
 
-# Resources
+<div class="simple-row">
+  <h2>Computer Science</h2>
+  <div><p><a href="{{ '/resources/computer-science/' | relative_url }}">Computer Science 9618 resources</a></p></div>
+</div>
 
-A compact directory of the notes, handouts, and course guidance currently available. More topic materials can be added as the library grows.
-
-## Mathematics · 9709
-
-<ul class="link-list">
-  <li>
-    <a href="{{ '/mathematics/' | relative_url }}"><strong>Mathematics subject page</strong></a>
-    <p>Study guidance and links for Cambridge International Mathematics.</p>
-  </li>
-  <li>
-    <a href="{{ '/mathematics/exam-overview/' | relative_url }}"><strong>Exam overview</strong></a>
-    <p>How to confirm your current assessment route and plan revision.</p>
-  </li>
-  <li>
-    <a href="{{ '/mathematics/handouts/quadratics/' | relative_url }}"><strong>Quadratic equations handout</strong></a>
-    <p>Three worked examples and five practice problems with step-by-step solutions.</p>
-  </li>
-  <li><a href="{{ '/mathematics/self-assessment/quadratics/' | relative_url }}"><strong>Quadratics self-assessment</strong></a> — twelve fully worked fluency questions.</li>
-  <li><a href="{{ '/mathematics/exam-style-questions/quadratics/' | relative_url }}"><strong>Quadratics exam-style practice</strong></a> — six original questions with illustrative marks.</li>
-</ul>
-
-## Physics · 9702
-
-<ul class="link-list">
-  <li>
-    <a href="{{ '/physics/' | relative_url }}"><strong>Physics subject page</strong></a>
-    <p>Study guidance and course links.</p>
-  </li>
-  <li>
-    <a href="{{ '/physics/syllabus-notes/physical-quantities/' | relative_url }}"><strong>Physical quantities and units notes</strong></a>
-    <p>SI base units, derived units, prefixes, vectors, and unit checks.</p>
-  </li>
-  <li>
-    <a href="{{ '/physics/handouts/physical-quantities/' | relative_url }}"><strong>Physical quantities handout</strong></a>
-    <p>Reference tables and three fully worked unit-conversion examples.</p>
-  </li>
-</ul>
-
-## Computer Science · 9618
-
-<ul class="link-list">
-  <li>
-    <a href="{{ '/computer-science/' | relative_url }}"><strong>Computer Science subject page</strong></a>
-    <p>Study guidance and course links.</p>
-  </li>
-  <li>
-    <a href="{{ '/computer-science/syllabus-notes/information-representation/' | relative_url }}"><strong>Information representation notes</strong></a>
-    <p>Number systems, signed integers, text, images, sound, and compression.</p>
-  </li>
-  <li>
-    <a href="{{ '/computer-science/handouts/info-rep/' | relative_url }}"><strong>Number-base conversion handout</strong></a>
-    <p>Conversion walkthroughs, algorithm trace tables, and two's complement.</p>
-  </li>
-</ul>
+<div class="simple-row">
+  <h2>Mathematics</h2>
+  <div><p><a href="{{ '/resources/mathematics/' | relative_url }}">Mathematics 9709 resources</a></p></div>
+</div>

@@ -1,6 +1,6 @@
 # PROGRESS
 
-Last updated: 2026-10-15 (Phase V verification attempted)
+Last updated: 2026-10-15 (Phase R2 complete)
 
 ## Done
 - Phase 1 design lock, Phase 2 handout language, Phases 3-5 prototype topics
@@ -15,13 +15,16 @@ Last updated: 2026-10-15 (Phase V verification attempted)
   Direct pushes to main are not allowed in this Arena session. After waiting
   90 seconds, all three live-site curl checks failed at the TLS connection;
   Pages delivery and the visible About/colour changes remain unverified.
+- Phase R1: simple home page, logo, Club and AS and A Level pages, five-link
+  navigation, and plain-row styling completed on 2026-10-15.
+- Phase R2: About page in the author's own words, resources hub, three subject
+  pages, and 18 handout pages completed on 2026-10-15.
 
 ## In progress
 - Nothing.
 
 ## Next
-- Phase V verification: build the site, inventory the files, check every link,
-  check maths delimiters, confirm no footer exists.
+- Content phases, one topic per chat.
 
 ## Open issues
 - The site has never been built or rendered in the environment.
@@ -52,10 +55,3 @@ Last updated: 2026-10-15 (Phase V verification attempted)
 - Publication check remains blocked in this sandbox: all three curls to the
   live site failed with OpenSSL SSL_ERROR_SYSCALL (exit 35). The GitHub Pages
   deployment and live appearance must be checked externally after PR #2.
-
-## Rules in force
-- One phase per chat. Read only the files named in the prompt, plus PROGRESS.md
-  and DESIGN.md. No repository scans.
-- Never print file contents or diffs in chat. End with a summary of <=10 lines.
-- Colour comes from tokens only. One topic per chat when writing content.
-- Every step of every solution shown.

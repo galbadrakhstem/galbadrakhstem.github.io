@@ -1,49 +1,57 @@
 ---
 layout: default
-title: Home
+title: Home · Galbadrakh STEM
 permalink: /
-description: Independent Cambridge International AS & A Level learning resources in Mathematics, Physics, and Computer Science.
+description: Galbadrakh STEM — Cambridge AS and A Level resources, a Physics and Astronomy Club, and the Cosmic Calculations series.
 ---
 
-<p class="eyebrow">Independent study · Clear explanations · Worked solutions</p>
-
-# Cambridge International AS &amp; A Level
-
-<p class="lead">A growing library of concise notes, worked examples, and practice for Cambridge International AS &amp; A Level Mathematics, Physics, and Computer Science.</p>
-
-## Choose a subject
-
-<div class="subject-grid">
-  <section class="subject-card is-maths">
-    <p class="course-code">9709</p>
-    <h2><a href="{{ '/mathematics/' | relative_url }}">Mathematics</a></h2>
-    <p>Build confidence with algebra, pure mathematics, and carefully explained methods.</p>
-    <a class="text-link" href="{{ '/mathematics/' | relative_url }}">Explore Mathematics →</a>
-  </section>
-  <section class="subject-card is-physics">
-    <p class="course-code">9702</p>
-    <h2><a href="{{ '/physics/' | relative_url }}">Physics</a></h2>
-    <p>Review physical quantities, units, models, and the reasoning behind the equations.</p>
-    <a class="text-link" href="{{ '/physics/' | relative_url }}">Explore Physics →</a>
-  </section>
-  <section class="subject-card is-cs">
-    <p class="course-code">9618</p>
-    <h2><a href="{{ '/computer-science/' | relative_url }}">Computer Science</a></h2>
-    <p>Work through information representation, number systems, and computational ideas.</p>
-    <a class="text-link" href="{{ '/computer-science/' | relative_url }}">Explore Computer Science →</a>
-  </section>
+<div class="simple-row">
+  <div>
+    <img class="simple-logo" src="{{ '/assets/img/logo.svg' | relative_url }}" alt="Galbadrakh STEM logo" width="96" height="96">
+    <h2>Galbadrakh Ulziibold</h2>
+  </div>
+  <div>
+    <p>Mathematics · Physics · Computer Science · AI</p>
+    <p>I study Cambridge International AS and A Level Mathematics, Physics and Computer Science at Mongol Aspiration International School, Mongolia.</p>
+  </div>
 </div>
 
-## How to use these resources
-
-Start with a subject overview, read the related syllabus notes, then try the handout questions before opening the solutions. Each page is written for independent revision and aims to show the reasoning—not just the final answer.
-
-<div class="notice">
-<strong>Course scope:</strong> These materials are for Cambridge International AS &amp; A Level (CAIE) Mathematics 9709, Physics 9702, and Computer Science 9618 only. They are independent study resources, not official Cambridge International publications. Check the syllabus and component options for your examination year.
+<div class="simple-row">
+  <h2>Introduction</h2>
+  <div>
+    <p>Astronomy is a fascinating subject, but when I began my studies just before high school, I struggled to find books that were easy to understand. I decided to fill that gap by writing a peer-to-peer guide for fellow students, including members of my Physics &amp; Astronomy Club. This book, focused on Orbital Mechanics, is the first volume of the Cosmic Calculations Series. The series also covers other essential topics, such as Telescope &amp; Magnification and Waves &amp; Light. I wrote this book to be the resource I wish I’d had, and I hope it helps other students advance their knowledge of the universe.</p>
+    <p>— Galbadrakh Ulziibold</p>
+  </div>
 </div>
 
-## About the author
+<div class="simple-row">
+  <h2>Subjects</h2>
+  <div>
+    <ul>
+      <li><a href="{{ '/mathematics/' | relative_url }}">Mathematics 9709</a></li>
+      <li><a href="{{ '/physics/' | relative_url }}">Physics 9702</a></li>
+      <li><a href="{{ '/computer-science/' | relative_url }}">Computer Science 9618</a></li>
+    </ul>
+  </div>
+</div>
 
-I'm Galbadrakh, a Grade 11 student in Mongolia studying Cambridge International AS & A Level, mostly mathematics and computer science. I built this site because a mark scheme tells you what counts as correct but never where the answer came from — so every solution here shows every step, in full.
+<div class="simple-row">
+  <h2>Club</h2>
+  <div>
+    <p>The Physics &amp; Astronomy Club at Mongol Aspiration International School. <a href="{{ '/club/' | relative_url }}">Read more</a></p>
+  </div>
+</div>
 
-[Read more about why this site exists →]({{ '/about/' | relative_url }})
+<div class="simple-row">
+  <h2>Resources</h2>
+  <div>
+    <p><a href="{{ '/resources/' | relative_url }}">Resources by subject</a></p>
+  </div>
+</div>
+
+<div class="simple-row">
+  <h2>About</h2>
+  <div>
+    <p><a href="{{ '/about/' | relative_url }}">About the author</a></p>
+  </div>
+</div>
