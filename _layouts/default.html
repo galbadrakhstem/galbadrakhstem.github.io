@@ -34,6 +34,7 @@
     <meta name="twitter:title" content="{{ full_title | escape }}">
     <meta name="twitter:description" content="{{ page.description | default: site.description | escape }}">
     <meta name="twitter:image" content="{{ '/assets/img/logo.svg' | absolute_url }}">
+    <meta name="robots" content="noindex, nofollow">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -84,6 +85,17 @@
       };
     </script>
     <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <style>
+      #pw-gate { position: fixed; inset: 0; z-index: 99999; background: #0b0f19; display: flex; align-items: center; justify-content: center; font-family: system-ui, -apple-system, sans-serif; }
+      #pw-gate[hidden] { display: none; }
+      #pw-gate .box { background: #1a2030; padding: 2rem; border-radius: 12px; width: 90%; max-width: 360px; text-align: center; color: #fff; box-shadow: 0 10px 40px rgba(0,0,0,.5); }
+      #pw-gate h2 { margin: 0 0 .5rem; font-size: 1.25rem; }
+      #pw-gate p { color: #9aa; font-size: .9rem; margin: .5rem 0 1rem; }
+      #pw-gate input { width: 100%; padding: .6rem .8rem; border: 1px solid #334; border-radius: 8px; background: #0b0f19; color: #fff; font-size: 1rem; box-sizing: border-box; }
+      #pw-gate button { margin-top: 1rem; width: 100%; padding: .6rem; border: none; border-radius: 8px; background: #4f8cff; color: #fff; font-size: 1rem; cursor: pointer; }
+      #pw-gate .err { color: #ff6b6b; font-size: .85rem; margin-top: .5rem; min-height: 1.2em; }
+      body.pw-locked { overflow: hidden; }
+    </style>
   </head>
 {% assign subject_slug = page.subject %}
 {% if subject_slug == nil or subject_slug == empty %}
@@ -103,11 +115,21 @@
       {% endcase %}
   {% endcase %}
 {% endif %}
-  <body{% if subject_slug %} data-subject="{{ subject_slug | downcase | replace: ' ', '-' }}"{% endif %}{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
+  <body{% if subject_slug %} data-subject="{{ subject_slug | downcase | replace: ' ', '-' }}"{% endif %} class="pw-locked{% if page.body_class %} {{ page.body_class }}{% endif %}">
+    <div id="pw-gate">
+      <div class="box">
+        <h2>Protected site</h2>
+        <p>This site is private. Enter the password to continue.</p>
+        <input type="password" id="pw-input" autocomplete="current-password" placeholder="Password">
+        <button id="pw-btn" type="button">Unlock</button>
+        <div class="err" id="pw-err"></div>
+      </div>
+    </div>
     <a class="skip-link" href="#main-content">Skip to content</a>
     {% include navbar.html %}
     <main id="main-content" class="container">
       {{ content }}
     </main>
+    <script src="{{ '/assets/js/password-gate.js' | relative_url }}"></script>
   </body>
 </html>
