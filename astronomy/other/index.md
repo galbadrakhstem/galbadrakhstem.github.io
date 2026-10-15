@@ -16,7 +16,6 @@ description: Other astronomy projects — research, outreach, and interests.
   <div>
     <ul>
       <li>Art Festival, Mongol Temuulel School — 1st Place (class, 2024–2025)</li>
-      <li>A-grade standing — 2024–2025 and 2025–2026</li>
     </ul>
   </div>
 </div>
@@ -24,7 +23,7 @@ description: Other astronomy projects — research, outreach, and interests.
 <div class="simple-row">
   <h2>Interests</h2>
   <div>
-    <p>Curious, responsible — studying astronomy, table tennis, Rubik's cube solving. Building resources that show every step, so others don't need a second website to understand.</p>
+    <p>Curious, responsible — studying astronomy. Building resources that show every step, so others don't need a second website to understand.</p>
     <p>Future: more volumes of Cosmic Calculations, expanded Olympiad handouts, and observational projects.</p>
   </div>
 </div>

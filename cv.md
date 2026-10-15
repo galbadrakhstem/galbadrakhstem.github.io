@@ -8,10 +8,10 @@ description: Curriculum vitae of Galbadrakh Ulziibold — Astronomy Olympiad med
 <div class="simple-row">
   <h2>Galbadrakh Ulziibold</h2>
   <div>
-    <p>Mongol Aspiration International School (Mongol Temuulel), Ulaanbaatar, Mongolia — Grade 10V</p>
+    <p>Mongol Aspiration International School (Mongol Temuulel), Ulaanbaatar, Mongolia — 11th grade student, Class 28c (high school class of 2028)</p>
     <p>Cambridge International AS & A Level: Mathematics 9709, Physics 9702, Computer Science 9618, AI</p>
     <p>Contact: <a href="mailto:physicsandastronomy24@gmail.com">physicsandastronomy24@gmail.com</a></p>
-    <p>Curious, responsible — astronomy research, table tennis, cube solving. Founder, MAIS Physics & Astronomy Club (14 Nov 2024).</p>
+    <p>Curious, responsible — astronomy research. Founder, MAIS Physics & Astronomy Club (14 Nov 2024).</p>
   </div>
 </div>
 
@@ -25,6 +25,7 @@ description: Curriculum vitae of Galbadrakh Ulziibold — Astronomy Olympiad med
       <li>Members delivered research presentations (e.g., orbital resonance)</li>
       <li>Invited to teach astronomy component for students preparing for International Earth Science Olympiad (July 2026)</li>
     </ul>
+    <p>Direct evidence: thanked by name on the IESO page of the Mongolian Geography Olympiad Committee (<a href="https://geography.mn/ieso#history">https://geography.mn/ieso#history</a>), among those who worked on the team's preparation for the 19th IESO (Turin, Italy, August 2026): "Монгол тэмүүлэл сургуулийн 11В ангийн сурагч Ө.Галбадрах нартаа талархал дэвшүүлье." ("We express our gratitude to … U. Galbadrakh, a class 11V student at Mongol Temuulel School.")</p>
   </div>
 </div>
 
@@ -35,12 +36,10 @@ description: Curriculum vitae of Galbadrakh Ulziibold — Astronomy Olympiad med
     <ul>
       <li>OWAO 2025 — Open World Astronomy Olympiad: Gold Medal, and Diamond award for high performance. Listed in the <a href="https://owao.siriusolymp.ru/2025en/results">official OWAO 2025 list of the winners and prize-winners</a> (U. Galbadrakh, Mongolia — Gold).</li>
       <li>National Astronomy Olympiad X — Bronze Medal, Senior Level</li>
-      <li>Grade 10 — A-grade standing</li>
     </ul>
     <h4>2024–2025</h4>
     <ul>
       <li>National Astronomy Olympiad IX — Gold Medal</li>
-      <li>Grade 9–10 — A-grade standing</li>
       <li>Art Festival, Mongol Temuulel School — 1st Place (class)</li>
     </ul>
   </div>
@@ -58,9 +57,9 @@ description: Curriculum vitae of Galbadrakh Ulziibold — Astronomy Olympiad med
 </div>
 
 <div class="simple-row">
-  <h2>Skills & Interests</h2>
+  <h2>Interests</h2>
   <div>
-    <p>Orbital mechanics, observational astronomy, data processing, Cambridge 9709/9702/9618 problem solving, teaching, Rubik's cube, table tennis.</p>
+    <p>Astronomy, astrophysics, math, physics, linguistics, data science/handling, computer science, machine learning, artificial intelligence.</p>
     <p>Languages: Mongolian (native), English (academic).</p>
   </div>
 </div>
