@@ -391,3 +391,131 @@ main.container::before, .site-main::before{display:none}
     display:flex; align-items:center; font-size:1rem;
   }
 }
+
+/* ==========================================================================
+   HOME PROFILE LAYOUT — KEVIN ZHOU STYLE
+   Two-column home page with circular portrait, contact links, club logo,
+   and right-hand biography column.
+   ========================================================================== */
+
+#profile{
+  text-align:center;
+  padding:0 10px 30px;
+  position:relative;
+}
+.portrait{
+  width:200px;
+  height:200px;
+  margin:0 auto;
+  border-radius:50%;
+  object-fit:cover;
+  display:block;
+}
+.portrait-title .portrait-name{
+  font-size:1.75rem;
+  font-weight:400;
+  color:var(--heading);
+  margin:20px 0 10px;
+}
+.profile-links{
+  list-style:none;
+  padding:0;
+  margin:14px 0 0;
+  font-size:.86rem;
+  line-height:1.5;
+}
+.profile-links li{
+  margin:0 0 6px;
+}
+.profile-links a{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  overflow-wrap:anywhere;
+}
+.profile-icon{
+  flex:0 0 15px;
+  width:15px;
+  height:15px;
+}
+.profile-education{
+  width:max-content;
+  max-width:100%;
+  margin:28px auto 0;
+  color:var(--text);
+  font-size:.88rem;
+  line-height:1.45;
+  text-align:left;
+}
+.profile-education h2{
+  margin:0 0 10px;
+  color:var(--heading);
+  font-size:.9rem;
+  font-weight:700;
+  line-height:1.5;
+}
+.profile-education ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.profile-education li{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin:0 0 8px;
+}
+.profile-education li:last-child{
+  margin-bottom:0;
+}
+.profile-education .university-icon{
+  display:block;
+  flex:0 0 22px;
+  width:22px;
+  height:22px;
+  margin:0;
+  object-fit:contain;
+  border-radius:var(--radius);
+}
+.profile-club-badge{
+  display:inline-block;
+  margin-top:20px;
+}
+.club-logo-badge{
+  display:block;
+  width:140px;
+  height:auto;
+  margin:0 auto;
+  border-radius:var(--radius);
+}
+.club-page-logo{
+  display:block;
+  width:140px;
+  height:auto;
+  border-radius:var(--radius);
+}
+.about-biography > :first-child{
+  margin-top:0;
+}
+.about-biography h4{
+  font-size:1.15rem;
+  font-weight:700;
+  color:var(--heading);
+  margin:1.5rem 0 .6rem;
+}
+@media (min-width:992px){
+  .about-layout{
+    display:grid;
+    grid-template-columns:260px minmax(0,1fr);
+    column-gap:40px;
+    align-items:start;
+  }
+  .about-profile{
+    width:260px;
+    justify-self:center;
+  }
+  .about-biography{
+    min-width:0;
+    width:100%;
+  }
+}
