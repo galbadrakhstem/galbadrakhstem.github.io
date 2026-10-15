@@ -100,3 +100,14 @@ Kevin Zhou, knzhou.github.io — theme CSS and custom layout layer inspected 202
 - Navigation order: Home · Club · AS and A Level · Resources · About · CV.
 - Home introduction order: subjects first, astronomy and club second, then subject links,
   resources, CV.
+
+## Home profile, Club logo, and Contact (Phase R4)
+
+- Home page uses `.aligned-sections.about-layout` (Kevin Zhou two-column profile layout):
+  left column `.about-profile` with circular portrait (`assets/img/portrait.png`),
+  name, email (`28c_galbadrakh.u@mongolaspiration.edu.mn`), CV link, and Club logo
+  (`assets/img/club-logo.png`); right column `.about-biography` with introduction,
+  astronomy and club section, and subject/resource links.
+- Personal statement removed from `/about/`.
+- Contact email `28c_galbadrakh.u@mongolaspiration.edu.mn` configured in `_config.yml`
+  and displayed on `/`, `/about/`, and `/club/`.

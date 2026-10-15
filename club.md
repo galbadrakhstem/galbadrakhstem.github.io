@@ -6,8 +6,11 @@ description: The Physics and Astronomy Club at Mongol Aspiration International S
 ---
 
 <div class="simple-row">
-  <h2>Club</h2>
   <div>
+    <img class="club-page-logo" src="{{ '/assets/img/club-logo.png' | relative_url }}" alt="MAIS Physics and Astronomy Club logo" width="140" height="167">
+  </div>
+  <div>
+    <h2>MAIS Physics &amp; Astronomy Club</h2>
     <p>The Physics &amp; Astronomy Club at Mongol Aspiration International School.</p>
   </div>
 </div>
@@ -45,6 +48,6 @@ description: The Physics and Astronomy Club at Mongol Aspiration International S
 <div class="simple-row">
   <h2>Contact</h2>
   <div>
-    <p>{% if site.author and site.author.email %}<a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>{% elsif site.repository %}<a href="https://github.com/{{ site.repository }}/issues">Ask a question or suggest a change on GitHub</a>{% endif %}</p>
+    <p><a href="mailto:28c_galbadrakh.u@mongolaspiration.edu.mn">28c_galbadrakh.u@mongolaspiration.edu.mn</a></p>
   </div>
 </div>

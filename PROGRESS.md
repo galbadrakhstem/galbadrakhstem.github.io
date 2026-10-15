@@ -1,6 +1,6 @@
 # PROGRESS
 
-Last updated: 2026-10-15 (Phase R3 complete)
+Last updated: 2026-10-15 (Phase R4 complete)
 
 ## Done
 - Phase 1 design lock, Phase 2 handout language, Phases 3-5 prototype topics
@@ -22,6 +22,10 @@ Last updated: 2026-10-15 (Phase R3 complete)
 - Phase R3: phone navigation (brand row, scrollable links, 44px targets),
   six-link navigation with CV last, subject-first home introduction, and CV
   page at /cv/ completed on 2026-10-15.
+- Phase R4: Home page updated to Kevin Zhou two-column profile layout with
+  author portrait (`assets/img/portrait.png`), club logo (`assets/img/club-logo.png`),
+  and contact email (`28c_galbadrakh.u@mongolaspiration.edu.mn`); personal statement
+  removed from `/about/`; club logo and contact email added to `/club/`.
 
 ## In progress
 - Nothing.

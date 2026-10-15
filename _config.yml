@@ -3,6 +3,9 @@ description: Clear, independent study resources for Cambridge International AS &
 url: "https://galbadrakhstem.github.io"
 baseurl: ""
 lang: en
+author:
+  name: Galbadrakh Ulziibold
+  email: 28c_galbadrakh.u@mongolaspiration.edu.mn
 markdown: kramdown
 permalink: pretty
 
