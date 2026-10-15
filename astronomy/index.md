@@ -28,7 +28,7 @@ description: Astronomy resources by Galbadrakh Ulziibold — Olympiad preparatio
   </li>
   <li>
     <a href="{{ '/astronomy/other/' | relative_url }}"><strong>Other</strong></a>
-    <p>Outreach, school projects, interests and future volumes — art festival, table tennis, cube solving.</p>
+    <p>Outreach, school projects, interests and future volumes — art festival.</p>
   </li>
 </ul>
 
@@ -39,5 +39,5 @@ description: Astronomy resources by Galbadrakh Ulziibold — Olympiad preparatio
 - Contact: <a href="mailto:physicsandastronomy24@gmail.com">physicsandastronomy24@gmail.com</a>
 
 <div class="notice">
-<strong>About me:</strong> OWAO 2025 (Open World Astronomy Olympiad) Gold Medal and Diamond award — see the <a href="https://owao.siriusolymp.ru/2025en/results">official OWAO 2025 list of the winners and prize-winners</a> — and National Astronomy Olympiad IX Gold &amp; X Bronze (Senior). Mongol Aspiration International School, Grade 10V, A-grade.
+<strong>About me:</strong> OWAO 2025 (Open World Astronomy Olympiad) Gold Medal and Diamond award — see the <a href="https://owao.siriusolymp.ru/2025en/results">official OWAO 2025 list of the winners and prize-winners</a> — and National Astronomy Olympiad IX Gold &amp; X Bronze (Senior). Mongol Aspiration International School, 11th grade student, Class 28c.
 </div>

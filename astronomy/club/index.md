@@ -23,6 +23,7 @@ description: MAIS Physics & Astronomy Club — teaching, results, and activities
   <div>
     <p>Orbital mechanics is the core topic. Taught throughout 9th and 10th grade, returning to same material with new students, new questions and new gaps to bridge. A-level physics content is explained with intuitive methods for high-school students.</p>
     <p>In July 2026 the founder was invited to teach the astronomy component to students preparing for the International Earth Science Olympiad.</p>
+    <p>Direct evidence: thanked by name on the IESO page of the Mongolian Geography Olympiad Committee (<a href="https://geography.mn/ieso#history">https://geography.mn/ieso#history</a>), among those who worked on the team's preparation for the 19th IESO (Turin, Italy, August 2026): "Монгол тэмүүлэл сургуулийн 11В ангийн сурагч Ө.Галбадрах нартаа талархал дэвшүүлье." ("We express our gratitude to … U. Galbadrakh, a class 11V student at Mongol Temuulel School.")</p>
   </div>
 </div>
 
