@@ -358,3 +358,45 @@ Kevin Zhou, knzhou.github.io — theme CSS and custom layout layer inspected 202
   an issue or have a suggestion." `.page-footnote` lines up with the row content column
   (no offset at 700px and below), muted, .95rem.
 - `sitemap.xml`: 174 URLs (three FAQ pages at 0.6, four Computer Science paper pages at 0.5).
+
+## /as-and-a-level/ cleanup and icon grid for Non-Technical and Other (Phase R11 — 2026-10-16)
+
+- The four trailing `<p>` link paragraphs (Mathematics / Physics / Computer Science
+  Olympiad·Book·Club·Other, `Open Non-technical classes`, `Open Mongolian 11th grade
+  curriculum / Үндэсний хөтөлбөр · Open Other`, the entire Handout row including the
+  Astronomy line) are removed. The page is now exactly: Technical classes · Non-Technical
+  classes · Other · the `.page-footnote`. The footnote remains the last element so its
+  spacing rules (Phase R10) still apply.
+- Computer Science icon swapped from the SVG text `0101` glyph to an inline SVG monitor
+  with `</>` brackets on its screen, drawn at the same 26×26 footprint and the same
+  `stroke-width:1.6`, `stroke-linecap:round`, `stroke-linejoin:round` style as the
+  Physics atom — so it reads as a screen with code, which is the universally recognised
+  visual for AS and A Level Computer Science rather than a binary string.
+- Non-Technical classes and the Other / Mongolian 11th grade curriculum rows use the
+  same `ul.component-grid.is-icon-grid` icon-card design as the Technical row: each
+  card is a `a.component-card.has-icon.is-nontechnical` or `.is-curriculum` block with
+  a `.component-icon` tile (46px, inline SVG in the page's neutral accent), a
+  `.component-name`, a `.component-meta` description and a `.component-browse` "Open …
+  →" line. The Trailing `<p>` link at the bottom of each row is gone (cards link
+  directly to the sub-page).
+- Two new component-token modifiers are added next to the existing `.is-maths|is-physics|is-cs`:
+  `.component-card.is-nontechnical` (teal `#0f766e` on `#e6f4f1` wash with
+  `#a7d4cb` rule) and `.component-card.is-curriculum` (amber `#b45309` on `#fef3c7`
+  wash with `#fcd34d` rule). Both colours are reused from the existing Computer
+  Science / Astronomy palette — no new hex values are introduced, in line with the
+  COLOUR LAYER rule that says icon cards may only reuse existing accents.
+- A sibling grid `.component-grid.is-icon-grid-wide` is added so the 2-card Non-Technical
+  row and the 4-card Other row reflow into 2 columns from 700px and 4 columns from 1100px,
+  instead of the Technical row's 3-from-1200px `.is-icon-grid` rule. One column below
+  700px, matching the existing breakpoint. Each icon-card style (left bar, wash, tint,
+  title/browse colour) is inherited unchanged from the R9 rule.
+- Icon SVGs for the new cards are inline and follow the same monochrome, `currentColor`
+  convention as Physics so they pick up the card's accent automatically:
+  - General Language English: an open book with a horizontal baseline.
+  - Global Perspectives and Research: a globe (circle + equator + two meridians).
+  - Монгол хэл: three horizontal text lines with a quill/cursor.
+  - Үндэсний бичиг: a book/document with vertical-script lines.
+  - Уран зохиол: two book spines with text lines.
+  - Нийгэм судлал: a group of three figures.
+- `_includes/navbar.html`, `_layouts/default.html`, subject landing pages and the
+  handout pages are unchanged.

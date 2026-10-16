@@ -378,6 +378,11 @@ blockquote{border-left:3px solid var(--accent)}
 .component-card.is-maths  {--accent:#1d4ed8; --accent-tint:#eef2ff; --accent-line:#c7d2fe}
 .component-card.is-physics{--accent:#6d28d9; --accent-tint:#f4f0ff; --accent-line:#ddd0fb}
 .component-card.is-cs     {--accent:#0e7c5a; --accent-tint:#eaf7f2; --accent-line:#b9e3d3}
+/* Non-technical classes and the national curriculum share the icon-card look
+   of the Technical row, but use distinct hues drawn from the existing palette
+   (teal = CS, amber = Astronomy) so no new colours are introduced. */
+.component-card.is-nontechnical{--accent:#0f766e; --accent-tint:#e6f4f1; --accent-line:#a7d4cb}
+.component-card.is-curriculum  {--accent:#b45309; --accent-tint:#fef3c7; --accent-line:#fcd34d}
 /* icon-card wash: half the subject tint on paper. Derived from existing tokens
    (no new hue); browsers without color-mix() show plain paper. */
 .component-card.has-icon{--accent-wash:color-mix(in srgb, var(--accent-tint) 50%, var(--paper))}
@@ -621,8 +626,20 @@ main.container:not(:has(> .about-layout)){padding-top:30px}
 @media (min-width:1200px){
   .component-grid.is-icon-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
+/* Sibling variant for the Non-Technical (2 cards) and Other / national
+   curriculum (4 cards) rows on /as-and-a-level/, so the same icon-card design
+   reflows naturally into 2 or 4 columns at the row's width instead of being
+   forced to 3. Two columns from 700px and up, four from about 1100px. */
+.component-grid.is-icon-grid-wide{grid-template-columns:minmax(0,1fr)}
+@media (min-width:700px){
+  .component-grid.is-icon-grid-wide{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (min-width:1100px){
+  .component-grid.is-icon-grid-wide{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
 /* equal-height cards, so the "Browse" lines line up along the bottom */
-.component-grid.is-icon-grid > li{display:flex}
+.component-grid.is-icon-grid > li,
+.component-grid.is-icon-grid-wide > li{display:flex}
 
 .component-card.has-icon{
   display:flex; flex-direction:column; align-items:flex-start; flex:1 1 auto;
