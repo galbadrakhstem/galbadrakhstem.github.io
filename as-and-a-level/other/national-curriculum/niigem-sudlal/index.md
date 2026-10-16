@@ -2,78 +2,129 @@
 layout: default
 title: "Нийгэм судлал · Mongolian 11th grade curriculum"
 permalink: /as-and-a-level/other/national-curriculum/niigem-sudlal/
-description: "Нийгэм судлал (Social studies) — grade 11, Mongolian national curriculum (Үндэсний хөтөлбөр)."
+description: "Нийгэм судлал (Social studies) — grade 11, Mongolian national curriculum (Үндэсний хөтөлбөр): logistics, chapter handouts, past-exam walkthroughs."
 ---
 
 <p class="eyebrow">Other · <span lang="mn">Үндэсний хөтөлбөр</span></p>
 
-# <span lang="mn">Нийгэм судлал</span>
+<h1 class="sr-only">Нийгэм судлал</h1>
 
-<p class="lead">Social studies — a grade 11 subject of the Mongolian national curriculum.</p>
+<div class="simple-row is-handouts">
+  <h2 id="niigem-sudlal">Нийгэм судлал</h2>
+  <div>
+    <p>Social studies — a grade 11 subject of the Mongolian national curriculum (<span lang="mn">бүрэн дунд боловсрол</span>). The textbook is organised into six chapters, from society and culture to law, economics, politics and international relations.</p>
 
-## Textbook contents / <span lang="mn">Гарчиг</span>
+    <h3 id="logistics">Logistics</h3>
+    <ul>
+      <li><a href="https://moe.gov.mn/curriculum-buren-dund">Ministry of Education — upper-secondary curriculum (<span lang="mn">Бүрэн дунд боловсрол</span>)</a> — the subject learning guidelines (<span lang="mn">суралцахуйн удирдамж</span>) are listed by subject and grade; this subject appears as <span lang="mn">НИЙГЭМ СУДЛАЛ 11</span>.</li>
+      <li><a href="http://ebook.eec.mn/pdf/113.pdf">Assessment criteria — Нийгэм судлал (PDF, in Mongolian)</a> — <span lang="mn">СУУРЬ, БҮРЭН ДУНД БОЛОВСРОЛЫН ХИЧЭЭЛ, СУРГАЛТЫН ҮР ДҮНГ ҮНЭЛЭХ ШАЛГУУР</span> for social studies, from the Education Evaluation Center.</li>
+    </ul>
 
-<p>The contents of the grade 11 <span lang="mn">Нийгэм судлал</span> textbook, with the page each chapter and topic starts on.</p>
+    <h3 id="chapter-handouts">Chapter Handouts</h3>
+    <p>Textbook contents / <span lang="mn">Гарчиг</span> — click a chapter to open its handout. Each chapter page lists its subtopics with the textbook page where it starts.</p>
+    <ul class="component-grid">
+      <li>
+        <a class="component-card" href="{{ '/as-and-a-level/other/national-curriculum/niigem-sudlal/chapter-1/' | relative_url }}">
+          <span class="component-name"><span lang="mn">Бүлэг 1 · НИЙГЭМ, НИЙГМИЙН ХАРИЛЦАА</span></span>
+          <span class="component-meta">p.5 · 2 topics + conclusion</span>
+          <span class="component-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+      <li>
+        <a class="component-card" href="{{ '/as-and-a-level/other/national-curriculum/niigem-sudlal/chapter-2/' | relative_url }}">
+          <span class="component-name"><span lang="mn">Бүлэг 2 · СОЁЛ</span></span>
+          <span class="component-meta">p.40 · 4 topics + conclusion</span>
+          <span class="component-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+      <li>
+        <a class="component-card" href="{{ '/as-and-a-level/other/national-curriculum/niigem-sudlal/chapter-3/' | relative_url }}">
+          <span class="component-name"><span lang="mn">Бүлэг 3 · ЭРХ ЗҮЙ</span></span>
+          <span class="component-meta">p.71 · 5 topics + conclusion</span>
+          <span class="component-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+      <li>
+        <a class="component-card" href="{{ '/as-and-a-level/other/national-curriculum/niigem-sudlal/chapter-4/' | relative_url }}">
+          <span class="component-name"><span lang="mn">Бүлэг 4 · ЭДИЙН ЗАСАГ</span></span>
+          <span class="component-meta">p.106 · 5 topics + conclusion</span>
+          <span class="component-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+      <li>
+        <a class="component-card" href="{{ '/as-and-a-level/other/national-curriculum/niigem-sudlal/chapter-5/' | relative_url }}">
+          <span class="component-name"><span lang="mn">Бүлэг 5 · УЛС ТӨР</span></span>
+          <span class="component-meta">p.139 · 4 topics + conclusion</span>
+          <span class="component-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+      <li>
+        <a class="component-card" href="{{ '/as-and-a-level/other/national-curriculum/niigem-sudlal/chapter-6/' | relative_url }}">
+          <span class="component-name"><span lang="mn">Бүлэг 6 · ОЛОН УЛСЫН ХАРИЛЦАА</span></span>
+          <span class="component-meta">p.167 · 4 topics + conclusion</span>
+          <span class="component-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+    </ul>
 
-<div class="table-wrap">
-<table>
-  <thead><tr><th><span lang="mn">Бүлэг</span></th><th><span lang="mn">Сэдэв</span></th><th>Page</th></tr></thead>
-  <tbody>
-      <tr><td><span lang="mn">I БҮЛЭГ</span></td><td><span lang="mn">НИЙГЭМ, НИЙГМИЙН ХАРИЛЦАА</span></td><td>5</td></tr>
-      <tr><td><span lang="mn">Сэдэв 1.1</span></td><td><span lang="mn">Нийгмийн давхраажилт</span></td><td>6</td></tr>
-      <tr><td><span lang="mn">Сэдэв 1.2</span></td><td><span lang="mn">Нийгмийн өөрчлөлт</span></td><td>29</td></tr>
-      <tr><td></td><td><span lang="mn">Бүлгийн дүгнэлт</span></td><td>37</td></tr>
-      <tr><td><span lang="mn">II БҮЛЭГ</span></td><td><span lang="mn">СОЁЛ</span></td><td>40</td></tr>
-      <tr><td><span lang="mn">Сэдэв 2.1</span></td><td><span lang="mn">Соёлын үйлдвэрлэл</span></td><td>41</td></tr>
-      <tr><td><span lang="mn">Сэдэв 2.2</span></td><td><span lang="mn">Соёлын даяаршил</span></td><td>47</td></tr>
-      <tr><td><span lang="mn">Сэдэв 2.3</span></td><td><span lang="mn">Соёлын адилсал гэж юу вэ?</span></td><td>56</td></tr>
-      <tr><td><span lang="mn">Сэдэв 2.4</span></td><td><span lang="mn">Соёлын эрх чөлөө</span></td><td>60</td></tr>
-      <tr><td></td><td><span lang="mn">Бүлгийн дүгнэлт</span></td><td>67</td></tr>
-      <tr><td><span lang="mn">III БҮЛЭГ</span></td><td><span lang="mn">ЭРХ ЗҮЙ</span></td><td>71</td></tr>
-      <tr><td><span lang="mn">Сэдэв 3.1</span></td><td><span lang="mn">Хүний эрх ба Үндсэн хууль</span></td><td>71</td></tr>
-      <tr><td><span lang="mn">Сэдэв 3.2</span></td><td><span lang="mn">Өмчлөх эрхийг хуулиар хамгаалах нь</span></td><td>76</td></tr>
-      <tr><td><span lang="mn">Сэдэв 3.3</span></td><td><span lang="mn">Гэмт хэрэг, зөрчлөөс урьдчилан сэргийлэх нь</span></td><td>81</td></tr>
-      <tr><td><span lang="mn">Сэдэв 3.4</span></td><td><span lang="mn">Захиргаа, иргэдийн хоорондын маргааныг хянан шийдвэрлэх нь</span></td><td>86</td></tr>
-      <tr><td><span lang="mn">Сэдэв 3.5</span></td><td><span lang="mn">Хүний эрхийг хамгаалах үндэсний болон олон улсын механизм</span></td><td>92</td></tr>
-      <tr><td></td><td><span lang="mn">Бүлгийн дүгнэлт</span></td><td>103</td></tr>
-      <tr><td><span lang="mn">IV БҮЛЭГ</span></td><td><span lang="mn">ЭДИЙН ЗАСАГ</span></td><td>106</td></tr>
-      <tr><td><span lang="mn">Сэдэв 4.1</span></td><td><span lang="mn">Төр эдийн засгийг ямар бодлогоор зохицуулдаг вэ?</span></td><td>107</td></tr>
-      <tr><td><span lang="mn">Сэдэв 4.2</span></td><td><span lang="mn">Төрийн мөнгө, зээлийн бодлогын зорилго юу вэ?</span></td><td>110</td></tr>
-      <tr><td><span lang="mn">Сэдэв 4.3</span></td><td><span lang="mn">Гадаад худалдаа, гадаад худалдааны бодлого</span></td><td>115</td></tr>
-      <tr><td><span lang="mn">Сэдэв 4.4</span></td><td><span lang="mn">Гадаадын хөрөнгө оруулалт</span></td><td>121</td></tr>
-      <tr><td><span lang="mn">Сэдэв 4.5</span></td><td><span lang="mn">Эдийн засгийн хөгжил</span></td><td>129</td></tr>
-      <tr><td></td><td><span lang="mn">Бүлгийн дүгнэлт</span></td><td>134</td></tr>
-      <tr><td><span lang="mn">V БҮЛЭГ</span></td><td><span lang="mn">УЛС ТӨР</span></td><td>139</td></tr>
-      <tr><td><span lang="mn">Сэдэв 5.1</span></td><td><span lang="mn">Иргэний нийгэм, түүний мөн чанар, үндсэн шинж</span></td><td>140</td></tr>
-      <tr><td><span lang="mn">Сэдэв 5.2</span></td><td><span lang="mn">Сонгууль, сонгуулийн тогтолцоо</span></td><td>143</td></tr>
-      <tr><td><span lang="mn">Сэдэв 5.3</span></td><td><span lang="mn">Орчин үеийн нийгэм, улс төрийн үйл явцад хэвлэл мэдээллийн хэрэгслийн үзүүлэх нөлөө</span></td><td>150</td></tr>
-      <tr><td><span lang="mn">Сэдэв 5.4</span></td><td><span lang="mn">Улс төрийн институт</span></td><td>153</td></tr>
-      <tr><td></td><td><span lang="mn">Бүлгийн дүгнэлт</span></td><td>165</td></tr>
-      <tr><td><span lang="mn">VI БҮЛЭГ</span></td><td><span lang="mn">ОЛОН УЛСЫН ХАРИЛЦАА</span></td><td>167</td></tr>
-      <tr><td><span lang="mn">Сэдэв 6.1</span></td><td><span lang="mn">Олон улсын харилцааны улс бус оролцогч</span></td><td>168</td></tr>
-      <tr><td><span lang="mn">Сэдэв 6.2</span></td><td><span lang="mn">Монгол улс ба ОУХ-ны улс бус оролцогчдын хамтын ажиллагаа</span></td><td>176</td></tr>
-      <tr><td><span lang="mn">Сэдэв 6.3</span></td><td><span lang="mn">Монгол улсын “гуравдагч хөрш”-ийн бодлого</span></td><td>179</td></tr>
-      <tr><td><span lang="mn">Сэдэв 6.4</span></td><td><span lang="mn">Зөөлөн хүчний бодлого</span></td><td>186</td></tr>
-      <tr><td></td><td><span lang="mn">Бүлгийн дүгнэлт</span></td><td>191</td></tr>
-  </tbody>
-</table>
+    <h3 id="past-exam-walkthroughs">Past-exam walkthroughs</h3>
+    <ul class="handout-list is-grid">
+      <li class="handout-item">
+        <span class="handout-code">Б1</span>
+        <span class="handout-title" lang="mn">НИЙГЭМ, НИЙГМИЙН ХАРИЛЦАА</span>
+        <span class="handout-actions">
+          <a class="handout-link is-primary" href="{{ '/as-and-a-level/other/national-curriculum/niigem-sudlal/chapter-1/#past-exam-walkthroughs' | relative_url }}" aria-label="Б1 НИЙГЭМ, НИЙГМИЙН ХАРИЛЦАА — past-exam walkthroughs">Walkthroughs</a>
+        </span>
+      </li>
+      <li class="handout-item">
+        <span class="handout-code">Б2</span>
+        <span class="handout-title" lang="mn">СОЁЛ</span>
+        <span class="handout-actions">
+          <a class="handout-link is-primary" href="{{ '/as-and-a-level/other/national-curriculum/niigem-sudlal/chapter-2/#past-exam-walkthroughs' | relative_url }}" aria-label="Б2 СОЁЛ — past-exam walkthroughs">Walkthroughs</a>
+        </span>
+      </li>
+      <li class="handout-item">
+        <span class="handout-code">Б3</span>
+        <span class="handout-title" lang="mn">ЭРХ ЗҮЙ</span>
+        <span class="handout-actions">
+          <a class="handout-link is-primary" href="{{ '/as-and-a-level/other/national-curriculum/niigem-sudlal/chapter-3/#past-exam-walkthroughs' | relative_url }}" aria-label="Б3 ЭРХ ЗҮЙ — past-exam walkthroughs">Walkthroughs</a>
+        </span>
+      </li>
+      <li class="handout-item">
+        <span class="handout-code">Б4</span>
+        <span class="handout-title" lang="mn">ЭДИЙН ЗАСАГ</span>
+        <span class="handout-actions">
+          <a class="handout-link is-primary" href="{{ '/as-and-a-level/other/national-curriculum/niigem-sudlal/chapter-4/#past-exam-walkthroughs' | relative_url }}" aria-label="Б4 ЭДИЙН ЗАСАГ — past-exam walkthroughs">Walkthroughs</a>
+        </span>
+      </li>
+      <li class="handout-item">
+        <span class="handout-code">Б5</span>
+        <span class="handout-title" lang="mn">УЛС ТӨР</span>
+        <span class="handout-actions">
+          <a class="handout-link is-primary" href="{{ '/as-and-a-level/other/national-curriculum/niigem-sudlal/chapter-5/#past-exam-walkthroughs' | relative_url }}" aria-label="Б5 УЛС ТӨР — past-exam walkthroughs">Walkthroughs</a>
+        </span>
+      </li>
+      <li class="handout-item">
+        <span class="handout-code">Б6</span>
+        <span class="handout-title" lang="mn">ОЛОН УЛСЫН ХАРИЛЦАА</span>
+        <span class="handout-actions">
+          <a class="handout-link is-primary" href="{{ '/as-and-a-level/other/national-curriculum/niigem-sudlal/chapter-6/#past-exam-walkthroughs' | relative_url }}" aria-label="Б6 ОЛОН УЛСЫН ХАРИЛЦАА — past-exam walkthroughs">Walkthroughs</a>
+        </span>
+      </li>
+    </ul>
+
+    <h3 id="how-to-prepare">How to prepare</h3>
+    <p>Read the chapter summary first, then the key terms and the conclusion. For each <span lang="mn">сэдэв</span>, write a one-paragraph summary in your own words and link it to a real-world example from Mongolia. Practise explaining the definitions and the differences between similar concepts without looking at the textbook.</p>
+    <ul>
+      <li>Use the assessment criteria (PDF above) as a checklist: it lists the learning outcomes that past exams are built from.</li>
+      <li>Make flashcards for legal and economic terms and for international-relations concepts; review them with spaced repetition.</li>
+      <li>For past-exam practice, write full answers with structure — definition, explanation, example — and compare with the criteria.</li>
+    </ul>
+
+    <div class="notice">
+      <strong>Edition:</strong> the national curriculum is revised from time to time. Check with your school which edition applies to your grade 11 year. Textbook page numbers are from the 11th grade <span lang="mn">Нийгэм судлал</span> textbook.
+    </div>
+
+    <p><a href="{{ '/as-and-a-level/other/national-curriculum/' | relative_url }}">Mongolian 11th grade curriculum</a> · <a href="{{ '/as-and-a-level/other/' | relative_url }}">Other</a> · <a href="{{ '/as-and-a-level/' | relative_url }}">AS and A Level</a></p>
+  </div>
 </div>
-
-## Handouts
-
-To be added!
-
-## Past-exam walkthroughs
-
-To be added!
-
-## Official curriculum
-
-<ul class="link-list">
-  <li>
-    <a href="https://moe.gov.mn/curriculum-buren-dund">Ministry of Education — upper-secondary curriculum</a>
-    <p>The subject learning guidelines (<span lang="mn">суралцахуйн удирдамж</span>) are listed by subject and grade; this subject appears as <span lang="mn">НИЙГЭМ СУДЛАЛ</span>.</p>
-  </li>
-</ul>
-
-<p><a href="{{ '/as-and-a-level/other/national-curriculum/' | relative_url }}">Mongolian 11th grade curriculum</a> · <a href="{{ '/as-and-a-level/other/' | relative_url }}">Other</a> · <a href="{{ '/as-and-a-level/' | relative_url }}">AS and A Level</a></p>
