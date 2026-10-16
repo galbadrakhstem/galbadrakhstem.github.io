@@ -171,6 +171,71 @@ description: "Cambridge International 9709 Probability & Statistics 1 (Paper 5) 
         </span>
       </li>
     </ul>
+    <h3 id="textbook-contents">Textbook table of contents</h3>
+    <p>The contents of the Cambridge International AS &amp; A Level Mathematics Probability &amp; Statistics 1 coursebook, with the page each section starts on. The chapter handouts above follow the same chapters.</p>
+    <div class="table-wrap">
+<table>
+  <thead><tr><th>Section</th><th>Title</th><th>Page</th></tr></thead>
+  <tbody>
+      <tr><td></td><td>Series introduction</td><td>vi</td></tr>
+      <tr><td></td><td>How to use this book</td><td>viii</td></tr>
+      <tr><td></td><td>Acknowledgements</td><td>x</td></tr>
+      <tr><td>1</td><td>Representation of data</td><td>1</td></tr>
+      <tr><td>1.1</td><td>Types of data</td><td>2</td></tr>
+      <tr><td>1.2</td><td>Representation of discrete data: stem-and-leaf diagrams</td><td>3</td></tr>
+      <tr><td>1.3</td><td>Representation of continuous data: histograms</td><td>6</td></tr>
+      <tr><td>1.4</td><td>Representation of continuous data: cumulative frequency graphs</td><td>13</td></tr>
+      <tr><td>1.5</td><td>Comparing different data representations</td><td>20</td></tr>
+      <tr><td></td><td>End-of-chapter review exercise 1</td><td>24</td></tr>
+      <tr><td>2</td><td>Measures of central tendency</td><td>26</td></tr>
+      <tr><td>2.1</td><td>The mode and the modal class</td><td>28</td></tr>
+      <tr><td>2.2</td><td>The mean</td><td>30</td></tr>
+      <tr><td>2.3</td><td>The median</td><td>42</td></tr>
+      <tr><td></td><td>End-of-chapter review exercise 2</td><td>51</td></tr>
+      <tr><td>3</td><td>Measures of variation</td><td>54</td></tr>
+      <tr><td>3.1</td><td>The range</td><td>55</td></tr>
+      <tr><td>3.2</td><td>The interquartile range and percentiles</td><td>56</td></tr>
+      <tr><td>3.3</td><td>Variance and standard deviation</td><td>65</td></tr>
+      <tr><td></td><td>End-of-chapter review exercise 3</td><td>83</td></tr>
+      <tr><td></td><td>Cross-topic review exercise 1</td><td>86</td></tr>
+      <tr><td>4</td><td>Probability</td><td>90</td></tr>
+      <tr><td>4.1</td><td>Experiments, events and outcomes</td><td>91</td></tr>
+      <tr><td>4.2</td><td>Mutually exclusive events and the addition law</td><td>94</td></tr>
+      <tr><td>4.3</td><td>Independent events and the multiplication law</td><td>100</td></tr>
+      <tr><td>4.4</td><td>Conditional probability</td><td>108</td></tr>
+      <tr><td>4.5</td><td>Dependent events and conditional probability</td><td>112</td></tr>
+      <tr><td></td><td>End-of-chapter review exercise 4</td><td>118</td></tr>
+      <tr><td>5</td><td>Permutations and combinations</td><td>122</td></tr>
+      <tr><td>5.1</td><td>The factorial function</td><td>124</td></tr>
+      <tr><td>5.2</td><td>Permutations</td><td>125</td></tr>
+      <tr><td>5.3</td><td>Combinations</td><td>135</td></tr>
+      <tr><td>5.4</td><td>Problem solving with permutations and combinations</td><td>138</td></tr>
+      <tr><td></td><td>End-of-chapter review exercise 5</td><td>143</td></tr>
+      <tr><td></td><td>Cross-topic review exercise 2</td><td>146</td></tr>
+      <tr><td>6</td><td>Probability distributions</td><td>149</td></tr>
+      <tr><td>6.1</td><td>Discrete random variables</td><td>150</td></tr>
+      <tr><td>6.2</td><td>Probability distributions</td><td>150</td></tr>
+      <tr><td>6.3</td><td>Expectation and variance of a discrete random variable</td><td>156</td></tr>
+      <tr><td></td><td>End-of-chapter review exercise 6</td><td>162</td></tr>
+      <tr><td>7</td><td>The binomial and geometric distributions</td><td>165</td></tr>
+      <tr><td>7.1</td><td>The binomial distribution</td><td>166</td></tr>
+      <tr><td>7.2</td><td>The geometric distribution</td><td>175</td></tr>
+      <tr><td></td><td>End-of-chapter review exercise 7</td><td>185</td></tr>
+      <tr><td>8</td><td>The normal distribution</td><td>187</td></tr>
+      <tr><td>8.1</td><td>Continuous random variables</td><td>188</td></tr>
+      <tr><td>8.2</td><td>The normal distribution</td><td>193</td></tr>
+      <tr><td>8.3</td><td>Modelling with the normal distribution</td><td>205</td></tr>
+      <tr><td>8.4</td><td>The normal approximation to the binomial distribution</td><td>208</td></tr>
+      <tr><td></td><td>End-of-chapter review exercise 8</td><td>215</td></tr>
+      <tr><td></td><td>Cross-topic review exercise 3</td><td>217</td></tr>
+      <tr><td></td><td>Practice exam-style paper</td><td>220</td></tr>
+      <tr><td></td><td>The standard normal distribution function</td><td>222</td></tr>
+      <tr><td></td><td>Answers</td><td>223</td></tr>
+      <tr><td></td><td>Glossary</td><td>245</td></tr>
+      <tr><td></td><td>Index</td><td>247</td></tr>
+  </tbody>
+</table>
+</div>
     <h3 id="how-to-use">How to use a chapter handout</h3>
     <ol>
       <li>Read the outcomes list and mark any you cannot yet do without notes.</li>
