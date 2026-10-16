@@ -1,4 +1,3 @@
+# This site is private — keep it out of search engines.
 User-agent: *
-Allow: /
-
-Sitemap: https://galbadrakhstem.github.io/sitemap.xml
+Disallow: /
