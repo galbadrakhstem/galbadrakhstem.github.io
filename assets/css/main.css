@@ -714,3 +714,47 @@ main.container:not(:has(> .about-layout)){padding-top:30px}
 .page-footnote{margin:0 0 0 calc(var(--label-col) + var(--label-gap)); padding:22px 0 0;
                color:var(--muted-2); font-size:.95rem}
 @media (max-width:700px){.page-footnote{margin-left:0}}
+
+/* ==========================================================================
+   LOGIN / AUTH UI (uses Phase C semantic tokens only — no new colours)
+   ========================================================================== */
+
+/* --- login page ------------------------------------------------------- */
+.login-wrap{max-width:440px;margin:2.5rem auto 0}
+.login-card{background:#ffffff;border:1px solid var(--rule-2);border-radius:8px;
+  padding:2rem 2rem 1.5rem;box-shadow:0 6px 24px rgba(33,37,41,.06)}
+.login-title{margin:0 0 .5rem;font-size:1.75rem}
+.login-lead{color:var(--muted);margin:0 0 1.5rem;font-size:.95rem}
+.login-field{margin-bottom:1.15rem}
+.login-field label{display:block;font-family:var(--font-heading);font-size:.9rem;
+  font-weight:600;color:var(--heading);margin-bottom:.35rem}
+.login-field input{width:100%;padding:.65rem .8rem;font-size:1rem;font-family:var(--font-body);
+  color:var(--text);background:#ffffff;border:1px solid var(--rule-2);border-radius:var(--radius)}
+.login-field input:focus{outline:2px solid var(--link);outline-offset:1px;border-color:var(--link)}
+.login-hint{margin:.45rem 0 0;font-size:.8rem;color:var(--muted);line-height:1.45}
+.login-hint code{font-size:.78rem}
+.login-username{margin:.45rem 0 0;font-size:.85rem;color:var(--muted)}
+.login-username.has-user{color:var(--link)}
+.login-check{display:flex;align-items:center;gap:.5rem;margin:.25rem 0 1.15rem;
+  font-size:.9rem;color:var(--text);cursor:pointer}
+.login-check input{width:16px;height:16px;accent-color:var(--link)}
+.login-btn{width:100%;padding:.75rem 1rem;font-family:var(--font-heading);font-size:1.05rem;
+  font-weight:600;color:#ffffff;background:var(--link);border:none;border-radius:var(--radius);cursor:pointer;
+  transition:background .2s ease}
+.login-btn:hover{background:var(--link-hover)}
+.login-btn:disabled{background:var(--muted);cursor:wait}
+.login-error{margin:.9rem 0 0;padding:.65rem .85rem;font-size:.88rem;line-height:1.45;
+  color:var(--pit-ink);background:var(--pit-tint);border:1px solid var(--pit-line);border-radius:var(--radius)}
+.login-success{margin:.9rem 0 0;padding:.65rem .85rem;font-size:.88rem;line-height:1.45;
+  color:var(--ans-ink);background:var(--ans-tint);border:1px solid var(--ans-line);border-radius:var(--radius)}
+.login-note{margin:1.25rem 0 0;font-size:.78rem;color:var(--muted);line-height:1.5}
+.login-foot{margin:1.25rem 0 2rem;text-align:center;font-size:.95rem}
+
+/* --- navbar auth ------------------------------------------------------ */
+.nav-auth{display:flex;align-items:center}
+.nav-user{display:inline-flex;align-items:center;min-height:44px;padding:0 .9rem;
+  font-family:var(--font-heading);font-size:15px;font-weight:600;color:var(--muted-2);white-space:nowrap}
+.nav-user-name{color:var(--accent-ink)}
+.nav-lock{font-size:.72em;opacity:.65}
+.navbar-nav .nav-link.nav-login{color:var(--link);font-weight:700}
+@media (max-width:991.98px){.nav-user{padding:0 6px;font-size:14px}}

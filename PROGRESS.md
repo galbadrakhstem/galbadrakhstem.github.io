@@ -67,6 +67,23 @@ Last updated: 2026-10-15 (Phase R10 complete)
   whose pull request (#13) had already been merged, so it was handed over as a patch file
   to publish from a new session.
 
+- Phase L1 (login system, 2026-10-16): `/login/` page + `assets/js/auth.js` replace the old
+  full-site password overlay. Access rules: `/` (Home), `/club/` (Physics and Astronomy)
+  and `/login/` are public; every other page is owner-only by default (front matter
+  `access: public` opts out). Allowlist: `28c_galbadrakh.u@mongolaspiration.edu.mn`
+  (Owner) and `Galbadrakh9998@gmail.com`. School email format `##_#_firstname.lastnameinitial@`
+  `mongolaspiration.edu.mn` is validated and the username (e.g. Galbadrakh.U) is derived
+  automatically and shown live. Password checked with PBKDF2-HMAC-SHA256 (310 000
+  iterations, per-user salt; plaintext never stored), 5 failed attempts lock the form for
+  15 minutes, signed HMAC session (365 days, "Keep me signed in") keeps the owner signed
+  in. Anti-tamper guard defeats the iOS Safari "Hide Distracting Items" bypass: protected
+  content is display:none until the session verifies, guests are redirected to /login/
+  before first paint, and a watchdog re-checks every 5 s / on focus / on print. Login
+  notifications ("I am joined and the username is …") go to a configurable notifyEndpoint
+  (see docs/login-email-automation.md, free Google Apps Script). robots.txt now disallows
+  all crawlers. Node-based tests verified PBKDF2 vectors, session sign/verify, tamper
+  rejection, allowlist, format validation and lockout before merge.
+
 ## In progress
 - Nothing.
 

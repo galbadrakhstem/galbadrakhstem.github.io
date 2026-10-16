@@ -2,6 +2,7 @@
 layout: default
 title: Physics and Astronomy · Galbadrakh STEM
 permalink: /club/
+access: public
 description: The Physics and Astronomy Club at Mongol Aspiration International School — MAIS Physics and Astronomy Club founded by Galbadrakh Ulziibold.
 ---
 

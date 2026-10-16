@@ -2,6 +2,7 @@
 layout: default
 title: Home · Galbadrakh STEM
 permalink: /
+access: public
 description: Galbadrakh Ulziibold — Cambridge AS and A Level student, founder of MAIS Physics and Astronomy Club, Astronomy Olympiad medalist.
 ---
 
