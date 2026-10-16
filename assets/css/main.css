@@ -365,8 +365,18 @@ th{background:var(--accent-tint); border-bottom:2px solid var(--accent-line)}
 blockquote{border-left:3px solid var(--accent)}
 
 /* 7. cards on the home page: each declares its own accent */
-.subject-card, .resource-card{border-top:3px solid var(--accent)}
+.subject-card, .resource-card{
+  border-top:3px solid var(--accent);
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+  will-change: transform;
+}
 .subject-card{border-radius:4px}
+.subject-card:hover, .resource-card:hover,
+.subject-card:focus-visible, .resource-card:focus-visible{
+  transform: translate(-4px, -4px);
+  box-shadow: 6px 6px 0 0 var(--heading);
+  border-color:var(--heading);
+}
 .subject-card.is-maths  {--accent:#1d4ed8; --accent-ink:#1e40af; --accent-tint:#eef2ff; --accent-line:#c7d2fe}
 .subject-card.is-physics{--accent:#6d28d9; --accent-ink:#5b21b6; --accent-tint:#f4f0ff; --accent-line:#ddd0fb}
 .subject-card.is-cs     {--accent:#0e7c5a; --accent-ink:#0b5f46; --accent-tint:#eaf7f2; --accent-line:#b9e3d3}
@@ -573,18 +583,27 @@ main.container:not(:has(> .about-layout)){padding-top:30px}
    ========================================================================== */
 
 .component-grid{
-  display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px;
-  margin:1.4rem 0 2rem; padding:0; list-style:none;
+  display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px;
+  margin:1.4rem 0 2rem; padding:6px 8px 10px 6px; list-style:none;
+  overflow:visible;
 }
-.component-grid > li{margin:0}
+.component-grid > li{margin:0; overflow:visible}
 .component-card{
   display:block; position:relative; min-height:92px;
   padding:20px 52px 20px 22px; background:#ffffff; color:var(--text);
   border:1px solid var(--rule); border-left:4px solid var(--accent);
   border-radius:var(--radius); text-decoration:none;
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+  will-change: transform;
 }
 .component-card:hover,
-.component-card:focus{border-color:var(--accent); text-decoration:none}
+.component-card:focus,
+.component-card:focus-visible{
+  border-color:var(--heading);
+  text-decoration:none;
+  transform: translate(-4px, -4px);
+  box-shadow: 6px 6px 0 0 var(--heading);
+}
 .component-name{
   display:block; font-family:var(--font-heading); font-weight:700;
   font-size:1.15rem; line-height:1.35; color:var(--heading);
@@ -646,9 +665,16 @@ main.container:not(:has(> .about-layout)){padding-top:30px}
   padding:24px 24px 22px;
   border-color:var(--accent-line); border-left-color:var(--accent);
   background:var(--accent-wash);   /* COLOUR LAYER 7a */
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+  will-change: transform;
 }
 .component-card.has-icon:hover,
-.component-card.has-icon:focus{border-color:var(--accent)}
+.component-card.has-icon:focus,
+.component-card.has-icon:focus-visible{
+  border-color:var(--heading);
+  transform: translate(-4px, -4px);
+  box-shadow: 6px 6px 0 0 var(--heading);
+}
 
 /* the icon slot: a tinted tile in the card's accent */
 .component-icon{
@@ -758,3 +784,153 @@ main.container:not(:has(> .about-layout)){padding-top:30px}
 .nav-lock{font-size:.72em;opacity:.65}
 .navbar-nav .nav-link.nav-login{color:var(--link);font-weight:700}
 @media (max-width:991.98px){.nav-user{padding:0 6px;font-size:14px}}
+
+/* ==========================================================================
+   CODECADEMY-STYLE HOVER — PHASE H1 (2026-10-16)
+   Article / resource cards lift on hover with offset shadow, like
+   Codecademy's Related resources. Applied to all card types.
+   ========================================================================== */
+.article-card, .resource-card, .subject-card, .component-card{
+  will-change: transform;
+}
+.article-card:hover{
+  transform: translate(-4px, -4px);
+  box-shadow: 6px 6px 0 0 var(--heading);
+}
+
+/* ==========================================================================
+   NIIGEM SUDLAL CHAPTER PAGES — PHASE N1 (2026-10-16)
+   Big block hero + file-tree structure for Handout / Exam Prep / Q&A
+   ========================================================================== */
+
+.chapter-hero{
+  background: var(--accent-tint, #eef2ff);
+  border: 1px solid var(--accent-line, #c7d2fe);
+  border-left: 6px solid var(--accent, #1d4ed8);
+  border-radius: var(--radius);
+  padding: 28px 28px 22px;
+  margin: 0 0 28px;
+}
+.chapter-hero h1{
+  margin: 0 0 8px;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--heading);
+  letter-spacing: -0.01em;
+}
+.chapter-hero .chapter-subtitle{
+  margin: 0;
+  color: var(--muted-2);
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+.chapter-meta{
+  display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;
+}
+.chapter-meta .meta-pill{
+  display:inline-flex; align-items:center; padding:4px 10px;
+  background:#fff; border:1px solid var(--rule);
+  border-radius:999px; font-size:12px; font-weight:600;
+  color:var(--muted-2);
+}
+
+.file-tree-block{
+  background:#fff;
+  border:1px solid var(--rule);
+  border-radius:var(--radius);
+  padding:18px 20px;
+  margin:0 0 24px;
+  overflow-x:auto;
+}
+.file-tree-block pre{
+  margin:0; padding:0; background:none; border:none;
+  font-family:var(--font-mono);
+  font-size:13px; line-height:1.7;
+  color:var(--text);
+}
+
+.niigem-section{
+  margin:28px 0 0;
+  padding:22px 0 0;
+  border-top:1px solid var(--rule);
+}
+.niigem-section:first-of-type{border-top:none; padding-top:0; margin-top:0}
+.niigem-section h3{
+  display:flex; align-items:center; gap:10px;
+  font-size:1.15rem; font-weight:700; margin:0 0 12px;
+}
+.niigem-section h3 .mn{
+  font-weight:400; color:var(--muted); font-size:0.95rem;
+}
+.niigem-section .section-desc{
+  color:var(--muted-2); font-size:0.93rem; margin:0 0 14px;
+}
+
+.pdf-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  gap:12px;
+  margin:0 0 18px;
+  padding:0;
+  list-style:none;
+}
+.pdf-card{
+  display:flex; flex-direction:column; gap:8px;
+  padding:14px 16px;
+  background:#fff;
+  border:1px solid var(--rule);
+  border-left:4px solid var(--accent, #1d4ed8);
+  border-radius:var(--radius);
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+.pdf-card:hover{
+  transform: translate(-3px, -3px);
+  box-shadow: 5px 5px 0 0 var(--heading);
+  border-color:var(--heading);
+}
+.pdf-card .pdf-label{
+  font-family:var(--font-mono); font-size:11px; font-weight:700;
+  letter-spacing:0.08em; text-transform:uppercase; color:var(--muted);
+}
+.pdf-card .pdf-title{
+  font-family:var(--font-heading); font-weight:700;
+  font-size:1rem; line-height:1.35; color:var(--heading);
+}
+.pdf-card .pdf-meta{
+  font-size:0.85rem; color:var(--muted-2); line-height:1.4;
+}
+.pdf-card .pdf-actions{
+  display:flex; flex-wrap:wrap; gap:6px; margin-top:6px;
+}
+.pdf-link{
+  display:inline-flex; align-items:center; justify-content:center;
+  min-height:32px; padding:4px 12px;
+  background:var(--surface-2, #f3f6ff);
+  border:1px solid var(--accent-line, #c7d2fe);
+  border-radius:var(--radius);
+  color:var(--accent, #1d4ed8);
+  font-size:13px; font-weight:600; text-decoration:none; white-space:nowrap;
+}
+.pdf-link:hover{
+  background:var(--accent, #1d4ed8); color:#fff; border-color:var(--accent, #1d4ed8);
+  text-decoration:none;
+}
+.pdf-link.is-secondary{
+  background:#fff; border-color:var(--rule); color:var(--text);
+}
+.pdf-link.is-secondary:hover{
+  background:var(--surface); border-color:var(--heading); color:var(--heading);
+}
+
+.abbr-legend{
+  background:var(--surface);
+  border:1px solid var(--rule);
+  border-radius:var(--radius);
+  padding:14px 16px;
+  font-size:0.9rem; line-height:1.6;
+  margin:20px 0;
+}
+.abbr-legend dt{font-weight:700; color:var(--heading)}
+.abbr-legend dd{margin:0 0 8px 0; color:var(--muted-2)}
+.abbr-legend dd:last-child{margin-bottom:0}
