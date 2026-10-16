@@ -58,93 +58,53 @@ description: "Бүлэг 1 НИЙГЭМ, НИЙГМИЙН ХАРИЛЦАА — �
       </dl>
     </div>
 
-    <div class="niigem-section" id="handout">
-      <h3>Гарын авлага / Handout <span class="mn">· Handout/</span></h3>
-      <p class="section-desc">Бүлгийн гол агуулга, нэр томъёо, QEC аргаар бичих загвар.</p>
-      <ul class="pdf-grid">
-        <li class="pdf-card">
-          <span class="pdf-label">Handout · PDF</span>
-          <span class="pdf-title">Бүлэг 1 Гарын авлага — НИЙГЭМ, НИЙГМИЙН ХАРИЛЦАА</span>
-          <span class="pdf-meta">Бүрэн тэмдэглэл, тодорхойлолтууд, жишээнүүд. 11-р анги.</span>
-          <span class="pdf-actions">
-            <a class="pdf-link" href="{{ '/assets/pdfs/niigem-sudlal/chapter-1/NiigemSudlal11_Buleg1_Handout.pdf' | relative_url }}" target="_blank" rel="noopener">Open PDF</a>
-            <a class="pdf-link is-secondary" href="{{ '/assets/pdfs/niigem-sudlal/chapter-1/NiigemSudlal11_Buleg1_Handout.pdf' | relative_url }}" download>Download</a>
-          </span>
-        </li>
-        <li class="pdf-card">
-          <span class="pdf-label">QEC · PDF</span>
-          <span class="pdf-title">QEC — Question, Evidence, Conclusion загвар</span>
-          <span class="pdf-meta">Асуулт, нотолгоо, дүгнэлт бүтцээр хариулт бичих аргачлал. Шалгалтанд өндөр оноо авахад туслана.</span>
-          <span class="pdf-actions">
-            <a class="pdf-link" href="{{ '/assets/pdfs/niigem-sudlal/chapter-1/NiigemSudlal11_Buleg1_QEC.pdf' | relative_url }}" target="_blank" rel="noopener">Open PDF</a>
-            <a class="pdf-link is-secondary" href="{{ '/assets/pdfs/niigem-sudlal/chapter-1/NiigemSudlal11_Buleg1_QEC.pdf' | relative_url }}" download>Download</a>
-          </span>
-        </li>
-      </ul>
-    </div>
+    <h3 id="handout">Handout / <span lang="mn">Гарын авлага</span></h3>
+    <ul class="handout-list is-single">
+      <li class="handout-item">
+        <span class="handout-code">PDF</span>
+        <span class="handout-title" lang="mn">Гарын авлага, QEC — бүрэн тэмдэглэл, гол ойлголтууд, арга бичих загвар</span>
+        <span class="handout-actions">
+          <a class="handout-link is-primary" href="{{ '/assets/pdfs/niigem-sudlal/chapter-1/NiigemSudlal11_Buleg1_Handout.pdf' | relative_url }}" target="_blank" rel="noopener" aria-label="Гарын авлага — open PDF">Handout</a>
+          <a class="handout-link" href="{{ '/assets/pdfs/niigem-sudlal/chapter-1/NiigemSudlal11_Buleg1_QEC.pdf' | relative_url }}" target="_blank" rel="noopener" aria-label="QEC — open PDF">QEC</a>
+        </span>
+      </li>
+    </ul>
 
-    <div class="niigem-section" id="exam-prep">
-      <h3>Шалгалтанд бэлтгэх / Exam Prep <span class="mn">· Exam Prep/</span></h3>
-      <p class="section-desc">Шалгалтын өмнө давтах материал, түгээмэл алдаанууд, онооны хуваарилалт.</p>
-      <ul class="pdf-grid">
-        <li class="pdf-card">
-          <span class="pdf-label">Exam Prep · PDF</span>
-          <span class="pdf-title">Бүлэг 1 Шалгалтанд бэлтгэх</span>
-          <span class="pdf-meta">Давталтын хуудас, шалгалтын зөвлөмж, гол сэдвүүдийн хураангуй.</span>
-          <span class="pdf-actions">
-            <a class="pdf-link" href="{{ '/assets/pdfs/niigem-sudlal/chapter-1/NiigemSudlal11_Buleg1_Exam_Prep.pdf' | relative_url }}" target="_blank" rel="noopener">Open PDF</a>
-            <a class="pdf-link is-secondary" href="{{ '/assets/pdfs/niigem-sudlal/chapter-1/NiigemSudlal11_Buleg1_Exam_Prep.pdf' | relative_url }}" download>Download</a>
-          </span>
-        </li>
-      </ul>
-    </div>
+    <h3 id="exam-prep">Exam Prep / <span lang="mn">Шалгалтанд бэлтгэх</span></h3>
+    <ul class="handout-list is-single">
+      <li class="handout-item">
+        <span class="handout-code">PDF</span>
+        <span class="handout-title" lang="mn">Давталтын хуудас, шалгалтын зөвлөмж, онооны хуваарилалт</span>
+        <span class="handout-actions">
+          <a class="handout-link is-primary" href="{{ '/assets/pdfs/niigem-sudlal/chapter-1/NiigemSudlal11_Buleg1_Exam_Prep.pdf' | relative_url }}" target="_blank" rel="noopener" aria-label="Шалгалтанд бэлтгэх — open PDF">Open PDF</a>
+          <a class="handout-link" href="{{ '/assets/pdfs/niigem-sudlal/chapter-1/NiigemSudlal11_Buleg1_Exam_Prep.pdf' | relative_url }}" download aria-label="Шалгалтанд бэлтгэх — download PDF">Download</a>
+        </span>
+      </li>
+    </ul>
 
-    <div class="niigem-section" id="questions">
-      <h3>Асуулт болон Хариулт / Question with Solutions <span class="mn">· Coursebook/</span></h3>
-      <p class="section-desc">Сурах бичгийн дасгал ажлууд — өөрийгөө сорих (SA) болон шалгалтын загварын (ES) асуултууд, бүрэн шийдлийн хамт.</p>
-      <ul class="pdf-grid">
-        <li class="pdf-card">
-          <span class="pdf-label">SA · Self-assessment</span>
-          <span class="pdf-title">Self-assessment Questions — Бүлэг 1</span>
-          <span class="pdf-meta">Сурах бичгийн төгсгөл дэх өөрийгөө сорих асуултууд.</span>
-          <span class="pdf-actions">
-            <a class="pdf-link" href="{{ '/assets/pdfs/niigem-sudlal/chapter-1/NiigemSudlal11_Buleg1_SA.pdf' | relative_url }}" target="_blank" rel="noopener">Open PDF</a>
-            <a class="pdf-link is-secondary" href="{{ '/assets/pdfs/niigem-sudlal/chapter-1/NiigemSudlal11_Buleg1_SA.pdf' | relative_url }}" download>Download</a>
-          </span>
-        </li>
-        <li class="pdf-card">
-          <span class="pdf-label">SA Sol · Solution</span>
-          <span class="pdf-title">SA Solutions — Хариулт ба тайлбар</span>
-          <span class="pdf-meta">SA асуултуудын дэлгэрэнгүй хариулт, QEC бүтэцтэй.</span>
-          <span class="pdf-actions">
-            <a class="pdf-link" href="{{ '/assets/pdfs/niigem-sudlal/chapter-1/NiigemSudlal11_Buleg1_SA_Sol.pdf' | relative_url }}" target="_blank" rel="noopener">Open PDF</a>
-            <a class="pdf-link is-secondary" href="{{ '/assets/pdfs/niigem-sudlal/chapter-1/NiigemSudlal11_Buleg1_SA_Sol.pdf' | relative_url }}" download>Download</a>
-          </span>
-        </li>
-        <li class="pdf-card">
-          <span class="pdf-label">ES · Exam-style</span>
-          <span class="pdf-title">Exam-style Questions — Бүлэг 1</span>
-          <span class="pdf-meta">Шалгалтын загварын асуултууд — онооны хуваарилалттай.</span>
-          <span class="pdf-actions">
-            <a class="pdf-link" href="{{ '/assets/pdfs/niigem-sudlal/chapter-1/NiigemSudlal11_Buleg1_ES.pdf' | relative_url }}" target="_blank" rel="noopener">Open PDF</a>
-            <a class="pdf-link is-secondary" href="{{ '/assets/pdfs/niigem-sudlal/chapter-1/NiigemSudlal11_Buleg1_ES.pdf' | relative_url }}" download>Download</a>
-          </span>
-        </li>
-        <li class="pdf-card">
-          <span class="pdf-label">ES Sol · Solution</span>
-          <span class="pdf-title">ES Solutions — Хариулт ба үнэлгээ</span>
-          <span class="pdf-meta">ES асуултуудын бүрэн шийдэл, үнэлгээний шалгуур.</span>
-          <span class="pdf-actions">
-            <a class="pdf-link" href="{{ '/assets/pdfs/niigem-sudlal/chapter-1/NiigemSudlal11_Buleg1_ES_Sol.pdf' | relative_url }}" target="_blank" rel="noopener">Open PDF</a>
-            <a class="pdf-link is-secondary" href="{{ '/assets/pdfs/niigem-sudlal/chapter-1/NiigemSudlal11_Buleg1_ES_Sol.pdf' | relative_url }}" download>Download</a>
-          </span>
-        </li>
-      </ul>
-    </div>
+    <h3 id="self-assessment">Self-assessment / <span lang="mn">Өөрийгөө сорих</span></h3>
+    <ul class="handout-list is-single">
+      <li class="handout-item">
+        <span class="handout-code">PDF</span>
+        <span class="handout-title" lang="mn">Өөрийгөө сорих асуултууд ба дэлгэрэнгүй хариулт</span>
+        <span class="handout-actions">
+          <a class="handout-link is-primary" href="{{ '/assets/pdfs/niigem-sudlal/chapter-1/NiigemSudlal11_Buleg1_SA.pdf' | relative_url }}" target="_blank" rel="noopener" aria-label="Өөрийгөө сорих — questions">Questions</a>
+          <a class="handout-link" href="{{ '/assets/pdfs/niigem-sudlal/chapter-1/NiigemSudlal11_Buleg1_SA_Sol.pdf' | relative_url }}" target="_blank" rel="noopener" aria-label="Өөрийгөө сорих — solutions">Solutions</a>
+        </span>
+      </li>
+    </ul>
 
-    <div class="notice" style="margin-top:32px;">
-      <strong>Бүтэц:</strong> Бүлэг бүрийн хуудас ижил бүтэцтэй байх болно — <code>Handout/</code> (Handout, QEC), <code>Exam Prep/</code> (Exam_Prep), <code>Question with Solutions/Coursebook/</code> (SA, SA_Sol, ES, ES_Sol). Дараагийн бүлгүүдийн PDF-ийг оруулахад бэлэн.
-    </div>
+    <h3 id="exam-style">Exam-style / <span lang="mn">Шалгалтын загвар</span></h3>
+    <ul class="handout-list is-single">
+      <li class="handout-item">
+        <span class="handout-code">PDF</span>
+        <span class="handout-title" lang="mn">Шалгалтын загварын асуултууд ба бүрэн шийдэл</span>
+        <span class="handout-actions">
+          <a class="handout-link is-primary" href="{{ '/assets/pdfs/niigem-sudlal/chapter-1/NiigemSudlal11_Buleg1_ES.pdf' | relative_url }}" target="_blank" rel="noopener" aria-label="Шалгалтын загвар — questions">Questions</a>
+          <a class="handout-link" href="{{ '/assets/pdfs/niigem-sudlal/chapter-1/NiigemSudlal11_Buleg1_ES_Sol.pdf' | relative_url }}" target="_blank" rel="noopener" aria-label="Шалгалтын загвар — solutions">Solutions</a>
+        </span>
+      </li>
+    </ul>
 
     <p style="margin-top:24px;"><a href="{{ '/as-and-a-level/other/national-curriculum/niigem-sudlal/' | relative_url }}">Back to <span lang="mn">Нийгэм судлал</span></a> · <a href="{{ '/as-and-a-level/other/national-curriculum/' | relative_url }}">Mongolian 11th grade curriculum</a> · <a href="{{ '/as-and-a-level/other/' | relative_url }}">Other</a></p>
   </div>
