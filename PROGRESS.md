@@ -1,6 +1,6 @@
 # PROGRESS
 
-Last updated: 2026-10-15 (Phase R10 complete)
+Last updated: 2026-10-17 (Phase N2 complete)
 
 ## Done
 - Phase 1 design lock, Phase 2 handout language, Phases 3-5 prototype topics
@@ -83,6 +83,17 @@ Last updated: 2026-10-15 (Phase R10 complete)
   (see docs/login-email-automation.md, free Google Apps Script). robots.txt now disallows
   all crawlers. Node-based tests verified PBKDF2 vectors, session sign/verify, tamper
   rejection, allowlist, format validation and lockout before merge.
+
+- Phase N2 (Нийгэм судлал chapters 3–4, 2026-10-17): both chapter pages rebuilt in
+  the Phase N1 Chapter 1 design — chapter hero with meta pills, subtopic grid, file-tree
+  block, abbreviation legend, and Handout/QEC, Exam Prep, Self-assessment and Exam-style
+  PDF rows. Fourteen PDFs added under `assets/pdfs/niigem-sudlal/chapter-3/` and
+  `chapter-4/` (Handout, QEC, Exam_Prep, SA, SA_Sol, ES, ES_Sol per chapter). The
+  subject hub's Walkthroughs links for Б1–Б4 now target `#exam-prep`, because the
+  `#past-exam-walkthroughs` anchor they pointed at did not exist on chapters 1–4.
+  Sitemap unchanged: the two chapter URLs were already listed; PDFs are assets.
+  Approximate build (liquidjs + markdown-it) rendered 191 pages with 1292 internal
+  links and no broken links on the Niigem pages.
 
 ## In progress
 - Nothing.
