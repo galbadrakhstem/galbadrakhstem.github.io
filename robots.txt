@@ -1,3 +1,4 @@
-# This site is private — keep it out of search engines.
+# Public pages are indexable; owner-only pages carry noindex in their HTML.
 User-agent: *
-Disallow: /
+Allow: /
+Sitemap: https://galbadrakhstem.github.io/sitemap.xml

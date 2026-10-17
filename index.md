@@ -35,7 +35,7 @@ description: Galbadrakh Ulziibold — Cambridge AS and A Level student, founder 
             <span>Founder, <a href="{{ '/club/' | relative_url }}">MAIS Physics &amp; Astronomy Club</a> (2024)</span>
           </li>
           <li>
-            <img class="university-icon" src="{{ '/assets/img/logo.svg' | relative_url }}" alt="" width="20" height="20">
+            <img class="university-icon" src="{{ '/assets/img/logo-mark.png' | relative_url }}" alt="" width="20" height="20">
             <span>Mongol Aspiration International School</span>
           </li>
         </ul>

@@ -400,3 +400,34 @@ Kevin Zhou, knzhou.github.io — theme CSS and custom layout layer inspected 202
   - Нийгэм судлал: a group of three figures.
 - `_includes/navbar.html`, `_layouts/default.html`, subject landing pages and the
   handout pages are unchanged.
+
+## Author crest, navbar scale, and public indexing (Phase R12 — 2026-10-17)
+
+- The author's own crest replaces the placeholder `assets/img/logo.svg` (deleted).
+  Derived from the crest artwork in this phase:
+  - `assets/img/logo.png` — full lockup (shield, laurels, STEM banner) at 1200×1200
+    on white; used for `og:image` / `twitter:image` in `_layouts/default.html`.
+  - `assets/img/logo-mark.png` — shield-only crop at 512×512 on transparency (laurels
+    and banner excluded, white ground removed); used for the navbar crest and the
+    20px school icons on the Home (`index.md`) and Club (`club.md`) pages.
+  - `assets/img/favicon.png` (64×64) and `favicon.ico` + `assets/favicon.ico`
+    (16/32/48/64), all rendered from the shield mark.
+  - `assets/img/apple-touch-icon.png` — 180×180, the shield mark centred on cream
+    `#EEE4D8`.
+  The `<head>` icon links no longer reference SVG: PNG favicon, ICO, and the Apple
+  touch icon only.
+- Navbar (`_includes/navbar.html`, `assets/css/main.css`): the crest beside the brand
+  is 46px (`.site-logo`, with matching `width`/`height` attributes), the brand is
+  1.2rem, and nav links are 16px / weight 500 with `0 0.65rem` padding. At 992px and
+  wider the bar is one unbroken row — `.navbar-content` and `.navbar-nav` are
+  `flex-wrap: nowrap` and `.navbar-menu` scrolls sideways (scrollbar hidden) instead
+  of wrapping. Phone behaviour (brand hidden, scrollable link row) is unchanged.
+  To retune later, only two values need changing: `.site-logo` size and
+  `.navbar-nav .nav-link` font-size.
+- Public indexing: `robots.txt` is now `Allow: /` with a
+  `Sitemap: https://galbadrakhstem.github.io/sitemap.xml` line. In
+  `_layouts/default.html` the robots meta is conditional on the existing
+  `gs_access` value: `noindex, nofollow` only on owner-only pages, and
+  `index, follow, max-image-preview:large` on public pages. Owner-only pages remain
+  protected by the sign-in gate exactly as before; `robots.txt` allowing crawlers
+  does not expose them, because they still carry `noindex` and redirect guests.

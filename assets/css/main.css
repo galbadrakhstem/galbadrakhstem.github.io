@@ -94,14 +94,14 @@ th{background:var(--surface);font-weight:600;font-family:var(--font-heading)}
 #navbar-main .navbar-menu{display:flex; flex-grow:1; align-items:center; min-width:0}
 .navbar-brand{
   display:inline-flex; align-items:center; gap:.5rem;
-  font-family:var(--font-heading); font-size:1.25rem; font-weight:700;
+  font-family:var(--font-heading); font-size:1.2rem; font-weight:700;
   color:rgba(0,0,0,.9); white-space:nowrap; margin-right:1rem;
 }
 .navbar-brand:hover,.navbar-brand:focus{color:rgba(0,0,0,.9);text-decoration:none}
 .navbar-nav{display:flex;flex-wrap:wrap;list-style:none;margin:0 0 0 auto;padding:0}
 .navbar-nav .nav-link{
-  display:flex; align-items:center; min-height:44px; padding:0 .9rem;
-  font-size:18px; font-weight:600; color:#495057; white-space:nowrap;
+  display:flex; align-items:center; min-height:44px; padding:0 0.65rem;
+  font-size:16px; font-weight:500; color:#495057; white-space:nowrap;
   transition:color .6s ease;
 }
 .navbar-nav .nav-link:hover{color:var(--link);text-decoration:none}
@@ -109,6 +109,11 @@ th{background:var(--surface);font-weight:600;font-family:var(--font-heading)}
 .navbar-nav>.nav-item:last-child>.nav-link{padding-right:0}
 @media (min-width:992px){
   #navbar-main{min-height:63px}
+  /* one unbroken row: brand + links never wrap; links scroll sideways if needed */
+  #navbar-main .navbar-content{flex-wrap:nowrap}
+  #navbar-main .navbar-menu{overflow-x:auto; scrollbar-width:none}
+  #navbar-main .navbar-menu::-webkit-scrollbar{display:none}
+  .navbar-nav{flex-wrap:nowrap}
   #navbar-main .navbar-brand,
   #navbar-main .navbar-nav .nav-link{padding-top:6.5px;padding-bottom:6.5px}
 }
@@ -413,7 +418,7 @@ blockquote{border-left:3px solid var(--accent)}
 main.container::before, .site-main::before{display:none}
 .navbar{background:#fff; border-bottom:1px solid var(--rule); box-shadow:none}
 .navbar-brand{display:inline-flex; align-items:center; gap:.5rem}
-.site-logo{width:28px; height:28px; display:inline-block; flex:0 0 auto}
+.site-logo{width:46px; height:46px; display:inline-block; flex:0 0 auto}
 .eyebrow{display:none}
 .simple-row{display:grid; grid-template-columns:180px minmax(0,1fr); column-gap:36px;
             padding:28px 0; border-bottom:1px solid var(--rule)}

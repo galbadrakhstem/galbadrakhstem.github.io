@@ -35,11 +35,11 @@ description: The Physics and Astronomy Club at Mongol Aspiration International S
             <span>Founded 14 November 2024</span>
           </li>
           <li>
-            <img class="university-icon" src="{{ '/assets/img/logo.svg' | relative_url }}" alt="" width="20" height="20">
+            <img class="university-icon" src="{{ '/assets/img/logo-mark.png' | relative_url }}" alt="" width="20" height="20">
             <span>Mongol Aspiration International School</span>
           </li>
           <li>
-            <img class="university-icon" src="{{ '/assets/img/logo.svg' | relative_url }}" alt="" width="20" height="20">
+            <img class="university-icon" src="{{ '/assets/img/logo-mark.png' | relative_url }}" alt="" width="20" height="20">
             <span>Core topic: orbital mechanics</span>
           </li>
         </ul>
