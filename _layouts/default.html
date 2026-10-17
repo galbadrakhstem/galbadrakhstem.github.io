@@ -11,8 +11,7 @@
     <title>{{ full_title | escape }}</title>
     <link rel="canonical" href="{{ page.url | absolute_url }}">
     <!-- Favicon / Logo instead of globe -->
-    <link rel="icon" type="image/svg+xml" href="{{ '/assets/img/logo.svg' | relative_url }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="64x64" href="{{ '/assets/img/favicon.png' | relative_url }}">
     <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -69,7 +68,7 @@
     <meta name="twitter:title" content="{{ full_title | escape }}">
     <meta name="twitter:description" content="{{ page.description | default: site.description | escape }}">
     <meta name="twitter:image" content="{{ '/assets/img/logo.png' | absolute_url }}">
-    <meta name="robots" content="noindex, nofollow">
+    {% if gs_access == 'owner' %}<meta name="robots" content="noindex, nofollow">{% else %}<meta name="robots" content="index, follow, max-image-preview:large">{% endif %}
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
