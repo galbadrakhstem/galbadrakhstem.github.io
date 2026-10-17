@@ -73,28 +73,28 @@ description: "Нийгэм судлал (Social studies) — grade 11, Mongolian
         <span class="handout-code">Б1</span>
         <span class="handout-title" lang="mn">НИЙГЭМ, НИЙГМИЙН ХАРИЛЦАА</span>
         <span class="handout-actions">
-          <a class="handout-link is-primary" href="{{ '/as-and-a-level/other/national-curriculum/niigem-sudlal/chapter-1/#past-exam-walkthroughs' | relative_url }}" aria-label="Б1 НИЙГЭМ, НИЙГМИЙН ХАРИЛЦАА — past-exam walkthroughs">Walkthroughs</a>
+          <a class="handout-link is-primary" href="{{ '/as-and-a-level/other/national-curriculum/niigem-sudlal/chapter-1/#exam-prep' | relative_url }}" aria-label="Б1 НИЙГЭМ, НИЙГМИЙН ХАРИЛЦАА — past-exam walkthroughs">Walkthroughs</a>
         </span>
       </li>
       <li class="handout-item">
         <span class="handout-code">Б2</span>
         <span class="handout-title" lang="mn">СОЁЛ</span>
         <span class="handout-actions">
-          <a class="handout-link is-primary" href="{{ '/as-and-a-level/other/national-curriculum/niigem-sudlal/chapter-2/#past-exam-walkthroughs' | relative_url }}" aria-label="Б2 СОЁЛ — past-exam walkthroughs">Walkthroughs</a>
+          <a class="handout-link is-primary" href="{{ '/as-and-a-level/other/national-curriculum/niigem-sudlal/chapter-2/#exam-prep' | relative_url }}" aria-label="Б2 СОЁЛ — past-exam walkthroughs">Walkthroughs</a>
         </span>
       </li>
       <li class="handout-item">
         <span class="handout-code">Б3</span>
         <span class="handout-title" lang="mn">ЭРХ ЗҮЙ</span>
         <span class="handout-actions">
-          <a class="handout-link is-primary" href="{{ '/as-and-a-level/other/national-curriculum/niigem-sudlal/chapter-3/#past-exam-walkthroughs' | relative_url }}" aria-label="Б3 ЭРХ ЗҮЙ — past-exam walkthroughs">Walkthroughs</a>
+          <a class="handout-link is-primary" href="{{ '/as-and-a-level/other/national-curriculum/niigem-sudlal/chapter-3/#exam-prep' | relative_url }}" aria-label="Б3 ЭРХ ЗҮЙ — past-exam walkthroughs">Walkthroughs</a>
         </span>
       </li>
       <li class="handout-item">
         <span class="handout-code">Б4</span>
         <span class="handout-title" lang="mn">ЭДИЙН ЗАСАГ</span>
         <span class="handout-actions">
-          <a class="handout-link is-primary" href="{{ '/as-and-a-level/other/national-curriculum/niigem-sudlal/chapter-4/#past-exam-walkthroughs' | relative_url }}" aria-label="Б4 ЭДИЙН ЗАСАГ — past-exam walkthroughs">Walkthroughs</a>
+          <a class="handout-link is-primary" href="{{ '/as-and-a-level/other/national-curriculum/niigem-sudlal/chapter-4/#exam-prep' | relative_url }}" aria-label="Б4 ЭДИЙН ЗАСАГ — past-exam walkthroughs">Walkthroughs</a>
         </span>
       </li>
       <li class="handout-item">
